@@ -1,0 +1,5145 @@
+clear
+protonvpn not connecting
+clear
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | nu
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+clear
+brew install neovim
+node
+node --version
+clear
+nvim
+clear
+cargo
+ls -
+ls -a
+mkdir .config
+ls
+ls -a
+cd .config
+ls
+ls -a
+clear
+cd ../
+clear
+nucargo
+clear
+cargo
+help
+ls -a
+echo $nu.env-path
+cd `Library/Application Support/`
+ls -a
+cd nushell/
+ls
+nvim config.nu
+cd ~/
+clear
+ls -a
+nvim .profile
+ls .config/ -a
+nvim .profile
+echo $nu.env-path
+cd `Library/Application Support/`
+cd nushell/
+ls
+nvim env.nu
+cargo
+clear
+echo $nu.env-path
+brew install direnv
+ls
+cd ~/
+ls
+ls -a
+cd .config
+mkdir nvim
+clear
+ls -a
+cd nvim/
+mkdir lua
+nvim init.lua
+cd lua/
+mkdir plugins
+mkdir core
+cd core
+nvim init.lua
+nvim options.lua
+rm options.lua
+ls
+rm init.lua
+cd ..
+ls
+rm core/
+rm plugins/
+clear
+ls
+clear
+cd ..
+ls
+mkdir core
+ls
+nvim init.la
+nvim init.lua
+ls
+nvim lua/utils.lua
+nvim core/options.lua
+ls
+mv core lua
+ls
+cd lua
+ls
+mv utils.lua core
+ls
+ls core
+cd ../
+ls
+nvim
+clear
+nvim
+ls -a
+nvim init.lua
+nvim
+ls
+nvim
+cd lua/
+ls
+cd core/
+ls
+nvim init.lua
+ls
+nvim init.lua
+cd ..
+ls
+cd ../
+nvim init.lua
+nvim
+nvim lua/core/init.lua
+cd lua/core/
+ls
+nvim remap.lua
+nvim 
+cd ~
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+clear
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+clear
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \<\n>       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+ls
+cd .config/
+cd nvim/
+clear
+nvim
+cd ~
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+clear
+cd .config/nvim/
+nvim
+cd lua/core/
+ls
+rn vimplug.lua vimplug.vim
+rename vimplug.lua vimplug.vim
+ls
+sed vimplug.lua vimplug.vim
+sed -n vimplug.lua vimplug.vim
+clear
+rm vimplug.lua
+nvim
+cd ~
+cd .config/nvim
+clear
+nvim
+nvim 
+nvim
+mkdir plugin
+mv lua/core/packer.lua plugin/
+ls -a plugin/
+mkdir after
+mv plugin/packer lua/core/
+mv plugin/packer.lua lua/core/
+clear
+git clone https://github.com/weknowbi/weknow.git
+clear
+sudo xcodebuild -license
+ls -a
+git --git-dir .git --work-tree . status
+cd workspaces/
+clear
+git clone https://github.com/weknowbi/weknow.git
+npm
+clear
+curl -fsSL https://fnm.vercel.app/install | bash
+$nu.config-path
+vim $nu.config-path
+nvim $nu.config-path
+load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" && name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
+load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" and name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
+clear
+load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" and name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
+nvim $nu.config-path
+load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" and name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
+load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" && name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
+load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" ; name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
+load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" and name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
+fnm env --shell bash
+load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" and name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
+nvim $nu.config-path
+echo $nu.path | append (fnm env | lines | split column '"' | first | get Column2) | config set_into  path
+fnm env | str  find-replace -a "export " '' | str find-replace -a '"' '' |  lines | split column = | rename name value | last 5 | load-env
+fnm env --shell bash | lines | last 5 | str find-replace 'export ' '' | str find-replace -a '"' '' | split column = | rename name value | load-env
+athvar add ($nu.env.FNM_MULTISHELL_PATH + /bin)
+pathvar add ($nu.env.FNM_MULTISHELL_PATH + /bin)
+clear
+fnm
+fnm env --shell
+go install github.com/Southclaws/fnm-nushell@latest then run a short pipeline: fnm env --shell bash | fnm-nushell | from json | load-env
+nvim $nu.config-path
+clear
+fnm
+nvim $nu.config-path
+fnm
+clear
+ls
+cd weknow/clientapps/webclient/ng2+/
+clear
+fnm install
+fnm list-remote
+fnm install hydrogen
+fnm install 18.13.0
+fnm default 18.13.0
+fnm use 18.13.0
+clear
+fnm current
+fnm env
+nvim $nu.config-path
+fnm
+fnm current
+clear
+cd weknow/clientapps/
+cd webclient/ng2+/
+clear
+npm i
+npm run serve
+clear
+ls -a
+ls -a src/
+nvim src/data/localConfigs.json
+clear
+npm run serve
+clear
+npm run serve
+clear
+ping 192.168.1.12
+clear
+ping 192.168.1.3
+ipconfig
+ipconfig ifcount
+ipconfig getifaddr interface
+ipconfig getpacket interface
+ipconfig
+ipconfig getiflist
+ipconfig getsummary
+ipconfig getifaddr
+ipconfig waitall
+ipconfig ifconfig
+ifconfig en0
+ping 192.168.1.3
+clear
+npm run serve
+clear
+ping 192.168.1.12
+clear
+ping 192.168.1.3
+ping localhost
+ping 192.168.1.3
+ping 192.168.1.12
+clear
+npm run serve
+code-insiders .
+code .
+clear
+npm run serve
+clear
+npm run serve
+clear
+npm uninstall @angular/flex-layout
+clear
+npm run serve
+clear
+npm run serve
+clear
+git config --global user.name "Ruan Molinari"
+git config --global user.email "ruan.molinari@proton.me"
+clear
+npm run serve
+clear
+git checkout main
+clear
+npm run serve
+clear
+cd ~
+cd .config/nvim/
+nvim
+brew install telescope
+nvim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \<\n>       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+ls -a
+cd ~
+cd .local/share/
+ls -a
+cd nvim/
+ls -a
+ls
+cd ~
+nvim .config/nvim/
+cd .config/nvim/
+nvim
+ls -a
+cd lua/core/
+ls -a
+nvim
+cd ~
+cd .local/share/nvim/site/autoload/
+ls
+rm plug.vim
+ls
+cd ~
+cd .config/nvim/
+ls
+rm plugins.lua
+cd lua/
+ls
+ls -a
+cd core/
+ls
+cd ../../
+clear
+ls
+nvim
+clear
+nvim
+nvim .config/nvim/
+cd .config/nvim/
+cler
+clear
+nvim
+clear
+nvim
+clear
+cd .config/nvim/
+ls
+nvim
+cd ../
+rm nvim/
+rm nvim --recursive 
+ls
+clear
+mkdir nvim
+cd nvim/
+nvim init.lua
+mkdir lua
+nvim
+ls lua/
+ls 
+cd lua/
+ls
+cd ...
+cd nvim/
+clear
+nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+git clone --depth 1 https://github.com/wbthomason/packer.nvim \  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+clear
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+clear
+cd ~
+ls -a
+nvim plugins.lua
+rm plugins.lua
+ls
+ls -a
+clear
+cd .config/nvim/
+clear
+nvim
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+npm run serve
+clear
+npm run serve
+npm i
+clear
+npm run serve
+CLEAR
+clear
+cd ~
+cd .config/nvim/
+nvim
+cd lua/
+ls
+mkdir core
+mv opts.lua core
+mv packer.lua core/
+mv remap.lua core/
+clear
+cd ../
+ls
+nvim init.lua
+nvim
+cd ~/.local/share/nvim/site/
+cd pack/
+cd packer/start/
+ls
+git clone --depth 1 https://github.com/wbthomason/packer.nvim
+ls
+cd ~
+cd .config/nvim/
+ls
+nvim
+clear
+ls
+nvim
+cd .config/nvim/
+nvim
+clear
+cd ~
+cd .local/share/nvim/site/pack/
+ls
+cd packer/
+ls
+cd start/
+ls
+cd packer.nvim/
+ls
+cd lua/
+ls
+nvim packer.lua
+cd ~
+cd .config/nvim/
+clear
+nvim
+clear
+nvim
+clear
+brew install pyenv
+pyenv
+clear
+pyenv install 3.11.1
+clear
+$nu.config-path
+cd $nu.config-path
+cd `Library/Application Support/nushell/`
+lls
+ls
+clear
+ls
+nvim
+$env
+clear
+ls
+ls -a
+nvim $nu.config-path
+$env
+$env.PYENV_ROOT
+nvim $nu.config-path
+$env.PYENV_ROOT
+reset
+clear
+pyenv global 3.11.1
+pyenv versions
+nvim $nu.config-path
+clear
+ls
+cd Library/
+ls
+..
+ls
+cd Public/
+ls
+ls -a
+cd `Drop Box/`
+ls
+ls -a
+~
+clear
+ls
+cd ../
+ls
+cd ruan/
+clear
+git clone https://github.com/beancount/beancount
+cd beancount/
+py -m pip install .
+python3y -m pip install .
+python3 -m pip install .
+python3 -m pip install --upgrade pip
+nvim $nu.config-path
+reset 
+python3 -m pip install --upgrade pip
+clear
+cd ~
+clear
+ls .config/nvim/
+cd .config/nvim/
+ls
+clear
+nvim
+cd ~
+cd beancount/
+ls
+cd ~
+bean-check
+cd beancount/bin/
+ls
+clear
+cd ~
+nvim $nu.env-path
+reset
+bean-check
+nvim $nu.env-path
+reset
+bean-check
+$env.PATH
+nvim $nu.env-path
+bean-check
+bean-check --help
+cd .config/nvim/
+nvim
+clear
+brew install ripgrep
+nvim
+clear
+biean-file
+bean-file
+bean-doctor 
+cd ~
+cd beancount/
+ls
+ls -a
+cd beancount/
+ls
+cd ..
+ls
+cd bin/
+ls
+cd ..
+ls
+python3 setup.py build_ext -i
+clear
+cd ..
+bean-doctor 
+cd beancount/
+python3 setup.py install
+python3
+clear
+py
+python
+python3
+clear
+cd beancount/
+python3 setup.py install
+python3 setup.py
+python3 setup.py --help
+python3 setup.py build
+clear
+bean-doctor 
+nvim /Users/ruan/Library/Python/3.9/lib/python/site-packages/beancount/__init__.py
+ls
+ls -a
+cd requirements/
+ls
+cd ..
+clear
+nvim /Users/ruan/Library/Python/3.9/lib/python/site-packages/beancount/__init__.py
+ls
+cd requirements/
+ls
+nvim dev.txt
+cd ..
+clear
+python3 setup.py develop
+python3 setup.py build -d ./
+python3 setup.py build --install-dir ./
+clear
+brew install direnv
+nvim $nu.config-path
+clear
+reset
+python3 setup.py build_ext -i
+clear
+bean-check
+python3 setup.py build_ext -i
+python3 setup.py build
+bean-check
+bean-check --help
+bean-check -a
+bean-check --version
+bean-check -a
+python3 -m beancount.scripts.deps
+nvim .envrc
+reset
+$PYTHONPATH
+$env.PYTHONPATH
+$env
+{NAME: "TEST", AGE: 1} | load-env
+$env.PYTHONPATH
+$env.NAME
+ls
+ls -a
+cd .pyenv
+ls
+cd ..
+nvim $nu.config-path
+cd $nu
+$nu.config-path
+cd `Library/Application Support/`
+cd nushell/
+ls
+clear
+ls
+clear
+nvim
+cd ~
+ls
+ls -a
+cd ...
+ls
+cd home/
+ls
+ls -a
+cd ....
+cd ..
+cd /home/user
+cd usr
+ls
+cd Applications
+cd ..
+cd Applications/
+ls
+cd ..
+clear
+cd ~
+ls
+ls -a
+cd ..
+ls
+cd ..
+ls
+cd dev
+ls
+cdc ..
+cd ..
+ls
+ls -a
+clear
+cd ~
+clear
+ls
+fnm
+fnm help
+cd ..
+clear
+ls
+cd ~
+nvim $nu.config-path
+clear
+ls
+fnm
+reset
+fnm
+fnm env
+fnm --fnm-dir
+clear
+nvim $nu.config-path
+cd beancount/
+direnv allow
+$PYTHONPATH
+nvim $nu.env-path
+nvim beancount-env.nu
+reset
+clear
+nvim $nu.co
+nvim $nu.config-path
+nvim $nu.co
+nvim $nu.config-path
+clear
+reset
+nvim $nu.config-path
+clear
+ls
+clear
+ls
+clear
+nvim $nu.env-path
+$env
+$env.PYTHONPATH
+CLEAR
+nvim $nu.env-path
+cd ../
+ls
+$nu
+cd $nu
+cd `Library/Application Support/`
+ls
+cd nushell/
+clear
+ls
+clear
+nvim
+cd ~
+bean-check
+cd beancount/
+python3 setup.py install
+$env
+pyenv
+pyenv global
+pyenv global 3.11.1
+pyenv install 3.11.1
+pyenv root
+cd ..
+pyenv root
+nvim $nu.env-path
+$env.PWD
+nvim $nu.env-path
+pyenv root
+ls
+cd ..
+clear
+pyenv root
+clear
+nvim $nu.env-path
+cd ..
+clear
+ls
+nvim $nu.env-path
+cd ..
+nvim $nu.env-path
+$env
+nvim $nu.env-path
+cd ..
+cd `Library/Application Support/`
+ls
+cd nushell/
+clear
+ls
+nvim
+cd ~
+ls
+nvim .direnv
+ce `Library/Application Scripts/`
+cd ..
+cd ruan/
+cd Library/
+cd `Application Support/`
+cd nushell/
+clear
+ls 
+nvim
+cd ~
+cd beancount/
+ls
+nvim .direnv
+ls beancount-env.nu
+nvim beancount-env.nu
+direnv
+direnv reload
+cd ..
+direnv
+direnv reload
+direnv debug
+direnv
+direnv prune
+ls
+clear
+ls
+nu
+cd beancount/
+clear
+pyenv root
+ls
+pyenv
+pyenv global
+pyenv init
+clear
+pyenv
+pyenv rehash
+cd beancount/
+pyenv
+ls
+python3 --version
+py
+python
+python --help
+python3 --help
+$env
+:q
+clear
+pyenv versions
+python --version
+clear
+cd ..
+brew doctor
+pyenv init
+python
+brew upgrade pyenv
+nvim $nu.env-path
+cd beancount/
+ls
+ls -a
+rm .pyenv
+cd ..
+rm beancount/.envrc
+cd beancount/
+cd ..
+clear
+cd beancount/
+python3 setup.py install --user
+clear
+ls
+cd WORKSPACE
+nvim WORKSPACE
+rm WORKSPACE
+cd ..
+git clone https://github.com/beancount/beancount
+cd beancount/
+git pull
+python3 setup.py install --user
+ls
+nvim WORKSPACE
+clear
+bean-check
+ls
+cd bin
+ls
+bean-doctor 
+bean-doctor missing-open
+..
+python3 -m pip install python-dateutil bottle ply lxml python-magic beautifulsoup4
+$env
+$env.PATH
+clear
+cd beancount/
+python3 setup.py install
+python3 setup.py install --user
+bean-check
+$env.PATH
+$env.PATH | split row (char esep)
+nvim $nu.env-path
+cd beancount/
+bean-check
+cd beancount/
+nvim
+cd beancount/
+nvim
+bean-check
+nvim
+cd ..
+..
+rm beancount/ -- force
+rm beancount/ --force
+rm beancount/ -f
+rm beancount/ -i
+rm -f beancount
+rm -rfv beancount/
+ls
+clear
+git clone https://github.com/beancount/beancount/tree/v2
+clear
+cd beancount/
+ls
+git clone https://github.com/beancount/beancount/tree/v2
+ls
+rm --rfv v2
+ls -a
+git clone https://github.com/beancount/beancount.git
+git checkout v2
+git branch
+cd beancount/
+git checkout v2
+git checkout v123123124
+git checkout v413341
+clear
+ls
+python3 setup.py install --user
+bean-check
+clear
+nvim $nu.env-path
+pip3
+pip
+clear
+nvim $nu.env-path
+cd beancount/
+python3 setup.py uninstall --user
+python3 setup.py build_ext -i
+make build
+git checkout main
+git checkout origin
+git checkout origin/main
+python3 setup.py build_ext -i
+make build
+  brew install rgbds
+brew uninstall rgbds
+clear
+brew install bison
+$en
+$env
+$env.PATH
+ls
+cd /usr/local/opt
+cd /usr
+ls
+cd local
+ls
+cd bin
+cd ~
+cd opt
+cd /opt
+ls
+cd homebrew/
+ls
+cd opt
+ls
+cd bison/
+ls
+cd ..
+ls
+cd ..
+cd bison/
+ls
+ls -a
+cd 3.8.2/
+ls
+clear
+$env
+cd ....
+ls
+cd opt
+ls
+cd bison/
+cd ....
+cd opt
+cd ...
+ls
+cd ~
+nvim $nu.env-path
+clear
+bison --version
+clear
+cd beancount/
+python3 setup.py build_ext -i
+make build
+clear
+bean-check
+bean-check --help
+$env.PATH
+cd bin
+ls
+bean-check
+bean-doctor
+bean-doctor missing-open
+bean-doctor missing-open --help
+bean-check
+bean-check --help
+flex
+cd ..
+flex --version
+bean-example
+clear
+cd ~
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+npm run serve
+clear
+npm run serve
+clear
+npm run serve
+ping 192.168.1.11
+clear
+ping 192.168.1.11
+clear
+npm run serve
+clear
+cd ~
+ls
+cd Documents/
+ls
+clear
+mkdir beancount
+cd bean
+ls
+mkdir beancount
+ls
+ls -a
+clear
+mkdir beancount
+ls
+nvim
+ls
+cd
+cd ..
+ls
+cd ruan/
+ls
+cd Documents/
+ls
+mkdir beancount
+cd ..
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+npm run serve
+clear
+npm run serve
+clear
+cd ~
+clear
+bazel
+c;ear
+clear
+bazel
+clear
+brew install bazel
+cd ~
+clear
+cd beancount/
+ls
+cd ..
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+npm run serve
+clear
+ipconfig ifconfig
+ipconfig ifconfig getsummary
+ipconfig ifconfig getpacket
+ifconfig getpacket
+ifconfig
+clear
+npm run serve
+ping 192.168.1.11
+clear
+npm run serve
+clear
+cd ~
+l
+ls
+cd Documents/
+ls
+mkdir beancount
+ls
+cd beancount/
+ls
+ls -a
+clear
+nvim test.beancount
+ls
+cd ..
+cd beancount/
+clear
+bazen build //bin:all
+nvim $nu.env-path
+cd /opt/homebrew/
+ls
+cd opt
+ls
+cd bazel/
+ls
+clear
+cd ~
+clear
+reset
+cd beancount/
+bazel build //bin:all
+clear
+git checkout v2
+git checkout v2 --force
+clear
+python3 -m pip install beancount
+clear
+bean-check ../Documents/beancount/test.beancount
+cd ..
+cd Documents/
+cd beancount
+ls
+bean-check test.beancount
+clear
+cd ..
+rm --rfv beancount
+rm -rfv beancount
+clear
+python3 -m pip install git+https://github.com/beancount/beancount#egg=beancount
+bean-check
+python3 -m pip
+python3 -m pip check
+python3 -m pip inspect
+clear
+python3 -m pip show
+python3 -m pip show beancount
+cd /Users/ruan/Library/Python/3.9/lib/python/site-packages
+ls
+cd beancount/
+ls
+cd bin
+nvim $nu.env-path
+ls
+ls -a
+cd tools
+ls
+cd ..
+cd utils
+ls
+cd ..
+ls
+cd core
+ls
+cd ..
+ls
+python3 -m pip uninstall beancount
+clear
+cd ~
+clear
+brew install beancount
+beancount
+bean-check
+clear
+cd Documents/
+cd bean
+cd beancount
+ls
+bean-check test.beancount
+bean-doctor
+bean-doctor -h
+bean-doctor checkdeps test.beancount
+pip3 install
+pip3 install dateutil bottle googleapiclient
+pip3 install dateutil, bottle, googleapiclient
+pip3 install dateutil
+pip3 install python-dateutil
+python3 -m pip install python-dateutil
+python3 -m pip install bottle ply
+cd ~
+cd Library/
+cd Python/
+ls
+pyenv
+pyenv global
+pyenv version-file
+cd ..
+cd .pyenv/
+ls
+cd versions/
+ls
+clear
+cd ..
+pyenv
+python
+py
+pyenv root
+pyenv shims
+nvim $nu.env-path
+reset
+clear
+pyenv
+py
+pyenv global 3.11.1
+pyenv rehash
+pyenv local
+pyenv commands
+pyenv whence
+pip
+clear
+python3
+clear
+python3 --help
+$nu.config-path
+cd $nu.config-path
+cd $nu.config-path/..
+cd ../$nu.config-path
+clear
+cd $nu
+clear
+$nu.config-path
+cd `Library/Application Support/nushell/`
+ls
+clear
+ls
+cd ....
+ls
+cd .config/
+ln -s "/Users/ruan/Library/Application Support/nushell" .
+ls
+cd nushell/
+clear
+nvim
+clear
+cd ~
+cd workspaces/weknow/clientapps/webclient/ng2+/
+nvim $nu.config-path
+nvim $nu.env-path
+reset
+clear
+nvim $nu.env-path
+clear
+cd .config/nushell/
+nvim
+cd .config/nu
+cd .config/nushell/
+clear
+nvim
+cd .config/nushell/
+nvim
+cd .config/nushell/
+nvim
+clear
+isjdoaisjdoaisjdoisjad
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+npm run serve
+cargo
+npm
+node
+node --version
+clear
+fnm
+fnm current
+fnm default
+fnm env
+fnm list
+fnm list-remote
+fnm install 18.13.0
+clear
+fnm list
+fnm
+npm
+node
+cfnm env
+fnm env
+fnm exec run serve
+fnm exec
+fnm exec --using=13 npm run serve
+fnm exec --using=18 npm run serve
+CLEAR
+npm run serve
+fnm exec --using=18 npm run serve
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+npm
+clear
+fnm exec --using=18 npm run serve
+clear
+fnm exec --using=18 npm run serve
+clear
+fnm exec --using=18 npm run serve
+cd .....
+cd weknow/
+git reset --hard
+clear
+git clean
+git clean -d -f
+clear
+cd clientapps/
+cd webclient/ng2+/
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+ls
+ls -a
+nvim
+fnm exec --using=18 npm run serve
+cd ~
+cd workspaces/weknow/
+git clean -d -f
+git reset --hard
+clear
+git clean -d -f
+git reset --hard
+git clean -d -f
+git reset --hard
+git reset --hard main
+git clean -d -f
+clear
+git clean -d -f -x
+cd clientapps/webclient/ng2+/
+fnm exec --using=18 npm install
+clear
+cd ....
+ls
+ls -a
+cd .git
+ls
+ls -a
+clear
+cd ~
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+fnm exec --using=18 npm install
+clear
+cd workspaces/weknow/
+clear
+git fetch origin
+git rebase main
+git fetch origin
+git pull --rebase=interactive origin main
+git push
+git pull
+git config pull.rebase true
+git pull
+git rebase --abort
+clear
+git reset --hard main
+git clean -d -f
+clear
+git branch -m WM-3429
+fnm exec --using=18 npm run serve
+clear
+fnm exec --using=18 npm run serve
+clear
+fn 
+clear
+fnm
+fnm default 18
+fnm exec npm run serve
+fnm use 18
+fnm env
+fnm env --help
+clear
+fnm env --use-on-cd
+fnm
+fnm env --use-on-cd
+nvim $nu.env-path
+cd ~
+ls
+ls -a
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+fnm
+fnm default 18
+fnm exec npm run serve
+fnm use 18
+nvim .fnm
+cd .config
+ls
+ls -a
+fnm env --shell bash | lines | last 5 | str find-replace 'export ' '' | str find-replace -a '"' '' | split column = | rename name value | load-env
+#load env variables
+fnm env --shell bash | lines | last 5 | str find-replace 'export ' '' | str find-replace -a '"' '' | split column = | rename name value | load-env
+#add dynamic fnm path
+pathvar add $nu.env.FNM_MULTISHELL_PATH
+clear
+fnm
+fnm default 18
+cd workspaces/weknow/clientapps/webclient/ng2+/
+cd ..
+fnmcd ng2+
+clear
+fnm exec npm run serve
+fnm use 18\
+fnm use 18
+fnm exec npm run serve
+nvim $nu.env-path
+cd ..
+cd workspaces/weknow/
+clear
+git config pull.rebase false
+git config
+git rebase onto main
+git rebase main
+brew install git-lfs
+git rebase main
+git reset --merge
+git rebase -i HEAD~5
+git rebase -i HEAD~2
+git rebase -i WM-3429~2
+GIT REBASE --continue
+git rebase --continue
+git rebase -i HEAD~2
+git push origin :WM-2429
+git push origin WM-3429
+git push origin WM-3429 --force
+git push origin :WM-3429
+fnm exec --using=18 npm run serve
+clear
+clear
+git checkout WM-3429
+git merge 3.3
+git checkout main
+git merge WM-3429
+git push
+clear
+git reset
+git reset --hard
+git reset --HARD
+git reset --hard
+git branch
+git branch --help
+git branch --from 
+git checkout WD-1699-fix
+clear
+bean-check
+python3 -m pip install beancount
+/Library/Developer/CommandLineTools/usr/bin/python3 -m pip install --upgrade pip
+pip
+python3 pip
+python3
+bean-check
+./Library/Python/3.9/lib/python/site-packages/
+ls
+bean-check
+bean-check --version
+beancheck -h
+bean-check -h
+clear
+brew update
+brew install exercism
+exercism version
+clear
+cd ~
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+git add .
+git commit -b WM-3418 -m "- WM-3418: Ajustes na versão mobile"
+git commit -m "- WM-3418: Ajustes na versão mobile"
+git push
+fnm exec --using=18 npm run serve
+clear
+exercism download --exercise=hello-world --track=rust
+exercism configure --token=cab3838f-97ad-4830-91dd-84ec6938ba16
+clear
+cd ~
+clear
+nvim $nu.config-path
+clear
+nvim $nu.config-path
+cd .config/nvim/
+clear
+ls
+nvim
+nvim $nu.config-path
+clear
+cd ~
+exercism download --exercise=hello-world --track=rust
+cd Exercism/rust/
+nvim hello-world/
+cd he
+cd hello-world/
+clear
+ls
+nvim
+cargo run
+nvim
+cargo run
+cargo test
+nvim
+cargo test
+ pv
+nvim
+cargo test
+clear
+nvim
+clear
+cd ~
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+git checkout main
+git merge WM-3418
+git push
+git checkout 3.3
+git add .
+git checkout -b WM-3428
+git commit -m "- WM-3328: Corrigindo overlap em elementos no explorador de dados;"
+git push
+git push --set-upstream origin WM-3428
+git branch -m WM-3428
+git push
+git push --set-upstream origin WM-3428
+git push --set-upstream origin WM-3428 --force
+git reset --hard
+git commit --ammend -m "- WM-3428: Corrigindo overlap em elementos no explorador de dados;"
+git commit --amend -m "- WM-3428: Corrigindo overlap em elementos no explorador de dados;"
+git checkout main
+git commit --amend -m "- WM-3428: Corrigindo overlap em elementos no explorador de dados;"
+git sync
+git checkout 3.3
+git checkout -b WM-3448
+CLEAR
+git reset --hard
+git branch -D WM-3448
+clear
+git branch WM-3448
+git checkout WM-3448
+CLEAR
+git checkout -b WM-3448
+clear
+git checkout main
+git merge WM-3448
+git push
+git checkout 3.3
+git cherry -v origin WD-3448
+git cherry -v WD-3448
+git cherry -v 3.3 WD-3448
+git rev-parse WD-3448
+git rev-parse origin/WD-3448
+git rev-parse origin WD-3448
+clear
+git rev-parse --verify WM-3448
+git rev-parse --verify --short WM-3448
+git cherry-pick -x 94179b74f
+git push
+cd workspaces/weknow/clientapps/webclient/ng2+/
+git add .
+git checkout -b WM-3456
+git commit -m "- WM-3456: Dica no campo de separador de variáveis;"
+git checkout main
+git cherry-pick -x 9363b734a
+git push
+git checkout 3.3
+git cherry-pick -x 9363b734a
+clear
+git pish
+git push
+clear
+git checkout -b WM-3476
+CLEAR
+git add .
+git commit -m "WD-3476: Ajustes na janela de adicionar filtro;"
+git push
+git push --set-upstream origin WM-3476
+git checkout main
+git merge WM-3476
+git push
+git cherry-pick -x 8040aafbe
+git cherry-pick -x eaf04caee
+git rev-parse --verify --short WM-3476
+git cherry-pick -x eaf04caee
+git rev-parse -b WM-3476 --verify --short
+git cherry-pick -x eaf04caee85ee17a397dc6c32e5344d500553532
+git rev-parse origin/WD-3476 --verify --short
+git checkout WM-3476
+git rev-parse --verify --short
+git rev-parse --verify --short WM-3476
+git checkout 3.3
+git rev-parse --verify --short WM-3476
+git cherry-pick -x eaf04caee
+git push
+clear
+fnm exec --using=18 npm run serve
+clear
+cd ~
+clear
+ls -a
+cd Documents/
+ls
+ls -a
+clear
+mkdir Beancount
+mkdir beancount
+ls
+ls -a
+cd beancount
+ls
+nvim test.beancount
+bean-check test.beancount
+nvim test.beancount
+bean-check test.beancount
+nvim test.beancount
+bean-check test.beancount
+nvim test.beancount
+bean-check test.beancount
+nvim test.beancount
+bean-check test.beancount
+nvim test.beancount
+bean-check test.beancount
+nvim test.beancount
+bean-check test.beancount
+nvim test.beancount
+bean-check test.beancount
+clear
+cd ~
+cd workspaces/weknow/clientapps/webclient/ng2+/
+git reset --hard
+clear
+git pull origin/WD-1699
+git pull origin WD-1699
+git checkout WD-1699
+clear
+fnm exec --using=18 npm run serve
+clear
+fnm exec --using=18 npm run serve
+clear
+fnm exec --using=18 npm run serve
+ping 192.168.1.11
+clear
+fnm exec --using=18 npm run serve
+git checkout main
+cd workspaces/weknow/clientapps/webclient/ng2+/
+git config core.autocrlf input
+cd ~
+ls -a
+cd .gitconfig
+git config --global core.attributesfile ~/.config/git
+cd .config/git
+cd .config/
+mkdir git
+cd git
+nvim .gitattribute
+clear
+git config --global core.attributesfile
+git config --global core.attributesfile ~/.config/git/.gitattributes
+clear
+cd ~
+cd workspaces/weknow/clientapps/webclient/ng2+/
+git lfs pull
+cd ~
+cd .config/git/
+ls
+ls a
+ls -a
+nvim
+:q
+clear
+fnm exec --using=18 npm run serve
+clear
+cd ~
+clear
+ls
+ls -a
+cd Desktop/
+ls
+cd ..
+ls
+cd ..
+ls
+cd Applications/
+ls
+cd `World of Warcraft/`
+ls
+cd _retail_/
+ls
+mkdir Interface
+fnmcd 
+cd interface
+cd Interface
+ls
+cd /Applications/World of Warcraft/_retail_
+/Applications/"World of Warcraft"/_retail_
+cd Applications/
+cd ~
+cd ...
+cd Applications/
+cd `World of Warcraft/`
+ls
+cd _retail_/
+ls
+cd Interface/
+ls
+mkdir Addons
+cd Addons/
+clera
+clear
+mkdir CapsSafeChat
+cd CapsSafeChat/
+nvim CapsSafeChat.toc
+nvim main.lua
+clear
+cd ~
+ls
+cd workspaces/
+ls
+mkdir rust
+fnmcd 
+cd ~
+nvim $nu.config-path
+clear
+cd workspaces/
+cd rust/
+clear
+ls
+cargo new conway_game_of_life
+cd conway_game_of_life/
+ls
+cd workspaces/
+cd rust/
+ls
+cd conway_game_of_life/
+ls
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+nvim
+clear
+cd ~
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+cd ~
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+git stash
+git checkout -b WM-3418
+git pop
+git stash pop
+git add .
+git commit -m "- WD-3418: Corrigido botão de voltar na tela de cadastro de usuários mobile"
+git push
+git chegout main
+git checkout main
+git merge WM-3418
+git reset --hard
+git cherry-pick -x 8d6de6cd8
+git push
+git checkout 3.3
+git cherry-pick -x 8d6de6cd8
+git push
+git pull
+git push
+git push -ff
+git push --ff
+git push --set-upstream origin
+git push --set-upstream origin WM-3418
+git pull
+git pull origin WM-3418
+git reset --hard
+git clean -d -f
+git reset --hard
+git sheckout main
+git checkout main
+clear
+git pull WM-3429
+git pull origin WM-3429
+git chegkout WM-3429
+git checkout WM-3429
+clear
+cd ~
+cd workspaces/
+cd rust/
+ls
+cd conway_game_of_life/
+clear
+fnm exec --using=18 npm run serve
+clear
+cd conway_game_of_life/
+cd ~
+cd workspaces/
+cd rust/
+cd conway_game_of_life/
+clear
+nvim
+cd ~
+cd workspaces/weknow/clientapps/webclient/ng2+/
+fnm exec --using=18 npm run serve
+clear
+cd ~
+clear
+cd Documents/
+cd beancount
+clear
+ls
+ren test.beancount main.beancount
+rename test.beancount main.beancount
+ls
+rename
+rename help
+rename --help
+clear
+nvim test.beancount
+cd ~
+cd .config/nvim/
+nvim
+brew uninstall nvim
+brew install nvim
+brew update
+brew upgrade
+nvim
+cd ~
+cd .cache
+ls
+rm nvim
+rm --rfv nvim
+rm -r -f -v nvim
+cd ~
+cd .local
+cd share/
+fnmcd 
+cd nvim
+la
+ls
+cd .local/share/nvim/
+cd ..
+ls
+rm -r -f -v nvim
+clear
+cd ~
+brew install --HEAD luajit
+brew unlink luajit
+brew install --HEAD luajit
+brew install --HEAD nvim
+brew uninstall nvim
+brew install --HEAD nvim
+cd .config/
+fnmcd 
+cd .config/nvim
+clear
+nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+clear
+nvim
+msgcat --test=color
+nvim
+clear
+brew tap wez/wezterm
+cd ~
+brew install --cask wez/wezterm/wezterm
+clear
+nvim
+clear
+brew install --cask kitty
+cd .config/nvim/
+nvim
+cd ~
+$nu
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+fnm exec --using=18 npm run serve
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+nvim
+cd ~
+cd .config/nvim/
+nvim
+cd ~
+cd workspaces/weknow/clientapps/webclient/ng2+/
+cd ~
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+nvim
+cd ~
+cd .config/nvim/
+nvim
+cd ~
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+git add .
+nvim
+git checkout main
+git add .
+git commit -m "- WM-3429: Adequando alguns inputs ao protótipo"
+git pull
+git checkout 3.3
+git cherry-pick -x bd9d03ff4
+git push
+nvim
+clear
+fnm exec --using=18 npm run serve
+clear
+git checkout -b WM-3485
+fnm exec --using=18 npm run serve
+clear
+fnm exec --using=18 npm run serve
+clear
+nvim
+clear
+git add .
+git commit -m "- WM-3485: Aguardando registro de novo usuário para redirecionamento da página;"
+git push --set-upstream origin WM-3485
+git checkout main
+git merge WM-3485
+git push
+git chackout 3.3
+git cherry-pick -x 6d03cda27
+:q
+git cherry-pick -x 6d03cda27
+git checkout 3.3
+git cherry-pick -x 6d03cda27
+git push
+clear
+cd ~
+clear
+brew tap homebrew/cask-fonts
+brew install --cask font-caskaydia-cove-nerd-font
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+git checkout main
+git pull
+git checkout clear
+clear
+git checkout 3.3
+git pull
+clear
+git checkout main
+git checkout -b WM-3507
+clear
+fnm exec --using=18 npm run serve
+clear
+:q
+clear
+nvim
+clear
+cd  ~
+cd Documents/beancount
+clear
+ls
+nvim test.beancount
+cd ~
+cd .config/nvim/
+nvim
+:q
+clear
+cd ~/Documents/
+clear
+cd beancount
+clear
+cd ~
+clear
+cd .config/nvim/
+nvim
+clear
+nvim test.beancount
+cd ~
+cd Documents/beancount
+clear
+bean-check test.beancount
+clear
+bean-check test.beancount
+clear
+cd ~/.config/nvim
+clear
+nvim
+clear
+nvim
+nvim test.beancount
+clear
+cd ~/.config/nvim
+clear
+nvim
+nvim
+cd ~
+cd Documents/beancount
+nvim test.beancount
+cd ~/.config/nvim
+nvim
+cd ~
+cd Documents/beancount/
+clear
+cd ..
+ls
+cd kitty/
+clear
+nvim
+cd ~
+cd .config
+cd kit
+cd kitty/
+clear
+ls
+cd kitty-themes
+THEME=https://raw.githubusercontent.com/dexpota/kitty-themes/master/themes/gruvbox_dark.conf
+git clone --depth 1 https://github.com/dexpota/kitty-themes.git
+ls
+clear
+ln -s ./kitty-themes/themes/gruvbox_dark.conf ~/.config/kitty/theme.conf
+ls
+clear
+brew install starship
+clear
+mkdir ~/.cache/starship
+starship init nu | save -f ~/.cache/starship/init.nu
+clear
+nvim $nu.config-path
+nvim $nu.env-path
+nvim $nu.config-path
+cd ..
+clear
+exi
+cd $nu
+nvim $nu.env-path
+clear
+ls
+clear
+which nu
+clear
+nvim $nu.env-path
+clear
+nvim
+clear
+ls
+cd .config
+nvim starship.toml
+clear
+cd ..
+cd ~
+clear
+brew install lsd
+lsd
+lsd -a
+clear
+lsd --config-path
+cd .config
+ls
+clear
+kitty list-fonts
+clear
+starship preset pastel-powerline > ~/.config/starship.toml
+starship preset pastel-powerline ~/.config/starship.toml
+clear
+ls
+clear
+ls
+ls -a
+lsa
+clear
+lsd -a
+clear
+ls
+cd .conf
+ls
+cd kitty/
+ls
+clear
+ls
+nvim kitty.conf
+clear
+nvim
+ls
+cd  .config
+cd nvim
+clear
+ls
+clear
+nvim
+clear
+cd ..
+ls
+clear
+exi
+clear
+clearexit
+nu
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+git checkout main
+clear
+git clean -d -f
+git reset --hard
+git clean -d -f
+clear
+git pull
+rebase --abort
+git rebase --abort
+clear
+git reset --hard
+git clean -d -f
+clear
+nvim
+clear
+ls
+cd kitty/
+ls
+nvim kitty.coonf
+nvim kitty.conf
+clear
+cd .config
+cd kitty/
+ls
+nvim kitty.conf
+cd .config
+clear
+cd kitty/
+clear
+ls
+nvim
+help
+config set path $nu.path
+clear
+brew --version
+which nu
+clear
+nvim
+clear
+which nu
+nvim
+kitty -o background_opacity=0.5
+clear
+kitty -o background_opacity=1.0
+clear
+cd ~
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+nvim
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+clear
+nvim
+cd ~/.config/kitty/
+cd .config/kitty/
+nvim
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+clea
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+cd .config/kitty/
+clear
+nvim
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+git checkout main
+git pull
+clear
+git fetch origin
+clear
+git checkout -b WM-3486
+git checkout 3.3
+git pull
+git checkout WM-3486
+clear
+git add .
+git commit -m "-WM-3486: O container da lista na tela de adicionar visão customizada agora tem um tamanho fixo;"
+git checkout main
+git merge WM-3486
+git checkout 3.3
+git cherry-pick -x 9dd27d12c
+git push
+git checkout main
+git push
+git checkout WM-3486
+git push
+git config --global --add --bool push.autoSetupRemote true
+git push
+clear
+cd .config
+ls
+cd nushell/
+clear
+ls
+clear
+nvim
+brew config
+clear
+cd ~
+ls
+cd ..
+ls
+cd ..
+ls
+cd Applications/
+clearl
+clear
+ls
+cd `World of Warcraft/`
+clear
+ls
+clear
+nvim
+cd ~
+cd .config/kitty/
+clear
+ls
+cd Documents/Pictures/
+ls
+move pexels-pixabay.png ~/Pictures/
+mv pexels-pixabay.png ~/Pictures/
+ls
+cd ~/Pictures/
+ls
+mkdir Wallpapers
+mv pexels-pixabay.png ./Wallpapers/
+clear
+cd ~
+clear
+Fls
+ls
+cd .config/kitty/
+nvim
+cd .config/kitty/
+nvim
+clear
+ls
+ls -
+ls -a
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+git info
+git --help
+git checkout main
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+git add .
+git commit -m "#ignorar# removendo código não utilizado e arquivos antigos que foram substituídos;"
+git push
+clear
+git checkout WM-3486
+clear
+nvim
+cd ~
+clear
+ls
+cd .config/kitty/
+clear
+cd .config/kitty/
+nvim
+cd workspaces/weknow/clientapps/webclient/ng2+/
+cd ~/.config/kitty/
+nvim
+clear
+cd clear
+clear
+ls
+nvim
+clear
+cd .config/kitty/
+nvim
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+ckear
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+lera
+clear
+git add .
+git commit -m "#ignorar# corrigindo altura do dialog;"
+git push
+git checkout main
+git pull
+git merge WM-3486
+git reset --hard
+git fetch origin
+git clean -d -f
+git reset --hard
+git cherry-pick -x eb296eaa6
+git push
+git checkout 3.3
+git cherry-pick -x eb296eaa6 -m "#ignorar# -WM-3486: Corrindo altura do dialog;"
+git cherry-pick -x eb296eaa6 -e "#ignorar# -WM-3486: Corrindo altura do dialog;"
+git cherry-pick -x eb296eaa6 -e
+git push
+git pull
+git reset --hard
+git clean -d -f
+clear
+git commit -m "#ignorar# -WM-3486: corrigindo altura do dialog;"
+git add ,
+git add .
+git commit -m "#ignorar# -WM-3486: corrigindo altura do dialog;"
+clear
+git push
+clear
+cd ~
+clear
+cd .config
+fnmcd 
+cd kitty
+ls
+cd .config/
+cd kitty/
+clear
+nvim
+kitty
+clear
+nvim
+clear
+cd ~
+ls
+ls -a
+cd Documents/
+ls
+cd beancount/
+ls
+rn test.beancount finances.beancount
+rename --help
+nu --help
+clear
+rn
+rm
+mv
+clear
+mv test.beancount ~
+ls
+cd ~
+ls
+clear
+rnm
+rn
+ren
+rename
+ls
+rename --help
+rename test.beancount finances.beancount
+ls
+mv test.beancount/* finances.beancount/
+mv test.beancount finances.beancount/
+mv test.beancount finances.beancount
+ls
+nvim finances.beancount
+mv finances.beancount Documents/
+cd Documents/
+ls
+cd beancount/
+ls
+cd ..
+rm beancount/
+ls
+nvim
+cd ~
+ls
+cd Documents/
+nvim finances.beancount
+bean-check finances.beancount
+:q
+clear
+bean-check finances.beancount
+clear
+cd ~
+cd .co
+fnmcd 
+cd ~
+cd .confic/nvim
+cd .config/nvim
+clear
+nvim
+nvim finances.beancount
+cd ....
+ls
+cd usr
+cd local
+ls
+cd ~
+homebrew -h
+brew -h
+brew info
+brew config
+which nu
+cargo --version --verbose
+cargo --help
+cargo cd ~
+clear
+cd ~
+clear
+cat /etc/shells
+sudo nvim /etc/shells
+cat /etc/shells
+clear
+ cd .config
+cd kitty/
+clear
+which nu
+clear
+starship
+clear
+nvim 
+clear
+brew
+brew --version
+cat /etc/shells
+clear
+kitty
+brew upgrade nu
+nu upgrade
+clear
+brew upgrade
+clear
+cd .config/kit
+nvim
+clear
+which nu
+chsh -s /opt/homebrew/bin/nu
+clear
+which zsh
+chsh -s /bin/zsh
+cd .config/
+cd nushell/
+ks
+ls
+clear
+T
+clear
+clewar
+clear
+claer
+cear
+clear
+ls
+which nu
+cd | which nu
+cd /opt/homebrew
+cd bin
+cd nu
+ls
+cd nu
+cd..
+cd ..
+ls
+clear
+cd bin
+cd nu
+cd nushell
+which nu
+ls
+cd nu
+clear
+cd .config/nushell
+cd
+cd ./nu
+clear
+cd ..
+ls
+which nu
+cd /opt/homebrew/bin/nu
+cd /opt/homebrew/bin
+ls
+cd pyenv
+clear
+which nu
+cd /opt/homebrew/bin
+cd ..
+clear
+cd ..
+clear
+cd /opt/homebrew/bin
+cd by
+cd nu
+clear
+                                                                                                                      
+clear
+starship --version
+cd ~
+clera
+clear
+which nu
+which starship
+clear
+starship --version
+clear
+chsh -s /opt/homebrew/bin/nu
+clear
+cd .config/nushell/
+clear
+ls
+cd ..
+clear
+nvim
+cd ~
+clear
+cd .config/nvim
+nvim
+clear
+cd ~
+cd workspaces/weknow/clientapps/webclient/ng2+/
+fnm exec --using=18 npm run serve
+ckear
+clear
+cd ~
+clear
+cd .config
+cd nvim
+clear
+nvim
+cd ..
+cd kit
+clear
+ls
+chsh -s /bin/zsh
+cd .config
+cd kitty/
+clear
+nvim
+clear
+cd .config/
+cd kitty/
+nvim
+clear
+nvim
+cd ..
+cd nvim/
+clear
+cd Documents/
+nvim finances.beancount
+clear
+nvim
+exot
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+cd workspaces/weknow/clientapps/webclient/ng2+/
+clear
+nvim
+git pull
+git add .
+git commit -m "#ignorar# removendo arquivos da tela antiga de edição de usuário;"
+git push
+git checkout 3.2
+nvim
+clear
+fnm exec --using=18 npm run serve
+clear
+fnm
+clear
+fnm exec --using=18 npm run serve
+clear
+cd ~
+cd .config
+cd nvim
+nvim
+cd ../kitty
+clear
+cd .config/kitty
+ls
+cd .config/kitty
+nbim
+nvim
+clear
+nu
+clear
+ls
+cd Documents/
+ls
+nvim finances.beancount
+clear
+cd ..
+cd .config/nvim
+cle ar
+clear
+nvim
+cargo add zhang
+cd ~
+cargo install zhang
+cd Documents/
+ls
+cp finances.beancount finances.zhang
+ls
+zhang
+zhang finances.zhang
+la
+clear
+cargo uninstall zhang
+cd ..
+ls
+cd workspaces/
+ls
+cd opensource
+mkdir open-source
+ls
+cd open-source/
+clear
+git clone https://github.com/zhang-accounting/zhang
+ls
+cd zhang/
+cargo build
+clear
+cargo buils -release
+cargo build --release
+clear
+cd workspaces/open-source/
+cd zhang/
+clear
+nvim
+cd ..
+clear
+mv workspaces/ workspace/
+ls
+cd workspace/
+ls
+cd open-source/
+clear
+ls
+cd zhang/
+clear
+nvim
+clear
+cargo build --release
+clear
+cd workspace/open-source/zhang/
+clear
+nvim
+clear
+cd frontend/
+ls
+fnm exec --using=18 npm run build
+fnm exec --using=18 npm build
+yarn
+clear
+brew install yarn
+clear
+yarn
+yarn build
+cd ..
+cargo build --release
+cd ..
+ls
+cd ..
+cd ~
+cd Documents/
+clear
+ls
+zhang finances.zhang
+zhang
+clear
+cd workspace/open-source/zhang/
+clear
+cargo install
+cargo install .
+zhang
+ls
+cargo run zhang
+cargo --help
+cargo b --help
+cd ,,
+cd ..
+ls
+cd zhang/
+ls
+cargo --help
+cargo list
+cargo --list
+clar
+clear
+ls
+zhang
+clear
+cargo zhang
+cargo --list
+clear
+cd .config/kitty/
+clear
+nvim
+clear
+ls
+cd nu
+brew --help
+brew info nu
+clear
+brew doctor
+clear
+ls
+clear
+cd ~
+brew
+brew list
+brew info nushell
+cat /etc/shells
+cd /opt/homebrew/Cellar/
+cd nushell/
+ls
+ls -a
+cd 0.76.0/
+ls
+cd bin
+ls
+nvim
+clear
+cat 
+clear
+cat /etc/shells
+cd /bin/bach
+cd /bin
+ls
+clear
+cat /etc/shells
+cd /opt/homebrew/bin
+clear
+nvim nu
+clear
+cd ~
+clear
+ls -a
+nvim .profile
+nvim .zshrc
+brew info nushell
+cd /opt/homebrew/Cellar/
+cd nushell/
+ls
+ls -a
+cd 0.76.0/
+ls
+ls -a
+cd .brew/
+ls
+ls -a
+nvim nushell.rb
+cd ..
+ls
+cd bin
+ls
+cd ~
+clear
+ls
+cd .config/nushell/
+ls
+ls -a
+cd lib/
+ls
+ls -a
+core
+cd core/
+clear
+ls -a
+cd ...
+ls
+chsh -s nu
+cat /etc/shells
+chsh -s /opt/homebrew/bin/nu
+zsh
+chsh -s /opt/homebrew/bin/nu
+cd .config/nushell/
+nvim
+cd .config/nushell/
+cd ..
+cd ~
+cd .config
+cd kitty/
+clear
+ls
+nvim
+cd ~
+clear
+env | each { |it| echo $"let-env ($it.name) = '($it.raw)'" } | str join (char nl)
+cd .config/
+cd nus
+ls
+let-env CMD_DURATION_MS = '14'
+let-env COLORTERM = 'truecolor'
+let-env COMMAND_MODE = 'unix2003'
+let-env DEFAULT_CONFIG_FILE = '/Users/ruan/Library/Application Support/nushell/lib/default_config.nu'
+let-env ENV_CONVERSIONS = ''
+let-env FNM_ARCH = 'arm64'
+let-env FNM_DIR = '/Users/ruan/.fnm'
+let-env FNM_LOGLEVEL = 'info'
+let-env FNM_MULTISHELL_PATH = '/Users/ruan/Library/Caches/fnm_multishells/83557_1678477922437'
+let-env FNM_NODE_DIST_MIRROR = 'https://nodejs.org/dist'
+let-env FNM_VERSION_FILE_STRATEGY = 'local'
+let-env HOME = '/Users/ruan'
+let-env KITTY_INSTALLATION_DIR = '/Applications/kitty.app/Contents/Resources/kitty'
+let-env KITTY_PID = '83542'
+let-env KITTY_PUBLIC_KEY = '1:L0%|~Q~J{>tF>e?3ffhONh{bPk^&GjB-l;i(AW+k'
+let-env KITTY_WINDOW_ID = '1'
+let-env LANG = 'en_US.UTF-8'
+let-env LAST_EXIT_CODE = '0'
+let-env LOGNAME = 'ruan'
+let-env MANPATH = '/Applications/kitty.app/Contents/Resources/man:'
+let-env NUSHELL_CURRENT_SHELL = '0'
+let-env NUSHELL_SHELLS = ''
+let-env NU_LIB_DIR = '/Users/ruan/Library/Application Support/nushell/lib'
+let-env NU_LIB_DIRS = ''
+let-env NU_PLUGIN_DIRS = ''
+let-env OLDPWD = '/Users/ruan/.config/kitty'
+let-env PAHT = ''
+let-env PATH = '/opt/homebrew/opt/bazel/bin:/opt/homebrew/opt/bison/bin:/Users/ruan/Library/Caches/fnm_multishells/83557_1678477922437/bin:/opt/homebrew/bin:/Users/ruan/.cargo/bin:/Applications/kitty.app/Contents/MacOS:/usr/bin:/bin:/usr/sbin:/sbin'
+let-env PROMPT_COMMAND = ''
+let-env PROMPT_COMMAND_RIGHT = ''
+let-env PROMPT_INDICATOR = ''
+let-env PROMPT_INDICATOR_VI_INSERT = ': '
+let-env PROMPT_INDICATOR_VI_NORMAL = '〉'
+let-env PROMPT_MULTILINE_INDICATOR = '::: '
+let-env PWD = '/Users/ruan'
+let-env SHELL = '/bin/zsh'
+let-env SHLVL = '1'
+let-env SSH_AUTH_SOCK = '/private/tmp/com.apple.launchd.T2HRgUQg2B/Listeners'
+let-env STARSHIP_SHELL = 'nu'clear
+clear
+def nuopen [arg, --raw (-r)] { if $raw { open -r $arg } else { open $arg } }
+alias open = ^open
+ls
+cd .config
+cd nushell/
+clear
+nvim
+clear
+config --set [path $nu.path]
+echo $nu:env
+clear
+cd ~
+clear
+config set 
+config --help
+config env 
+clear
+ls
+clear
+cd workspace/
+cd open-source/
+ls
+cd zhang/
+clear
+cargo bundle
+cargo --list
+clear
+cargo --help
+cargo install
+cargo install --path
+ls
+cd target/
+ls
+cd release/
+ls
+zhang
+./zhang
+clear
+ls
+cd workspace/
+ls
+cd open-source/
+ls
+cd zhang/
+ls
+cd target/release/
+clear
+ls
+cd .confi
+cd nuc
+cd nu
+clear
+ls
+zhang
+clear
+zhang
+echo $nu:env
+clear
+ls
+echo $nu.path
+echo $nu.env-path
+clear
+echo env
+clear
+$env
+cd /
+ls
+cd Users/
+cd ruan/
+clear
+ls
+cd workspace/open-source/zhang/
+clear
+ls
+cd target/release/
+clear
+ls
+zhang
+clear
+cd..
+cd ..
+ls
+cd ~
+clear
+cd Documents/
+s
+ls
+zhang finances.zhang
+zhang
+clear
+$env
+reset
+zhang
+cd .config
+cd kitty/
+clear
+ls
+nvim
+clear
+ls
+cd .config
+ls
+cd kitty/
+clear
+ls
+cd sessions/
+which nu
+nvim
+clear
+ls
+cd .config
+cd nushell/
+clear
+ls
+nvim
+clear
+kitty --start-as fullscreen
+clear
+ls
+clears
+clear
+ls
+clear
+brew install --cask rectangle
+rectangle
+clear
+fclear
+clear
+cd .config
+cd kitty/
+clear
+cd .config/kitty/
+clear
+ls
+clear
+cd .config/kitty/
+nvim
+cclear
+clear
+ls
+clear
+zhang
+cd Documents/
+clear
+ls
+zhang
+zhang parse finances.zhang
+zhang help
+zhang -v
+zhang exporter --help
+zhang parse --help
+zhang parse --endpoint finances.zhang
+zhang parse --endpoint ./finances.zhang
+zhang parse --endpoint ./finances.zhang /
+zhang parse --endpoint ./finances.zhang .
+clear
+cargo
+cd ~
+clear
+cd .config/nushell/
+clear
+nvim .zshrc
+nvim
+nvim
+clear
+clea
+cler
+clar
+clear
+cd ~
+clear
+cd doc
+ls
+rm finances.zhang
+clear
+vi
+clear
+ls
+nvim Finances.cashdb/
+rm Finances.cashdb/
+rm -r -f -v Finances.cashdb/
+clear
+clera
+cd doc
+clear
+nvim
+cd doc
+nvim finances.beancount
+ls
+ls -a
+nvim finances.beancount
+nvim fi
+nvim finances.beancount
+cd ..
+cd .confi
+cd nvim
+ls
+ls -
+clear
+which nvim
+cd /opt/homebrew/Cellar/
+ls
+cd nvim
+ls
+cd HEAD-aa840ab/
+ls
+cd bin
+ls
+cd ..
+cd share/
+ls
+cd nvim
+ls
+ls -a
+cd runtime/
+ls
+cd ..
+ls
+cd ..
+ls
+nvim
+cd ..
+cd ~
+ls
+clear
+cd
+ls
+cd ..
+cd ~/Documents/
+clear
+ls -a
+nvim .viminfo
+cd Documents/
+cd .local/state/
+ls
+cd nvim/
+ls
+cd swap/
+ls
+nvim
+clear
+cd Documents/
+clear
+nvim
+nvim finances.beancount
+clear
+cd Documents/
+nvim finances.beancount
+cd Documents/
+nvim finances.beancount
+cd ..
+ls
+ls -a
+cd .local/
+cd state/
+ls
+cd nivm
+cd nvim/
+ls
+cd swap/
+ls
+nvim
+ls
+cd ~
+cd Documents/
+clear
+cd Documents/
+clear
+nvim -V
+c;ear
+clear
+nvim fina
+clear
+cd Documents/
+nvim finances.beancount
+cd ~
+cd .cache/nvim/
+ls
+nvim packer.nvim
+cd ~
+clear
+cd Documents/
+ls
+cd Documents/
+ls
+cd Documents/
+clear
+cd Documents/
+cd ~
+cd .config
+ls
+cd nvim
+nvim
+cd Documents/
+Documents/
+cd Documents/
+clear
+cd Documents/
+nvim finances.beancount
+cd ~
+clear
+cd .config/nvim/
+cd Documents/
+nvim finances.beancount
+nvim
+clear
+cd Documents/
+nvim finances.beancount
+cd .local/
+ls
+cd share/
+ls
+cd nvim/
+ls
+cd mason/
+ls
+cd packages/
+cd ..
+ls
+cd site/
+ls
+cd pack/
+ls
+cd packer/
+ls
+cd start/
+ls
+cd nvim-treesitter/
+cd Documents/
+nvim finances.beancount
+nvim
+cd Documents/
+nvim finances.beancount
+cd Documents/
+nvim finances.beancount
+nvim
+finvim finances.beancount
+c;ear
+clear
+nvim finances.beancount
+clear
+cd ~
+cd .config/nvim/
+cd ..
+clear
+cd workspace/weknow/
+ls
+cd clientapps/webclient/ng2+/
+clear
+cd ~
+clear
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+fnm exec --using=18 npm build
+clear
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+git checkout main
+git add .
+git checkout main
+git stash
+git checkout main
+git pull
+clear
+git checkout -b WM-3508
+git stach pop
+git stash pop
+ls
+git status
+git reset --hard
+clear
+ls
+git status
+clear
+fnm exec --using=18 npm run serve
+clear
+fnm exec --using=18 npm run serve
+clear
+fnm exec --using=18 npm run serve
+clear
+git add .
+git commit -m "- WM-3508: Correção de bug nas novas fórmulas para números com potência;"
+git push
+git checkout main
+git pull
+git merge WM-3508
+git reset --hard
+git clean -d -f
+git merge --reset
+git merge --abort
+git merge --quit
+git status
+git discart
+git --help
+git reset
+git reset --hard
+git restore
+git git commit -h
+git commit --help
+git commit --amend
+git reset HEAD~
+git add .
+git add ,
+git add .
+git reset HEAD~
+git clean -d -f
+git reset --hard
+git pull
+git checkout WM-3508
+git commit --ammend
+git commit --amend -e
+clear
+brew install vlc
+clear
+cd ~
+cd /
+ls
+cd Library/
+cd Audio/
+cd Plug-Ins/
+ls
+cd ~
+clear
+nvim
+fnm exec --using=18 npm run serve
+clear
+cd workspace/
+ls
+cd rust
+ls
+curl -L https://raw.githubusercontent.com/rust-lang/rustlings/main/install.sh | bash
+clear
+ls
+cd ..
+ls
+cd ..
+ls
+curl -L https://raw.githubusercontent.com/rust-lang/rustlings/main/install.sh | bash
+ls
+clear
+rustup update
+clear
+cargp
+cargo
+clear
+cd .config
+ls
+cdcd nushell/
+cd nushell/
+clear
+ls -a
+cargo
+cd .cargo
+ls
+cd env
+ls
+cargo
+clear
+rustup
+clear
+nvim .profile
+clear
+rustup update
+nvim
+clear
+cd ~
+cd workspace/rust/
+clear
+ls
+mkdir advent_of_code_2022
+cd advent_of_code_2022/
+;s
+ls
+clear
+cd ..
+mv advent_of_code_2022 advent-of-code
+ls
+cd advent-of-code/
+clear
+ls
+clear
+cargo new day-1
+cd workspace/
+ls
+cd rust/
+cd advent-of-code/
+clear
+cargo new day-1
+cd day-1/
+clear
+rustup update
+cd .config/nvim/
+clear
+ls
+nvim
+nvim
+clear
+nvim
+cargo run
+cd workspace/rust/advent-of-code/
+ls
+cd day-1/
+clear
+clear
+cd .config/nvim/
+clear
+nvim
+nvim
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+rustc --explain E0283
+clear
+rustc --explain E0283
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+ls
+mv ./files/input.txt input.txt
+clear
+cargo run ./input.txt
+c
+clear
+cargo run ./input.txt
+clear
+cd .config/nvim/
+clear
+nvim
+clear
+cargo run ./input.txt
+clear
+cargo run ./input.txt
+clear
+cargo run ./input.txt
+clear
+cargo run ./input.txt
+clear
+cargo run ./input.txt
+clear
+cargo run ./input.txt
+clear
+cargo run ./input.txt
+clear
+cargo run ./input.txt
+clear
+cargo run ./input.txt
+clear
+cargo run ./input.txt
+clear
+cargo run ./input.txt
+clear
+cargo run ./input.txt
+clear
+cargo run ./input.txt
+nvim
+cd ../k
+nvim
+cd .config/kit
+clear
+cd .config/kitty/
+clear
+cd .config/kitty/
+clear
+cd workspace/rust/advent-of-code/
+clear
+ls
+cd day-1/
+clear
+cd workspace/rust/advent-of-code/
+cd day-1/
+clear
+cargo run
+clear
+cargo run ./input.txt
+clear
+cargo run ./input.txt
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd open-source/
+ls
+cd ..
+clear
+cd rust/
+clear
+ls
+clear
+rustlings
+rustling
+clear
+git clone -b 5.4.1 --depth 1 https://github.com/rust-lang/rustlings
+cd rustlings/
+cargo install --force --path .
+ls
+cd exercises/
+ls
+cd intro
+ls
+nvim
+rustlings
+cargo uninstall --force --path .
+cargo uninstall --path .
+cargo uninstall rustlings
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+rm -r -f -v rustlings/
+clera
+clear
+cargo install rustlings
+clear
+:q
+nvim
+mv src/main.rs src/lib.rs
+clear
+ls
+clear
+cargo test
+cargo test lib.rs
+ls
+cd advent-of-code/
+cd day-1/
+clear
+cargo test
+clear
+cargo tets
+cargo test
+clear
+ls
+cd src/
+ls
+cd bin/
+ls
+mv main.rs part-1.rs
+cd ..
+clear
+ls
+clear
+nvim
+ls
+rm -r -f -v target/
+clear
+cargo run
+clear
+nvim
+ls
+cd ..
+ls
+mv day-1/ day-01
+clear
+ls
+cd day-01/
+clear
+ls
+clear
+nvim\
+clear
+nvim
+cargo test
+clear
+cd ..
+cd ~
+clear
+cd workspace/rust/advent-of-code/
+cd day-01/
+clear
+cargo test
+clear
+cargo test
+ear
+clear
+cargo test
+clear
+cargo test
+nvim
+clear
+cargo test
+clear
+cargo test
+cargo run
+rustc run
+clear
+cargo run --bin
+cargo run --bin part-1
+cargo run --bin part-2
+clear
+cd ~
+cd workspace/weknow/clientapps/webclient/ng2+/
+cd ~
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+fnm exec --using=18 npm run serve
+clea
+clear
+nvim
+git checkout main
+clear
+pe
+clear
+fnm exec --using=18 npm run serve
+clear
+cd ~
+cd .config/
+cd nushell/
+ls
+nvim
+cd ~
+ls
+cd workspace/
+mkdir python
+cd python/
+pyenv
+pip
+clear
+cd ~
+clear
+cd .config/nushell/
+nvim
+clear
+clear
+pyenv
+pyenv --help
+clear
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+cd .config/kit
+clear
+cd workspace/weknow/clientapps/webclient/ng2+/
+cd ~
+cd .config/kitty/
+clear
+ls
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+fnm exec --using=18 npm run serve
+clear
+git pull
+clear
+git checkout 3.3
+git pull
+git checkout main
+clear
+git checkout -b WM-3528
+clear
+cd .config/nvim
+nvim
+nvim
+clear
+nvim
+cd .config/kit
+nvim
+clear
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+nvim
+cd .config/kit
+c;ear
+clear
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+cd .config/kit
+nvim
+cd workspace/weknow/clientapps/webclient/ng2+/
+nvim
+cd ~
+cd .config/kit
+nvim
+clear
+cd ..
+cd nvim/
+nvim
+clear
+cd ~
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+.config/kitt
+cd .config/kit
+nvim
+clear
+:q
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+clear
+nvim
+fnm exec --using=18 npm run serve
+clear
+fnm exec --using=18 npm run serve
+clear
+fnm exec --using=18 npm run serve
+clear
+cd .config/nvim
+nvim
+cd ..
+cd nushell/
+clear
+nvim
+cd ..
+cd ~
+cd .config/nvim
+clear
+nvim
+cd ..
+cd nushell/
+clear
+fnm
+fnm env
+fnm use 18
+fnm
+fnm install nest
+node
+npm
+node -V
+node -v
+clear
+npm install nest
+clear
+yarn
+clear
+ls
+cd workspace/
+ls
+mkdir nest
+cd nest/
+clear
+nest new nestjs-api-tutorial
+npm install nest
+nest new nestjs-api-tutorial
+npm -h
+npm run nest
+npm view
+clear
+npm -h
+npm -l
+npm -h
+clear
+fnm
+fnm alias
+clear
+fnm env
+fnm env bash
+fnm env -h
+fnm env --json
+fnm env --shell bash
+fnm
+fbn default 18
+fnm default 18
+fnm env --shell bash
+fnm list --shell bash
+fnm list -h
+fnm list
+fnm list --fnm-dir
+fnm -h
+fnm current
+fnm current -h
+fnm --fnm-dir
+fnm env --shell bash
+fnm list -h
+fnm list --json
+fnm env --shell bash
+node -h
+clear
+npm -h
+npm bin
+npm exec nest
+npm pkg
+npm root
+npm view
+clear
+npm -h
+npm ls
+yarn
+yarn install nest
+yarn add nest
+nest
+yarn -h
+yarn exec nest
+yarn run nest
+cd ~
+;s
+clear
+ls
+cd node_modules/
+ls
+nest
+cd nest/
+ls
+cd ..
+./nest
+ls -a
+cd ..
+clear
+ls -a
+node nest
+node -h
+node inspect nest
+clear
+ls
+ls -a
+cd .npm
+ls
+ls -a
+cd ..
+ls
+lclear
+clear
+ls -a
+cd .local/
+ls
+ls -a
+cd ..
+cd /usr/local/lib
+cd /usr/local
+ls
+cd bin
+ls
+cd ~
+clear
+cd ..
+ls
+cd ~
+ls
+rm node_modules/
+rm -r -f -v node_modules/
+ls
+clear
+npm install -g nest
+nest
+clear
+npm exec nest
+clear
+cd /usr/local
+ls
+cd ~
+npm -h
+ls
+fnm env --shell bash
+cd .fnm
+ls
+cd aliases/
+ls
+cd ..
+ls
+cd node-versions/
+ls
+cd v18.13.0/
+ls
+cd installation/
+clear
+ls
+cd lib/
+ls
+cd node_modules/
+ls
+cd npm/
+ls
+cd lib/
+ls
+cd workspaces/
+ls
+clear
+cd ~
+clear
+fnm env --shell bash
+fnm env --json | FNM_MULTISHELL_PATH
+fnm env --json | cd FNM_MULTISHELL_PATH
+cd /Users/ruan/Library/Caches/fnm_multishells/29744_1679349072426
+ls
+cd lib/
+ls
+cd node_modules/
+ls
+cd nest
+ls
+cd .
+cd ..
+ls
+..
+ls
+clear
+cd ..
+cd ~
+clear
+cd .config/nushell
+nvim
+load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" && name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
+PATH
+env
+clear
+nu
+nest
+npm -h
+clear
+$PATH
+env.$PATH
+env.PATH
+cd ~
+clear
+ls
+ls -a
+nvim .fnmrc
+cd .fnm
+ls
+npm bin
+npm -g bin
+ls
+cd ~
+ls
+npm bin
+fnm bin
+ls
+pwd
+npm-exec which nest
+npm exec which nest
+clear
+npm exec nest
+npm install -g nest
+npm -h
+npm explain
+npm explore
+clear
+cd ..
+cd ~
+cd .config
+cd nvim
+ls
+nvim
+cd ..
+cd nu
+ls
+nvim
+nest
+nvim
+clear
+node bin
+clear
+npm bin
+ls
+fnm
+fnm current
+fnm env
+fnm env --shell bash
+cd Library/Caches/fnm_multishells/
+ls
+cd ..
+clear
+fnm env --shell bash
+cd .fnm
+ls
+ls -a
+cd ~
+cd .fnm
+ls
+ls -a
+cd aliases/
+ls -a
+cd default/
+ls
+ls -a
+cd bin
+ls
+cd ..
+ls
+cd include/
+ls
+ls -a
+cd ..
+cd lib/
+ls
+ls -a
+cd node_modules/
+ls
+ls -a
+cd nest
+ls
+ls -a
+cd ..
+ls
+./nest/
+ls
+indent 
+./index.js
+cd ..
+ls
+cd ..
+ls
+cd dtrace/
+ls
+cd ..
+ls
+cd ..
+ls
+cd share/
+ls
+cd doc
+ls
+ls -a
+cd node/
+ls
+ls -a
+cd ..
+.
+ls
+..
+ls
+ls -a
+..
+ls
+ls -a
+cd bin
+ls
+cd ..
+clear
+ls
+cd ..
+ls
+..
+ls
+ls -a
+cd .downloads/
+;s
+ls
+ls -a
+cd ..
+ls
+..
+ls
+..
+ls
+cd .fm,
+cd .fnm
+clear
+cd ..
+ls -a
+rm .node_repl_history
+cd .npm
+ls
+ls -a
+cd _cacache/
+ls
+cd ..
+ls
+ls -a
+.config
+ls
+nushell/
+cd nushell/
+ls
+clear
+cd aa
+clear
+cd .config
+ls
+jest
+fnm use 18 nest
+fnm use nest 18
+fnm use nest
+clear
+env
+clear
+yarn install nest
+yarn -h
+yarn run nest
+yarn add nest
+yarn run nest
+yarn remove nest
+npm uninstall nest
+npm install -g @nest/cli
+npm install -g @nestjs/cli
+cd ,,
+cd ..
+ls
+cd workspace/nest/
+ls
+clear
+nest new nestjs-api-tutorial
+clear
+nvim
+clear
+cd ~
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+nvim
+cd .config/nvim
+clear
+nvim
+clear
+cd ~
+cd wo
+cd ..
+cd .config/
+fnmcd 
+cd nushell/
+ls
+nvim
+cd .config/kit
+cd .config/kitty/
+ls
+cd .config
+cd
+.config
+nushell
+ls
+cd
+ls
+cd
+clear
+cd workspace/weknow/clientapps/webclient/ng2+/
+nvim .config/nushell
+cd
+cd .config/
+.config
+ls
+cd ..
+ls
+cd ..
+clear
+cd ~
+~
+clear
+ls
+clear
+ls -a
+.config
+nushell
+cd .config
+clear
+cd ~
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+npm run servev
+clear
+cd .config
+ls
+cd nvim
+ls
+nvim
+nvim
+npm i -g eslint
+eslint -h 
+eslint --fix ./src/ng1App/services/hotjarService.js
+clear
+npm run build
+clear
+git add ,
+clear
+git add .
+git commit -m "- WM-3528: Implementação do Hotjar para coleta de feedback e informações sobre a interação dos usuários com a aplicação;"
+git commit --amend -e
+rm dist.zip
+git commit --amend -e
+git add .
+git commit --amend -e
+git push
+git add .
+git commit -m "#ignorar# ajustando posicionamento do widget do movidesk para não dar overlap;"
+git push
+git checkout main
+git merge WM-3508
+git checkout main
+git merge --abort
+git reset --hard
+git clean -d -f
+git checkout main
+git merge WM-3528
+git reset --hard
+git clean -d -f
+clear
+git merge --abort
+git reset --hard HEAD~1
+git reset --merge ORIG_HEAD
+git reset --hard ORIG_HEAD
+ls
+git status
+git revert
+git checkout origin/main
+git checkout main
+git reset --hard HEAD~1
+git fetch
+git reset --hard HEAD~1
+git pull
+git checkout WM-3528
+git clean -d -f
+git fetch
+git rebase main
+git pull
+git reset --hard HEAD~1
+git branch -h
+git branch -d
+git checkout main
+git branch -d WM-3528
+git branch -D WM-3528
+git pull origin WM-3528
+git reset --hard HEAD~1
+git fetch
+git checkout --track origin/WM-3528
+git pull
+npm run serve
+clear
+git checkout main
+git cherry-pick -x 20ce6da
+git cherry-pick -x 6dae293
+git push
+git checkout 3.3
+git cherry-pick -x 20ce6da
+git push
+git cherry-pick -x 6dae293
+git push
+npm run serve
+clear
+cd ~/workspace/
+ls
+cd nest
+ls
+cd nestjs-api-tutorial/
+ls
+clear
+nvim
+ls
+nest g module user
+nest g module bookmark
+brew install docker
+clear
+docker compose up dev-db -d
+yarn start:dev
+clear
+docker compose up dev-db
+docker -h
+clear
+docker -h
+docker compose up dev-db
+docker -v
+brew install docker-compse
+clear
+brew install docker-compose
+docker compose up dev-db
+docker-compose up dev-db
+docker-compose
+docker-compose up
+docker-compose up dev-db -d
+clear
+docker-compose up dev-db -d
+docker-compose up dev-db
+docker-machine
+clear
+brew install docker-machine
+docker-machine start
+docker-machine
+docker-machine create nest
+brew cask install virtualbox
+brew install --cask virtualbox
+yarn start:dev
+clear
+cd ~
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+git checkout 3.2
+git pull
+git cherry-pick -x 20ce6da
+git cherry-pick -x 6dae293
+git cherry-pick --continue
+git add .
+git cherry-pick --continue
+git push
+git checkout 3.1
+git pul
+git pull
+git cherry-pick -x 20ce6da
+nvim
+cd ..
+ls
+cd www
+ls
+git reset --hard HEAD~1
+git clean -d -f
+git pull
+clear
+git fetch
+nvim
+git checkout main
+git branch -d 3.1
+git branch -D 3.1
+git fetch origin
+git switch 3.1
+cd ..
+cd ng2+/
+;s
+clear
+ls
+cd src
+ls
+cd data/
+ls
+cd ..
+clear
+clear
+npm run serve
+cd ..
+cd www
+npm run serve
+git add .
+git commit -m "- WM-3528: Implementação do Hotjar para coleta de feedback e informações sobre a interação dos usuários com a aplicação;"
+git push
+clear
+ce ~
+cd ~
+clear
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+git checkout min
+git checkout main
+clear
+git checkout WM-3508
+clear
+nvim
+git fetch
+clear
+nvim
+clear
+ls
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+git add .
+git commit -m "- WM-3508: Correção de bug nas novas fórmulas para números com notação científica;"
+git checkout main
+git pull
+git cherry-pick -x 45fd2084
+git add .
+git cherry-pick continue
+git cherry-pick --continue
+git push
+git checkout 3.3
+git cherry-pick 925620238
+git push
+git pull
+git reset --hard
+git clean -d -f
+git reset --hard HEAD~1
+git reset --hard 3.3
+clear
+git reset --hard
+git clean -d -f
+clear
+git pull
+git add .
+git checkout main
+git branch -D 3.3
+git pull -b 3.3
+git switch 3.3
+clear
+git cherry-pick 925620238
+git push
+clear
+npm run serve
+clear
+nvim
+cd ~
+clear
+cd workspace/nest/
+ls
+cd nestjs-api-tutorial/
+clear
+docker-compose up dev-db -d
+sudo docker-compose up dev-db -d
+systemctl start docker
+docker-compose
+docker
+docker ps
+brew uninstall docker
+bre install --cask docker
+brew install --cask docker
+brew install colima
+colima start
+brew install docker
+colima start
+clear
+nvim
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+npm run serve
+cd main
+clear
+git checkout main
+clear
+fnm exec --using=18 npm run serve
+clear
+git checkout 3.3
+clear
+git fetch
+git pull
+cd workspace/weknow/clientapps/webclient/ng2+/
+clear
+clear
+ls
+rm -r -f -v node_modules/
+fnm exec --using=18 npm run serve
+clear
+npm i
+clear
+git checkout main
+git pull
+clear
+git add ,
+git add .
+git commit -m "#ignorar# havia mais um lugar onde o formato da notação estava causando erro;"
+git push
+git checkout 3.3
+git cherry-pick -x 5db17fd65
+clear
+git push
+clear
+git checkout main
+clear
+git checkout -b WD-1729
+clear
+nvim
+clear
+nvim
+clear
+nvim
+cd Documents/
+ls
+nvim finances.beancount
+npm run serve
+clear
+nvim
+cd workspace/
+ls
+cd pyt
+ls
+clear
+ls
+mkdir pontobot
+cd pontobot
+pyenv
+cd ~
+clear
+ls
+cd .config
+ls
+cd nushell
+ls
+cd workspace/
+ls
+cd python/
+cd pontobot/
+clear
+pyenv
+pyenv -h
+pyenv version
+pyenv --version
+clear
+pip
+py
+python
+clear
+csh
+python
+py
+conda
+brew install python@3.11
+python
+python@3.11
+py
+conda
+pyenv versiobs
+pyenv versions
+cd ~
+cd .pyenv
+ls
+cd versions
+ls
+cd 3.11.1/
+ls
+pyenv shell 3.11.1
+pyenv activate
+pyenv activate 3.11.1
+npm run serve
+clear
+nvim
+git add .
+git commit -m "- WD-1729: Implementação das novas políticas de segurança no frontend"
+git push
+clear
+ls
+git rm \\
+ls
+clear
+git fetch
+git pull
+clear
+nvim
+nnvim
+nvim
+clear
+git switch WP-1548y
+clear
+git switch WP-1548y
+git checkout main
+git reset --hard
+git clean -d -f
+clear
+git switch WP-1548y
+git checkout main
+git pull
+git reset --hard
+git clean -d -f
+git pull
+git add *
+git stash
+git pull
+git add .
+git stash
+git pull
+clear
+git add*
+git clean -d -f .
+git clean -d -f ""
+git clean -d -f "."
+git pull
+clear
+git pull
+clear
+git checkout -b WD-1729b
+git cherry-pick -x 107bb66
+ls
+git rm \
+git rm \ -f
+ls
+git add .
+git commit -m "- WD-1729: Implementação das novas políticas de segurança no frontend"
+git add . 
+git commit -m "#ignorar#"
+git push
+git -D WD-1729
+git add .
+git commit -m "#ignorar# corrigindo solicitações do code review"
+git push
+git add .
+git commit -m "#ignorar# limpando código"
+git push
+git add .
+git commit -m "#ignorar#"
+git push
+git add .
+git commit -m "#ignorar# corrigindo solicitações do code review"
+git push
+git stash
+git checkout main
+git pull
+git checkout -b WM-3583
+git pop
+git stash pop
+git add .
+nvim
+git commit -m "- WM-3583: Corrigindo erro na exportação de componentes;"
+      git push
+git checkout main
+git merge WM-3583
+git push
+git checkout WM-3584
+git checkout WM-3583
+git commit -m "- WM-3583: Corrigindo erro na exportação de componentes;"
+git add .
+git commit -m "- WM-3583: Corrigindo erro na exportação de componentes;"
+git push
+git checkout main
+git merge WM-3583
+git push
+git pull
+git clean -d -f
+git reset --hard
+git revert
+git merge --abort
+git commit --abort
+git revert --abort
+git reset --hard HEAD~1
+git pull
+git reset --hard HEAD~1
+git clean -d -f
+git reset --hard HEAD~1
+npm install
+node -v
+clear
+npm run serve
+clear
+npm run serve
+npm install
+ls
+rm -r -f -v node_modules/
+clear
+npm install
+rm -r -f -v node_modules/
+npm install
+NODE_OPTIONS=--openssl-legacy-provider
+export NODE_OPTIONS=--openssl-legacy-provider
+npm install
+cd node_modules/
+rm -r -f -v ace-builds
+rm -r -f -v .ace-builds-KEJ3MiRd/
+npm i
+rm -r -f -v node_modules/
+clear
+node options
+clear
+cd .confi
+ls
+cd nushell/
+ls
+clear
+cd ..
+clear
+rm -r -f -v node_modules/
+npm i
+clear
+git checkout WD-1729
+git clean -d -f
+git reset --hard HEAD~1
+git clean -d -f
+git checkout WD-1729
+npm run serve
+clear
+git fetch
+git checkout WD-1729b
+clear
+git checkout main
+git add .
+git commit -m "#ignorar# corrigindo ultimos commits;"
+git add .
+git push
+git pull
+clear
+git reset --hard HEAD~1
+git clean -d -f
+git pull
+git add .
+git commit -m "#ignorar# corrigindo ultimos commits;"
+git push
+git pull
+git switch 4.0
+git cherry-pick -x bfa4f40
+git add .
+git commit -m "- WM-3583: Corrigindo erro na exportação de componentes;"
+git push
+npm run serve
+clear
+npm run build
+ls
+zip dist.zip
+ls
+zip 
+zip -h
+zip -r dist.zip dist
+tar
+tar -c -z -f dist.zip -C ./dist ./
+ls
+dist.zip
+./dist.zip
+ls
+cd Documents/
+ls
+ng
+npm i -g @angular/cli
+ng
+ng new ailos_teste
+ls
+cd ..
+ls
+cd Documents/
+mv ailos_teste/ ../workspace/ailos_teste
+ls
+cd ..
+cd workspace/
+ls
+cd ailos_teste/
+ls
+clear
+npm run serve
+npm run server
+ng add @angular/material
+ng g app-shell
+nvim
+npm run ngcc
+ls
+cd workspace/
+ls
+cd ailos_teste/
+lsls
+ls
+clear
+npm run server
+ng generate @angular/material:material-nav --name sidenav
+ng generate @angular/material:material-nav --name app-shell
+ng g @schematics/angular:component admission --skip-selector
+ng g @schematics/angular:component admission/start
+ng g @schematics/angular:module admission/
+cd workspace/
+ls
+ng new angular-unit-testing
+ls
+rm -r -f -v angular-unit-testing/
+ls
+clear
+git clone https://github.com/bbachi/angular-unit-testing.git
+cd angular-unit-testing/
+npm i
+npm start
+clear
+sudo softwareupdate --install-rosetta --agree-to-license
+ls
+clear
+ls
+mkdir development
+cd development/
+cd
+ls
+cd Downloads/
+ls
+ls -a
+lsa
+cd ..
+ls
+rm -r -f -v Exercism/
+cd Library/
+ls
+clear
+cd ..
+ls
+cd Documents/
+ls
+cd ..
+cd Desktop/
+ls
+cd ..
+ls
+cd ..
+cd ruan/
+cd Downloads/
+ls
+clear
+ls -a
+ls
+cd Downloads/
+ls
+ls -a
+cd ..
+clear
+ls
+cd development/
+ls
+clear
+ls
+cd ..
+clea
+clear
+cd development/
+cd flutter/bin
+ls
+clear
+cd ..
+cd .
+cd ..
+ls
+clear
+cd .config/
+ls
+cd nushell/
+ls
+nvim env.nu
+flutter doctor
+nvim
+$nu.env
+$nu.ENV
+env
+env.PATH
+clear
+flutter
+clear
+flutter doctor
+xcode-select --switch /Applications/Xcode.app/Contents/Developer
+sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+sudo xcodebuild -runFirstLaunch
+clear
+ls
+cd workspace/
+ls
+cd rust/
+ls
+clear
+cargo new hello world
+cargo new hello-world
+ls
+cd hello-world/
+ls
+clear
+ls
+cargo run
+clear
+cargo run
+g++ version
+g++ --version
+g++
+clear
+cd workspace/
+ls
+mkdir c
+ls
+cd c
+ls
+clear
+mkdir jogo-adivinha
+clear
+ls
+cd jogo-adivinha/
+clear
+g++ jogoadivinha.cpp -o jogoadivinha.out
+ls
+jogoadivinha.out
+clear
+./jogoadivinha.out
+g++ jogoadivinha.cpp -o jogoadivinha.out
+clear
+./jogoadivinha.out
+cd ..
+cls
+clear
+ls
+clear
+mkdir mini_dungeons
+cd mini_dungeons/
+clear
+nvim
+ls
+cd .config/
+ls
+clear
+cd nvim/
+ls
+clear
+nvim
+clear
+nvim
+cd ..
+clear
+cd ..
+mv c cpp
+ls
+cd cpp
+clear
+mkdir pacman
+cd pacman/
+lcear
+clear
+git init
+ls
+ls -a
+clear
+nvim
+mkdir Headers
+cd ..
+ls
+cd .
+.cd ..
+ls
+cd ..
+ls
+cd nest
+clear
+ls
+clear
+npm update -g @nest//cli
+npm i -g @nest//cli
+fnm exec --using=18 npm i -g @nest/cli
+fnm exec --using=18 npm i -g @nestjs/cli
+clear
+nest new nestjs-api
+nvim jogoadivinha.cpp
+clear
+cd .config
+clear
+ls
+nvim starship.toml
+clear
+ls
+exercism
+brew uninstall exercism
+exercism
+ls
+rm exercism/
+rm -r -f -v exercism/
+clear
+ls
+clear
+ls
+clear
+brew install stow
+lsd
+clear
+cd ..
+ls
+ls -a
+lsd -a
+clear
+mkdir .dotfiles
+ls
+ls -a
+clear
+ls
+mkdir dotfiles
+cd dotfiles
+git init bare
+ls
+ls -a
+rm -r -f -v bare
+cd ..
+ls
+cd dotfiles/
+clear
+ls
+git init --bare
+ls
+ls -a
+cd hooks
+ls
+cd ..
+rm -r -f -v dotfiles
+clear
+ls
+clear
+stow --version
+clear
+cd .dotfiles/
+clear
+cd ..
+ls
+ls -a
+cd .fnm
+ls
+cd ..
+cd .config
+ls
+cd ..
+cd .cargo
+ls
+cd ..
+clear
+ls -a
+cd .vim
+clear
+ls
+cd autoload/
+ls
+cd ..
+cd undodir/
+ls
+cd ..
+clear
+ls
+ls -a
+nvim .zshrc
+nvim .yarnrc
+nvim .profile
+nvim .gitconfig
+clear
+ls
+clear
+cd .dotfiles/
+celar
+clear
+ls
+clear
+mkdir nvim
+mkdir kitty
+ls
+cd ..
+cd .config
+ls
+cd git
+ls
+cd ..
+cd flutter/
+ls
+cd ..
+clear
+cd ..
+cd .dotfiles/
+clear
+cd nvim/
+mkdir -p .config/nvim
+mkdir .config/nvim
+ls
+mkdir .config
+cd .config/
+ls
+nvim
+cd nvim/
+ls
+cd ..
+clear
+cd ..
+rm nvim
+cd nvim/
+cd .config/
+rm nvim
+ls
+cd ..
+clear
+ cd ..
+cd ..
+clear
+cd .config/
+ls
+mv nvim/ ~/.dotfiles/nvim/.config/
+ls
+cd ..
+clear
+cd .dotfiles/
+clear
+ls
+stow nvim/
+ls
+cd ..
+cd .colima/ls
+cd ~
+cd .config/
+ls
+cd nvim/
+nvim
+clear
+cd ~
+cd .dotfiles/
+ls
+cd kitty/
+ls
+mkdir .config
+ls
+mkdir .config
+ls
+ls -a
+clear
+cd ~
+ls -a
+cd .colima
+ls
+nvim
+colima --version
+brew uninstall colima
+cd ..
+ls
+ls -a
+brew uninstall colima\
+brew uninstall colima
+rm -r -f -v .colima/
+clear
+ls
+cd .config/
+ls
+mv kitty/ ~/.dotfiles/kitty/.config/
+clear
+cd ~
+cd .config/
+ls
+cd ..
+cd .dotfiles/
+ls
+stow kitty/
+cd ..
+ls
+cd .config/
+ls
+clear
+cd ..
+ls
+cd Library/
+ls
+cd `Application Support/`
+ls
+cd nushell
+ls
+cd lib/
+ls
+cd core/
+ls
+cd ..
+ls
+cd ..
+cd ~
+ls
+cd .dotfiles/
+ls
+mkdit nushell
+ls
+mkdir nushell
+cd nushell/
+mkdir Library
+cd Library/
+mkdir Application Support
+ls
+rm -r -f -v Application/
+rm -r -f -v Support/
+ls
+mkdir "Application Support"
+ls
+cd ..
+clear
+cd ~
+cd .config/
+cd nushell/
+ls
+cd ..
+bash
+ls
+cd ~
+cd `Library/Application Support/`
+ls
+cd nushell/
+cd ~
+clear
+cd .dotfiles/
+ls
+clear
+ $HOME
+clear
+$env
+$env.HOME
+clear
+zsh
+ls
+nvim install.sh
+ls
+cd nushell/
+ls
+cd Library/
+cd `Application Support/`
+ls
+cd nushell/
+ls
+nvim history.txt
+cd ~/.dotfiles/
+nvim .gitignore
+clear
+git remote
+git remote set
+git
+git status
+git remote -h
+git remote add origin https://github.com/ruan-molinari/.dotfiles.git
+git -h
+git init
+git remote add origin https://github.com/ruan-molinari/.dotfiles.git
+git push
+git add .
+clear
+ls
+ls -a
+cd kitty/
+ls
+ls -a
+cd .config/
+ls
+cd kitty/
+ls
+cd kitty-themes/
+ls
+cd ~
+cd .dotfiles/
+git add .
+clear
+git rm .git
+rm .git
+ls -a
+git -r -f -v .git
+rm -r -f -v .git
+git init
+git remote add origin https://github.com/ruan-molinari/.dotfiles.git
+git add .
+ls
+cd kitty/
+ls
+cd .config/
+ls
+nvim kitty/
+cd ..
+git rm --cached kitty/.config/kitty/kitty-themes/
+git rm --cached kitty/.config/kitty/kitty-themes/ -f
+git submodule add https://github.com/dexpota/kitty-themes kitty/.config/kitty/kitty-themes/
+cd kitty/
+cd .config/
+cd kitty/
+ls
+cd kitty-themes/
+ls
+cd ....
+cd ..
+git add .
+git commit -m "Initial commit"
+git push
+git pull
+git pull origin main
+git pull origin FETCH_HEAD
+git pull origin main
+git pull origin main --ff-only
+git pull origin main --no-rebase
+git pull origin main --rebase
+git pull origin main
+git add .
+ls
+ls -a
+git commit -m "Initial commit"
+git push
+git pull
+git branch --set-upstream-to=origin/<branch> main
+git branch --set-upstream-to=origin/main
+git pull
+git push
+git pull origin/main
+git pull origin main
+git pull --rebase
+git fetch
+git push
+git push -u
+git push -U
+git push -u origin main
+git pull --rebase
+git commit -m "Initial commit"
+git rm --cached .
+ls
+rm -r -f -v .git
+git init
+git remote add origin https://github.com/ruan-molinari/.dotfiles.git
+git submodule add https://github.com/dexpota/kitty-themes kitty/.config/kitty/kitty-themes/
+git pull
+git pull origin main
+ls
