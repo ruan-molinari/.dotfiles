@@ -5143,3 +5143,1081 @@ git submodule add https://github.com/dexpota/kitty-themes kitty/.config/kitty/ki
 git pull
 git pull origin main
 ls
+git add .
+git commit -m "Initial commit"
+git push
+clear
+cls
+clear
+ls
+cd nushell/
+ls
+cd Library/
+ls
+cd `Application Support/`
+ls
+cd nushell/
+ls
+clear
+ls
+ls -a
+ls
+clear
+ls -a
+cd .skiko/
+ls
+cd 9501f4ff87ab1f362914703c445352b4fa63ad64a4fa1677eebfb03ff03a0cde/
+ls
+nvim libskiko-macos-arm64.dylib
+cd ..
+ls
+clear
+ls -a\
+ls -a
+skiko --version
+rm -r -f -v skiko
+clear
+ls -a
+rm -r -f -v .skiko
+clear
+ls -a
+nvim .angular-config.json
+cd .rustup/
+ls
+cd downloads/
+ls
+ls -a
+cd ..
+cd toolchains/
+ls
+ls -a
+cd ..
+ls
+cd tmp/
+ls
+ls -a
+cd ..
+nvim settings.toml
+cd ..
+ls
+clear
+ls -a
+cd .local/
+ls
+cd share/
+ls
+cd direnv/
+ls
+cd allow/
+ls
+cd ..
+ls
+cd ..
+ls
+cd wezterm/
+ls
+cd ~
+clear
+ls -a
+cd .config/
+ls
+cd nushell/
+ls
+nvim starship.toml
+ls
+nvim env.nu
+cd ~
+cd .dotfiles/
+ls
+git pull
+clear
+cd ..
+ls
+cd workspace/
+ls
+clear
+ls
+cd nest
+clear
+ls
+cd workspace/
+ls
+cd nest/
+ls
+rm -r -f -v nestjs-api/
+rm -r -f -v nestjs-api-tutorial/
+clear
+ls
+cd nestjs-chat/
+ls
+nvim
+nest new nestjs-chat
+c;ear
+clear
+npm install prisma
+clear
+npm install prisma --save-dev
+npm config set registry http://registry.npmjs.org/
+npm install prisma --save-dev
+clear
+clear
+ls
+clear
+npx prisma init --datasource-provider sqlite
+ls
+nvimn
+nvim
+npx prisma migrate dev --name init
+npm i @prisma/client
+npx prisma migrate dev --name init
+npx prisma generate
+clear
+ls
+rm -r -f -v node_modules
+rm package-lock.json
+ls
+ls -a
+pnpm
+brew install pnpm
+pnpm
+pnpm init
+cd ..
+ls
+rm -r -f -v nestjs-chat/
+nest new chat-nestjs
+ls
+cd chat-nestjs/
+pnpm install prisma --save-dev
+pnpm dlx prisma migrate dev --name init
+pnpm dlx prisma init --datasource-provider sqlite
+cd ..
+ls
+cd chat-nestjs/
+clear
+pnpm dlx prisma migrate dev --name init
+pnpm install @prisma/client
+pnpm dlx prisma migrate dev --name init
+clear
+nest g module prisma
+nest g service prisma
+pnpm dlx prisma studio
+clear
+pnpm run start:dev
+clear
+pnpm i class-validator
+pnpm i class-transformer
+pnpm i @nestjs/passport @nestjs/jwt bcrypt class-validator class-transformer passport passport-jwt passport-local
+pnpm i -D @types/passport-jwt @types/passport-local @types/bcrypt
+clear
+git init
+git add .
+git commit -m "Initial commit"
+clear
+nest g resource user
+clear
+pnpm run start:dev
+clear
+pnpm dlx prisma migrate dev --name init
+pnpm run start:dev
+clear
+ls
+rm -r -f -v dist
+clear
+nvim
+git add .
+git commit -m "Create user"
+clear
+nest g module auth
+nest g controller auth
+nest g service auth
+clear
+nvim
+clear
+cd ..
+git clone https://github.com/aseprite/aseprite.git
+cd aseprite/
+ls
+git pull
+git submodule update --init --recursive
+brew install ninja
+cd ..
+clear
+clear
+ls
+mkdir build
+clear
+ls
+cd build/
+clear
+cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_OSX_ARCHITECTURES=arm64 -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -DLAF_BACKEND=skia -DSKIA_DIR=~/Downloads/skia -DSKIA_LIBRARY_DIR=~/Downloads/skia/out/Release-arm64 -DSKIA_LIBRARY=~/Downloads/skia/out/Release-arm64/libskia.a -DPNG_ARM_NEON:STRING=on -G Ninja
+cd ..
+ls
+cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_OSX_ARCHITECTURES=arm64 -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -DLAF_BACKEND=skia -DSKIA_DIR=~/Downloads/skia -DSKIA_LIBRARY_DIR=~/Downloads/skia/out/Release-arm64 -DSKIA_LIBRARY=~/Downloads/skia/out/Release-arm64/libskia.a -DPNG_ARM_NEON:STRING=on -G Ninja
+ls
+rm -r -f -v CMakeCache.txt
+rm -r -f -v CMakeFiles/
+ls
+cd build/
+cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_OSX_ARCHITECTURES=arm64 -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -DLAF_BACKEND=skia -DSKIA_DIR=~/Downloads/skia -DSKIA_LIBRARY_DIR=~/Downloads/skia/out/Release-arm64 -DSKIA_LIBRARY=~/Downloads/skia/out/Release-arm64/libskia.a -DPNG_ARM_NEON:STRING=on -G Ninja
+cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_OSX_ARCHITECTURES=arm64 -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -DLAF_BACKEND=skia -DSKIA_DIR=~/Downloads/skia -DSKIA_LIBRARY_DIR=~/Downloads/skia/out/Release-arm64 -DSKIA_LIBRARY=~/Downloads/skia/out/Release-arm64/libskia.a -DPNG_ARM_NEON:STRING=on -G Ninja ..
+git clone --recursive https://github.com/aseprite/aseprite.git
+ls
+cd ..
+git clone --recursive https://github.com/aseprite/aseprite.git
+rm -r -f -v aseprite/
+git clone --recursive https://github.com/aseprite/aseprite.git
+cd aseprite/
+git pull
+git submodule update --init --recursive
+cmake --version
+mkdir build
+cd build
+$HOME
+$nu.HOME
+$env.HOME
+cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_OSX_ARCHITECTURES=arm64 -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -DLAF_BACKEND=skia -DSKIA_DIR=$env.HOME/Downloads/skia -DSKIA_LIBRARY_DIR=$env.HOME/Downloads/skia/out/Release-arm64 -DSKIA_LIBRARY=$env.HOME/Downloads/skia/out/Release-arm64/libskia.a -DPNG_ARM_NEON:STRING=on -G Ninja
+cd build/
+cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_OSX_ARCHITECTURES=arm64 -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 -DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -DLAF_BACKEND=skia -DSKIA_DIR=$env.HOME/Downloads/skia -DSKIA_LIBRARY_DIR=$env.HOME/Downloads/skia/out/Release-arm64 -DSKIA_LIBRARY=$env.HOME/Downloads/skia/out/Release-arm64/libskia.a -DPNG_ARM_NEON:STRING=on -G Ninja ..
+clear
+cd ~
+ls
+cd Documents/
+ls
+nvim finances.beancount
+clear
+cd ~/workspace/
+ls
+cd rust/
+ls
+clear
+mkdir programming_rust_book
+cd programming_rust_book/
+clear
+cargo new hello-world
+ls
+cd hello-world/
+ls
+nvim
+cargo run
+clear
+cd ..
+rustup update
+clear
+cargo new euclidean-algorithm
+cd euclidean-algorithm/
+cargo test
+cargo run 42 56
+cargo run 799459 28823 27374
+cargo run 799459 28823 27375
+cargo run 1243908 57918 0450562
+cargo run 1243908 57918 0450563
+cargo run 1243908 57915 0450563
+cargo run 124398 57915 0450563
+clear
+cargo run 799459 28823 27347
+cargo run
+clear
+rustup doc --std
+nvim
+clear
+ls
+cd ..
+ls
+cd ..
+ls
+mv programming_rust_book/ programming-rust-book
+ls
+cd programming-rust-book/
+ls
+clear
+ls
+cd ..
+ls
+cd conway_game_of_life/
+nvim
+ls
+cd ..
+ls
+clear
+ls
+cd advent-of-code/
+l
+sls
+ls
+clear
+cd day-01/
+nvim
+clear
+cd ~
+clear
+ls
+cd workspace/
+ls
+cd nest/
+cd chat-nestjs/
+clear
+nvim
+cd ~
+clear
+ls
+cd .config/
+ls
+cd nvim/
+ls
+nvim
+cd ~
+clear
+cd ~
+cd .config/nvim/
+nvim
+nv
+nvim
+clear
+nvim
+cd ~
+ls
+clear
+ls
+cd workspace/
+ls
+cd nest/
+cd chat-nestjs/
+nvim
+cd ~
+ls
+cd Documents/
+ls
+nvim finances.beancount
+ear
+clear
+ls
+cd ..
+cd .config/nvim/
+nvim
+cd Documents/
+clear
+cd workspace/
+ls
+cd nest/
+nvim
+ts
+treesitter
+clear
+nvim finances.beancount
+cd chat-nestjs/
+ls
+nvim
+cd ..
+ls
+cd rust/
+ls
+cd hello-world/
+ls
+clear
+nvim
+nvim  finances.beancount
+cd ..
+ls
+cd .config/nvim/
+nvim
+nvim
+cargo install tree-sitter-cli
+tree-sitter-cli --version
+tree-sitter --version
+tree-sitter -h
+clear
+cd ~
+clear
+ls
+ls -a
+mvo,
+clear
+ cd..
+cd ..
+lc
+clear
+ls
+cd programming-rust-book/
+ls
+cd euclidean-algorithm/
+clear
+nvim
+clear
+cd workspace/
+cd rust/
+ls
+clear
+cd programming-rust-book/
+ls
+clear
+cd euclidean-algorithm/
+clear
+nvim
+clear
+cd ..
+clear
+cargo new actix-gcd
+cd actix-gcd/
+clear
+ls
+clear
+cd .config/nvim/
+cargo run
+clear
+cd ..
+ls
+cd euclidean-algorithm/
+nvim
+cd ~
+cd workspace/
+cd ..
+cd .config/nvim/
+clear
+nvim
+cd ..
+cargo new mandelbrot
+clear
+cd mandelbrot/
+clear
+nvim
+cd ..
+git init
+git add hello-world/
+ls
+cd add euclidean-algorithm/
+git add euclidean-algorithm/
+cd hello-world/
+ls
+ls -a
+rm -r -f -v .git/
+cd ..
+ls
+git add hello-world/
+git commit -m "Hello world"
+ls
+cd euclidean-algorithm/
+rm -r -f -v .git/
+cd ..
+clear
+git add euclidean-algorithm/
+git commit -m "Euclidean algorithm"
+cd ..
+ls
+cd programming-rust-book/
+ls
+cd actix-gcd/
+rm -r -f -v .git/
+cd ..
+git add actix-gcd/
+git commit -m "Euclidean algorithm with actix web"
+ls
+cd mandelbrot/
+clear
+ls
+rm -r -f -v .git/
+cd ..
+clear
+..
+ls
+clear
+cd programming-rust-book/
+cd mandelbrot/
+clear
+ls -a
+clear
+cd ..
+cd mandelbrot/
+clear
+cd .config/kitty/
+clear
+nvim
+cd workspace/
+clear
+ls
+cd nest/
+ls
+cd chat-nestjs/
+clear
+nvim
+clear
+nvim
+clear
+:q
+clear
+cargo test
+clear
+cargo test
+cargo test RUST_BACKTRACE=1
+cargo test
+clear
+nvim
+celar
+cd ~
+cd workspace/
+cd nest/
+ls
+cd chat-nestjs/
+clear
+yarn start:dev
+clear
+pnpm run start:dev
+clear
+pnpm run start:dev
+clear
+pnpm run start:dev
+clear
+pnpm run start:dev
+clear
+pnpm run start:dev
+nvim
+cd ..
+ls
+..
+cd rust/
+cd programming-rust-book/
+ls
+cd mandelbrot/
+clear
+Gclear
+clear
+cargo build --release
+mandelbrot mandelbrot.png 
+ls
+cd target/release/
+mandelbrot mandelbrot.png 4000x3000 -1.20,0.35 -1,0.25
+ls
+./mandelbrot mandelbrot.png 4000x3000 -1.20,0.35 -1,0.25
+ls
+./mandelbrot.png
+./mandelbrot mandelbrot.png 4000x3000 -1.20,0.35 -1,0.20
+rm mandelbrot.png
+ls
+./mandelbrot mandelbrot.png 4000x3000 -1.20,0.35 -1,0.20
+cargo build --release
+./mandelbrot mandelbrot.png 4000x3000 -1.20,0.35 -1,0.20
+./mandelbrot mandelbrot.png 4000x3000 -1.20,0.35 -1,0.25
+./mandelbrot mandelbrot.png 4000x3000 -1.20,0.35 -1,0.30
+./mandelbrot mandelbrot.png 4000x3000 -1.20,0.35 -1.10,0.30
+./mandelbrot mandelbrot.png 4000x3000 -1.20,0.35 -1.10,0.25
+./mandelbrot mandelbrot.png 4000x3000 -1.20,0.35 -1,0.20
+./mandelbrot mandelbrot.png 4000x3000 -1.20,0.35 -1,0.15
+cargo build --release
+./mandelbrot mandelbrot.png 4000x3000 -1.20,0.35 -1,0.20
+clear
+./mandelbrot mandelbrot.png 4000x3000 -1.20,0.35 -1,0.15
+./mandelbrot mandelbrot.png 4000x3000 -1.20,0.35 -1,0.20
+clear
+nvim
+clear
+cd ..
+ls
+clear
+cd ..
+ls
+clear
+cd ..
+..
+ls
+clear
+cargo new perlin-noise
+clear
+ls
+clear
+cd perlin-noise/
+clera
+clear
+nvim
+clear
+..
+ls
+mkdir angular
+cd angular/
+cd ..
+mv angular-unit-testing/ angular/unit-testing
+ls
+clear
+cd angular/
+clear
+ls
+nng new station-core --create-application=false
+ng new station-core --create-application=false
+ls
+cd station-core/
+clear
+ls
+ng g library @station/cards
+nvim
+cd ..
+..
+ls
+cd perlin-noise/
+nvim
+..
+ls
+cd nest/
+ls
+cd chat-nestjs/
+clear
+pnpm run start:dev
+clear
+pnpm run start:dev
+ls
+cd \
+rm \
+ls
+clear
+nvim
+ls
+rm -r -f -v dist/
+nvim
+.
+..
+clear
+..
+clear
+ls
+rm -r -f -v ailos_teste/
+npx create-nx-workspace --pm pnpm
+clear
+ls
+pnpm i -g nx@latest
+pnpm setup
+yarn
+clear
+ls
+yarn global add nx@latest
+nx
+npx create-nx-workspace@latest nx-laboratory
+ls
+cd nx-laboratory/
+nvim
+cd ..
+rm -r -f -v nx-laboratory/
+clear
+npx create-nx-workspace@latest myorg --preset=ts
+npx create-nx-workspace@latest laboratory --preset=ts
+cd laboratory/
+clear
+ls
+nvim
+pnpm run start:dev
+yarn add -D husky lint-staged
+yarn remove -D husky commit-staged
+yarn remove -D lint-staged
+yarn remove -D husky lint-staged
+clear
+git add .
+git commit -m "chore: initial commit"
+clear
+yarn add -D husky lint-staged
+npm init @eslint/config
+clear
+yarn add -D @nrwl/linter @nrwl/eslint-plugin-nx
+clear
+..
+ls
+cd nest/
+ls
+cd chat-nestjs/
+git add .
+git commit -m "feat: implementing jwt login structure"
+clear
+git push
+nvimn
+clear
+pnpm run prepare
+npx husky add .husky/pre-commit "npx lint-staged --concurrent false --relative"
+git add .
+git commit -m "ci: adding auto lint, format and type check on commit with husky and lint-staged"
+clear
+cd ..
+npx create-nx-workspace
+clear
+ls
+cd lab
+clear
+pnpn install -D @nx/nest
+pnpm install -D @nx/nest
+pnpm add -g pnpm
+pnpm setup
+clear
+nvim
+clear
+cd ~
+cd .config
+cd nvim/
+clear
+cd workspace/
+ls
+cd lab
+clear
+nvim
+cd ~
+clear
+cd workspace/
+ls
+cd angular/
+clear
+ls
+ng -v
+ng --versiona
+ng --version
+ng --help
+ng version
+clear
+ng update
+ng --help
+clear
+ls
+clear
+ng --help
+ng new ecommerce
+clear
+ls
+cd ecommerce/
+clear
+ng g m product-details && ng g c product-details
+ng g m product-details ; ng g c product-details
+ls
+clear
+ng g m card; ng g c cart
+clear
+ng g service products
+ls
+cd src
+ls
+cd app
+ls
+ng g m cart
+rm -r -f -v card
+mv products.service.ts ./services/products.service.ts
+mkdir services
+mv products.service.ts ./services/products.service.ts
+clear
+ls
+rm products.service.spec.ts
+clear
+ls
+nvim
+cd app
+...
+clear
+ls
+cd src/
+clear
+ls
+clear
+yarn run ngcc
+clear
+nvim
+ls
+cd app/
+clear
+ls
+rm -r -f -v cart
+rm -r -f -v product-details/
+rm -r -f -v products
+clear
+cd ..
+..
+cd src/
+clear
+ng g component components/store
+ng g c components/product-details
+ng g c components/cart
+clear
+cd .config/nvim/
+ng g service services/cart.service.ts
+ng g service services/cart
+clear
+cd .config/nvim/
+nvim
+ls
+cd src
+ls
+mv data/products.json assets/data.json
+clear
+nvim
+cd .c
+..
+cd .config/nvim/
+fnpm install -g @angular/language-server
+npm install -g @angular/language-server
+clear
+nvim
+ng s
+clear
+nvim
+clear
+ clear
+ng serve
+nvim
+ng test
+ng generate config karma
+ng test
+npm install karma-firefox-launcher --save-dev
+ng test
+clear
+ng test
+clear\
+clear
+nvim
+ls
+cd src/
+ls
+cd assets/
+ls
+clear
+bat data.json
+cat data.json
+nvim
+ng test
+clear
+brew install barrier
+barrier
+clear
+barrier
+nvim
+ng test
+clear
+nvim
+clear
+cd ~
+clear
+cd ~\
+cd ~
+clear
+cd Downloads/
+ls
+ls -a
+clear
+cd ~
+cd workspace/
+ls
+cd ..
+clear
+cd workspace/
+ng new number8
+clear
+nvim
+cd number8/
+clear
+nvim
+clear
+cd src/
+ls
+cd app/
+clear
+ls
+rm product.service.spec.ts
+mv product.service.ts services/product.service.ts
+mkdir services
+mv product.service.ts services/product.service.ts
+clear
+cd
+ls
+cd workspace/number8/
+clear
+nvim
+cd ..
+..
+clear
+nvim
+clear
+nvim
+ng s
+clear
+cd ~
+cd workspace/
+clear
+ls
+cd laboratory/
+ls
+clear
+nvim
+git status
+git log
+clear
+nvim
+npx nx g @nx/angular:app admin --directory=apps/admin
+pnpm install -D @nx/angular
+pnpm add -g pnpm
+yarn help
+yarn global list
+clear
+npm global list
+npm help
+npm -l
+clear
+npm list -g
+brew help
+bew list
+brew list
+brew install pnpm
+clear
+npx nx g @nx/angular:app admin --directory=apps/admin
+clear
+nvim
+clear
+npx nx g @nx/nest:app server --directory=apps/server
+clear
+npx nx g @nx/nest:app auth
+npx nx g @nx/nest:app auth --directory=apps/auth
+clear
+ls
+cd apps/
+ls
+mkdir oauth
+mv auth/ oauth/
+mv auth-e2e/ oauth/
+ls
+mv oauth auth
+ls
+cd auth/
+ls
+clear
+..
+ls
+..
+pnpm install -D @nestjs/microservices
+clear
+nvim
+npm i -S @nestjs/microservices @nestjs/passport @nestjs/jwt passport passport-local passport-jwt bcrypt
+cd .config/nvim/
+clear
+pnpm i -D @types/passport-local @types/passport-jwt @types/bcrypt
+clear
+nvim
+clear
+nvim
+clear
+nvim
+pnpm i -D @typescript-eslint/eslint-plugin@latest
+pnpm i -D @typescript-eslint/parser@latest
+pnpm i -D @typescript-eslint/parser@^5.60.1
+pnpm i -D @typescript-eslint/eslint-plugin@^5.60.1
+clear
+nvim
+ls
+cd apps/
+ls
+rm -r -f -v server
+clear
+..
+clear
+nvim
+cd apps/
+ls
+cd auth/
+clear
+ls
+nest g module Auth
+nest g service Auth
+nest g controller Auth
+clear
+....
+clear
+nvim
+ls
+cd apps/auth/
+ls
+cd auth
+ls
+cd src
+ls
+mv auth ./app/auth
+ls
+....
+..
+clear
+cd apps/
+ls
+rm -r -f -v admin
+clear
+..
+clear
+cd workspace/
+ls
+cd nest/
+ls
+cd chat-nestjs/
+clear
+nvim
+nvim
+clear
+ls
+cd apps
+ls
+rm -r -f -v auth/
+clear
+ls
+ls -a
+clear
+..
+ls
+clear
+ls
+ls
+npx nx g @nx/nest:app api --directory=apps/api
+clear
+clear
+ls
+cd src
+ls
+nim
+yarn add -D prisma
+clear
+npx prisma init
+npx prisma generate
+ls
+cd prisma
+ls
+..
+rm -r -f -v prisma
+ls
+npx prisma init
+ls
+cd prisma/
+nvim
+..
+rm -r -f -v prisma
+clear
+ls
+clear
+ls
+clear
+clear
+yarn add -D @nx/js
+clear
+ls
+rm -r -f -v node_modules/
+rm pnpm-lock.yaml
+rm package-lock.json
+rm yarn.lock
+rm yarn-error.log
+clear
+yarn install
+ls
+cd apps/
+ls
+rm -r -f -v api
+rm -r -f -v api-e2e/
+clear
+ls
+clera
+..
+clear
+ls
+..
+cd ~
+clear
+ls
+cd .config/
+clear
+ls
+..
+ls
+ls -a
+cd .dotfiles/
+clear
+ls
