@@ -12,14 +12,14 @@ parser_config.org = {
 -- Treesitter configuration
 require('nvim-treesitter.configs').setup {
   -- A list of parser names, or "all"
-  ensure_installed = { "help", "javascript", "typescript", "c", "lua", "rust" },
+  ensure_installed = { "help", "javascript", "typescript", "c", "lua", "rust", "json" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
 
   -- Automatically install missing parsers when entering buffer
   -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
-  auto_install = true,
+  auto_install = false,
 
   -- If TS highlights are not enabled at all, or disabled via `disable` prop,
   -- highlighting will fallback to default Vim syntax highlighting
@@ -29,5 +29,11 @@ require('nvim-treesitter.configs').setup {
     -- code block highlights that do not have ts grammar
     disable = { "beancount" },
   },
+
+  autopairs = {
+    enable = true
+  },
+
+  indent = { enable = true, disable = { "yaml" } },
 }
 

@@ -66,7 +66,6 @@ let-env PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
 ############## CARGO ###############
 ####################################
 let-env PATH = ($env.PATH | prepend ([$env.HOME '.cargo/bin'] | path join))
-let-env PATH = ($env.PATH | prepend ([$env.HOME 'workspace/open-source/zhang/target/release'] | path join))
 
 # FNM
 # load env variables
