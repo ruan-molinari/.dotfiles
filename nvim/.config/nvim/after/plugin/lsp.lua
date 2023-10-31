@@ -1,94 +1,99 @@
-local lsp = require("lsp-zero")
+local lsp_zero = require("lsp-zero")
 
-lsp.preset("recommended")
+lsp_zero.on_attach(function(client, bufnr)
+  -- see :help lsp-zero-keybindings
+  -- to learn the available actions
+  lsp_zero.default_keymaps({buffer = bufnr})
+end)
 
-lsp.ensure_installed({
-  'tsserver',
-  'eslint',
-  'rust_analyzer',
-  'beancount',
-  'angularls',
-  'lua_ls',
-  'clangd',
-  'jsonls',
-  'cssls',
-  'cssmodules_ls',
-  'html'
-})
 
-lsp.skip_server_setup({'rust_analyzer'})
-
--- Fix Undefined global 'vim'
-lsp.configure('lua_ls', {
-    settings = {
-        Lua = {
+require('mason').setup({})
+require('mason-lspconfig').setup({
+  ensure_installed = {
+    'tsserver',
+    'eslint',
+    -- 'rust_analyzer', -- rust-tools is setting it already
+    'beancount',
+    'angularls',
+    'lua_ls',
+    'clangd',
+    'jsonls',
+    'cssls',
+    'cssmodules_ls',
+    'html',
+    'pylsp',
+    'svelte',
+  },
+  handlers = {
+    lsp_zero.default_setup,
+    lua_ls = function ()
+      local opts = {
+        settings = {
+          Lua = {
             diagnostics = {
-                globals = { 'vim' }
+              globals = {'vim'}
             }
+          }
         }
-    }
-})
+      }
+      require('lspconfig').lua_ls.setup(opts)
+    end,
+    rust_analyzer = function()
+      local rust_tools = require('rust-tools')
 
-local cmp = require('cmp')
-local cmp_select = {behavior = cmp.SelectBehavior.Select}
-local cmp_mappings = lsp.defaults.cmp_mappings({
-  ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-  ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-  ['<CR>'] = cmp.mapping.confirm({ select = true }),
-})
+      local opts = {
+        tools = { -- rust-tools options
+          inlay_hints = {
+            only_current_line = true
+          }
+        },
 
-cmp_mappings['<Tab>'] = nil
-cmp_mappings['<S-Tab>'] = nil
-cmp_mappings['<C-k'] = nil
+        -- all the opts to send to nvim-lspconfig
+        -- these override the defaults set by rust-tools.nvim
+        -- see https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#rust_analyzer
+        server = {
+          cmd = { '/Users/ruan/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rust-analyzer' },
+          -- standalone file support
+          -- setting it to false may improve startup time
+          standalone = true,
+        }, -- rust-analyzer options
 
-lsp.setup_nvim_cmp({
-  mapping = cmp_mappings
-})
+        -- debugging stuff
+        dap = {
+          adapter = {
+            type = "executable",
+            command = "lldb-vscode",
+            name = "rt_lldb",
+          },
+        },
+      }
+      rust_tools.setup(opts)
 
-lsp.set_preferences({
-  suggest_lsp_servers = false,
-  sign_icons = {
-    error = 'E',
-    warn = 'W',
-    hint = 'H',
-    info = 'I'
+      -- require('lspconfig').rust_analyzer.setup(opts) -- uncomment if rust-tools is not being used
+    end
   }
 })
 
--- Use LspAttach autocommand to only map the following keys
--- after the language server attaches to the current buffer
-vim.api.nvim_create_autocmd('LspAttach', {
-  group = vim.api.nvim_create_augroup('UserLspConfig', {}),
-  callback = function(ev)
-    -- Enable completion triggered by <c-x><c-o>
-    vim.bo[ev.buf].omnifunc = 'v:lua.vim.lsp.omnifunc'
+local cmp = require('cmp')
+local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
-    -- Buffer local mappings.
-    -- See `:help vim.lsp.*` for documentation on any of the below functions
-    local opts = { buffer = ev.buf }
-    vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
-    vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
-    vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
-    vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
-    -- vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
-    vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, opts)
-    vim.keymap.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, opts)
-    vim.keymap.set('n', '<space>wl', function()
-      print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-    end, opts)
-    vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, opts)
-    vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, opts)
-    vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, opts)
-    vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
-    vim.keymap.set('n', '<space>f', function()
-      vim.lsp.buf.format { async = true }
-    end, opts)
-  end,
+cmp.setup({
+  sources = {
+    { name = 'path' },
+    { name = 'nvim_lsp' },
+    { name = 'nvim_lua' },
+  },
+  -- formatting = lsp_zero.cmp_format(),
+  mapping = cmp.mapping.preset.insert({
+        ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
+        ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+        ['<CR>'] = cmp.mapping.confirm({ select = true }),
+        ['<C-Space>'] = cmp.mapping.complete(),
+  }),
 })
 
-lsp.setup()
-
-vim.diagnostic.config({
-  virtual_text = true
-})
-
+-- lsp_zero.setup()
+--
+-- vim.diagnostic.config({
+--   virtual_text = true
+-- })
