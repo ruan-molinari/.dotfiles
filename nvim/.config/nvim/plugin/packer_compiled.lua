@@ -200,6 +200,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ruan/.local/share/nvim/site/pack/packer/start/vim-beancount",
     url = "https://github.com/nathangrigg/vim-beancount"
+  },
+  ["wilder.nvim"] = {
+    loaded = true,
+    path = "/Users/ruan/.local/share/nvim/site/pack/packer/start/wilder.nvim",
+    url = "https://github.com/gelguy/wilder.nvim"
   }
 }
 

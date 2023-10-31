@@ -84,6 +84,8 @@ let-env PATH = ($env.PATH | prepend '/opt/homebrew/opt/bazel/bin')
 # Flutter 
 let-env PATH = ($env.PATH | prepend ([$env.HOME 'development/flutter/bin'] | path join))
 
+# Python
+let-env PATH = ($env.PATH | prepend '/opt/homebrew/opt/python@3.11/libexec/bin')
 
 ####################################
 ############## PYENV ###############

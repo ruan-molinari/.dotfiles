@@ -40,6 +40,9 @@ return require('packer').startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
+  -- A more adventurous wildmenu
+  use { 'gelguy/wilder.nvim' }
+
   -- Support for beancount files
   use 'nathangrigg/vim-beancount'
 
@@ -49,7 +52,7 @@ return require('packer').startup(function(use)
   -- LSP (Language Service Provider) - provides support to various programming languages and file formats.
   use {
     'VonHeikemen/lsp-zero.nvim',
-    branch = 'v1.x',
+    branch = 'v3.x',
     requires = {
       -- LSP Support
       {'neovim/nvim-lspconfig'},

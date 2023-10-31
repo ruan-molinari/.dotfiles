@@ -7,9 +7,23 @@ export def main [] {
       $nothing  # replace with source code to run before the repl input is run
     }]
     env_change: {
-      PWD: [{|before, after|
-        $nothing  # replace with source code to run if the PWD environment is different since the last repl input
-      }]
+      PWD: [
+       # {
+       #   condition: {|_, after|
+       #     ('activate' not-in (overlay list)
+       #      and ($after | path join venv/bin/activate.nu | path exists))
+       #   }
+       #   code: "overlay use venv/bin/activate.nu"
+       # }
+       # {
+       #   condition: {|before, after|
+       #     ('activate' in (overlay list)
+       #       and ($after | path join venv/bin/activate.nu | path exists) == false
+       #      )
+       #   }
+       #   code: "overlay hide activate"
+       # }
+      ]
     }
   }
 }

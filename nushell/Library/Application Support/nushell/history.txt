@@ -6221,3 +6221,1927 @@ ls -a
 cd .dotfiles/
 clear
 ls
+git add .
+git status
+git commit -m "updating some configs on nvim plugins and nushell"
+clear
+ls
+cd kit
+ls
+ls -a
+cd .config
+ls
+cd kitty/
+clera
+ls
+clear
+ls
+clear
+nvim
+cleaR
+yarn add -g @ionic/cli
+npm install -g @ionic/cli
+clear
+ls
+cd workspace/
+clear
+ls
+ionic start
+clear
+cd rust/
+clear
+ls
+cd programming-rust-book/
+clear
+ls
+cd mandelbrot/
+clear
+py
+python
+clear
+brew link --force python@3.12
+brew install python@3.12
+sudo xcodebuild -license accept
+brew install python@3.12
+brew link --force python@3.12
+python
+py
+clear
+cargo install python
+clear
+ls
+python3
+brew unlink python 3.11
+brew unlink python@3.11
+brew link --force python@3.12
+brew install python@3.12
+clear
+py3
+python3
+clear
+python3 -m pip install --upgrade setuptools
+python3 -m pip install --upgrade pip
+clear
+pip
+clear
+pip3
+clear
+cd workspace/
+ls
+clear
+cd python/
+clear
+ls
+clear
+mkdir hello-world
+clear
+cd hello-world/
+clear
+nvim
+..
+rm hello-world/
+mkdir First Project
+cd First/
+..
+mv First/ "First Project"
+ls
+rm Project/
+clear
+ls
+cd `First Project/`
+clear
+ls
+python3 my_program.py
+clear
+cd .config/
+clear
+ls
+cd nushell/
+ls
+py
+py my_program.py
+clear
+cd workspace/
+ls
+cd python/
+cd `First Project/`
+py my_program.py
+cd workspace/
+ls
+cd python/
+clear
+cd `First Project/`
+py my_program.py
+clear
+cd workspace/
+ls
+py
+cd py
+ls
+cd `First Project/`
+py my_program.py
+clear
+py --version
+py --help
+python3 -h
+python3 --version
+pip -v
+pip --version
+pip3 --version
+pip
+py --version
+python3 --version\
+python3 --version
+python
+python3
+cd .config/
+ls
+cd nushell/
+nvim
+..
+cd ~
+ls
+ls -a
+cd .dotfiles/
+ls
+ls -a
+nvim
+clear
+git add .
+..
+clear
+ls
+clear
+ls
+cd .config/
+ls
+cd nushell/
+clear
+nvim
+clear
+s
+ls
+..
+clear
+cd ~
+clear
+ls
+cd .config/
+ls
+cd nushell/
+clear
+..
+ls
+cd Library/
+ls
+..
+ls
+cd ~
+clear
+ls
+brew
+brew info python
+brew link --force python@3.11
+python
+clear
+brew info python
+py
+python
+brew info python
+cd /opt/homebrew/opt/python@3.11/libexec/bin
+ls
+python
+pip
+ls
+cd .config/
+ls
+cd nushell/
+ls
+cd /opt/homebrew/opt/python@3.11/libexec/bin
+ls
+..
+ls
+..
+ls
+cd bin
+ls
+..
+ls
+cd libexec/
+ls
+cd bin/
+ls
+python
+./python
+ls
+python3.11 
+nvim env
+cd .config/nushell/
+nvim
+python
+clear
+py
+pip
+pip -v
+clear
+brew info python
+python-config
+clear
+ls
+clear
+python -m pip install virtualenv
+ls
+cd workspace/k
+..
+cd python/
+ls
+clear
+mkdir shorts-gen
+cd shorts-gen/
+ls
+virtualenv venv
+ls
+which python
+clear
+which python3
+python3 -v
+python3 --version
+clear
+ls
+cd venv/
+ls
+nvim
+..
+clear
+virtualenv -h
+clear
+source venv/bin/activate.nu
+venv/bin/activate.nu
+source venv/bin/activate.nu
+ls
+cd venv/
+ls
+cd bin/
+ls
+nvim activate.nu
+..
+overlay use venv/bin/activate.nu
+clear
+ls
+clear
+pip install praw
+clear
+nvim
+pip install pandas
+clear
+cd .config/
+ls
+cd nvim/
+ls
+nvim
+nvim
+python3 main.py
+ls
+cd venv/
+ls
+cd lib
+ls
+cd python3.11/
+l
+ls
+cd site-packages/
+ls
+..
+python main.py
+clear
+python -h
+python -V
+clear
+overlay use venv/bin/activate.nu
+python main.py
+clear
+python main.py
+ls
+clear
+python main.py
+clear
+python main.py
+..
+cd python/
+mkdir GANs
+cd GANs/
+virtualenv venv
+overlay use venv/bin/activate.nu
+clear
+ls
+clear
+clear
+..
+ls
+mkdir shortfy
+clear
+..
+ls
+cd python/
+rm shorts-gen/
+rm -r -f -v shorts-gen/
+clear
+ls
+rm -r -f -v GANs/
+ls
+cd shortfy/
+clear
+virtualenv venv
+overlay use venv/bin/activate.nu
+clear
+cd .config/
+ls
+cd venv/
+ls
+cd bin/
+ls
+nvim activate.nu
+deactivate
+clear
+overlay use venv/bin/activate.nu
+clear
+clear
+cd ~
+cd workspace/
+ls
+cd python/
+ls
+cd shortfy/
+clear
+overlay use venv/bin/activate.nu
+clear
+cd .config/
+ls
+cd nushell/
+ls
+clear
+cd lib/
+ls
+cd core/
+ls
+clear
+ls
+cd workspace/
+cd python/
+clear
+ls
+cd shortfy/
+..
+clear
+cd workspace/
+cd python/
+ls
+cd shortfy/
+cd venv/
+..
+clear
+cd workspace/
+cd python/
+ls
+cd shortfy/
+cd workspace/python/shortfy/
+..
+clear
+overlay hide venv --keep-env [ PWD ]
+overlay hide venv
+deactivate
+deactivate venv
+cd workspace/python/shortfy/
+overlay hide venv
+overlay hide venv --keep-env [ PWD ]
+overlay hide venv/bin/activate.nu --keep-env [ PWD ]
+clear
+overlay
+overlay list
+overlay hide activate
+cd workspace/python/shortfy/
+..
+cd workspace/python/shortfy/
+..
+cd shortfy/
+cd venv/
+ls
+cd shortfy/
+clear
+ls
+cd shortfy/
+cd venv/
+cd workspace/python/shortfy/
+cd venv/
+..
+clear
+cd workspace/python/shortfy/
+cd venv/
+..
+clear
+cd workspace/python/shortfy/
+cd venv/
+..
+cd workspace/python/shortfy/
+cd venv/
+..
+clear
+cd workspace/python/shortfy/
+overlay
+clear
+overlay
+overlay -h
+clear
+cd workspace/python/shortfy/
+clear
+cd venv/
+..
+cd shortfy/
+..
+clear
+ls
+cd python/
+clear
+cd workspace/python/shortfy/
+..
+cd workspace/python/shortfy/
+..
+cd shortfy/
+..
+overlay hide activate
+..
+clear
+cd workspace/
+ls
+cd python/
+cd shortfy/
+..
+clear
+cd shortfy/
+overlay 
+overlay use venv/bin/activate.nu
+..
+clear
+cd shortfy/
+clear
+ls
+clear
+ls
+cd workspace/
+cd python/
+ls
+rm -r -f -v pontobot/
+clear
+cd shortfy/
+ls
+clear
+overlay use venv/bin/activate.nu
+clear
+pip install tortoise-tts
+pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
+clear
+pip install numba inflect psutil
+pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
+clear
+pip install transformers
+ls
+cd venv
+ls
+cd lib
+ls
+..
+cd share
+ls
+cd doc
+ls
+..
+ls
+cd lib
+ls
+cd python3.11/
+ls
+cd site-packages/
+ls
+..
+git clone https://github.com/neonbjb/tortoise-tts.git
+cd tortoise-tts/
+ls
+pip install .
+..
+clear
+ls
+py main.py
+clear
+python main.py
+ls
+cd venv/
+ls
+cd lib/
+ls
+cd python3.11/
+ls
+cd tortoise-tts/
+ls
+clear
+ls
+python main.py
+cd venv/
+ls
+cd lib/
+ls
+cd python3.11/
+cd tortoise-tts/
+ls
+python setup.py
+pip install setup.py
+pip install ./setup.py
+pip install .
+nvim
+ls
+..
+clear
+python main.py
+clear
+python
+clear
+python main.py
+clear
+python main.py
+ls
+pip install -r requirements.txt
+clear
+python main.py
+clear
+python main.py
+clear
+python main.py
+ls
+overlay use venv/bin/activate.nu
+clear
+python main.py
+clear
+python main.py
+clear
+python main.py
+ls
+cd venv/
+ls
+cd share/
+ls
+cd man/
+ls
+cd man1/
+ls
+..
+ls
+cd doc/
+ls
+..
+ls
+..
+ls
+cd bin/
+ls
+..
+ls
+cd lib
+ls
+cd python3.11/
+ls
+cd site-packages/
+ls
+..
+clear
+..
+ls
+..
+clear
+cd /root
+cd ..
+..
+....
+ls
+ls -a
+cd ~
+ls
+ls -a
+venv -h
+virtualenv -h
+venv
+activate
+env
+clear
+virtualenv -h
+cd Library/
+ls
+cd `Application Support/`
+clear
+cd virtualenv/
+ls
+cd wheel/
+ls
+cd 3.11/
+ls
+cd embed/
+ls
+cd 3/
+ls
+..
+ls
+..
+ls
+cd image/
+ls
+cd 1
+ls
+cd CopyPipInstall/
+ls
+..
+ls
+..
+ls
+..
+ls
+..
+ls -a
+..
+ls
+cd virtualenv/
+ls -a
+ls -a -t
+ls -h
+ls -as
+ls -a
+cd wheel/
+ls -a
+clear
+python main.py
+clear
+python main.py
+ls
+cd venv/
+ls
+cd lib
+cd python3.11/
+ls
+cd site-packages/
+cd tortoise/
+ls
+cd __pycache__/
+ls
+..
+rm -r -f -v __pycache__/
+..
+ls
+cd TorToiSe-2.8.0.dist-info/
+ls
+..
+rm -r -f -v tortoise/
+rm -r -f -v TorToiSe-2.8.0.dist-info/
+..
+ls
+cd tortoise-tts/
+ls
+clear
+pip install .
+clear
+ls venv/
+ls
+cd venv/
+ls
+cd lib
+ls
+cd python3.11/
+ls
+cd tortoise-tts/
+ls
+clear
+pip install .
+clear
+..
+clear
+python main.py
+..
+ls
+cd tortoise-tts/
+ls -a
+cd .cache/
+ls
+rm -r -f -v tortoise/
+ls
+clear
+clear
+python main.py
+cd venv/
+ls
+cd bin/
+ls
+nvim activate.nu
+overlay 
+overlay hide activate
+overlay use venv/bin/activate.nu
+cd venv/
+ce bin/activate.nu
+nvim
+..
+clear
+overlay use venv/bin/activate.nu
+env
+clear
+python main.py
+ls
+nvim tortoise/
+clear
+ls
+cd tortoise/
+ls
+ls -a
+cd models/
+ls -a
+nvim bin/activate.nu
+clear
+..
+clear
+python
+clear
+ls
+cd `First Project/`
+clear
+ls
+clear
+nvim
+clear
+..
+ls
+clear
+mkdir memegram
+clear
+ls
+cd memegram/
+clear
+virtualenv venv
+overlay use venv/bin/activate.nu
+clear
+pip install instagrapi
+clcear
+clear
+pip install pillow
+..
+ls
+cd memegram/
+ls
+..
+mv memegram/ dumpster
+ls
+cd dumpster/
+ls
+overlay use venv/bin/activate.nu
+overlay hide activate
+clear
+exi
+cd workspace/
+cd python/
+cd dumpster/
+clear
+overlay use venv/bin/activate.nu
+clear
+ls
+cd assets/
+ls
+overlay use venv/bin/activate.nu
+clear
+..
+over
+overlay use venv/bin/activate.nu
+clear
+python main.py
+pip install instagrapi
+pip install pillow
+python main.py
+clear
+python main.py
+clear
+python main.py
+python
+clear
+15000/60
+python
+clear
+cd workspace/
+clear
+ls
+cd rust/
+clear
+ls
+cargo new autoinput
+cd autoinput/
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+cd .config/
+cd nvim/
+ls
+clear
+nvim
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+1
+cargo run
+clear
+cargo run
+clear
+cargo run
+1clear
+clear
+cargo run
+clear
+cargo run
+rustup
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+clear
+lss
+ls
+clear
+cd rustclea
+clear
+ls
+cd workspace/
+clear
+ls
+rustup
+..
+ls
+cd workspace/
+clear
+ls
+cd rust/
+ls
+cd autoinput/
+clearclear
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cd workspace/
+ls
+cd rust/
+ls
+clear
+cd autoinput/
+clear
+cargo run
+clear
+cargo run
+clear
+nvim
+clear
+..
+ls
+..
+ls
+rm -r -f -v aseprite/
+rm -r -f -v mobile/
+rm -r -f -v number8/
+rm -r -f -v habitate/
+ls
+clear
+ls
+cd cpp/
+ls
+..
+clear
+rm -r -f -v cpp/
+clear
+ls
+cd open-source/
+ls
+..
+rm -r -f -v open-source/
+cd weknow/
+ls
+..
+clear
+rm -r -f -v weknow/
+clear
+ls
+cd laboratory/
+ls
+..
+cd nest/
+ls
+clear
+ls
+clear
+tauri
+create-tauri-app
+clear
+cd ~
+clear
+xcode-select --install
+rustup update
+clear
+cargo install create-tauri-app
+clear
+ls
+cd workspace/
+mkdir tauri
+cd tauri/
+clear
+create-tauri-app
+cargo create-tauri-app
+cargo install tauri-cli
+cargo install trunk
+rustup target add wasm32-unknown-unknown
+clear
+ls
+cd pomodoro/
+tauri
+cargo-tauri
+nvim
+clear
+cargo update
+clear
+cd .config/
+cd nvim/
+clear
+cargo tauri dev
+clear
+nvim
+..
+cd rust/
+ls
+cd programming-rust-book/
+ls
+cd mandelbrot/
+ls
+clear
+nvim
+..
+ls
+clear
+cargo new quickreplace
+clear
+nvim
+clear
+ls
+clear
+..
+ls
+cd programming-rust-book/
+ls
+cd quickreplace/
+clear
+ls
+cargo run
+cargo run "find" "replace" file output
+clear
+echo "Hello, world!" > test.txt
+ls
+echo "Hello, world!" test.txt
+ls
+sh echo "Hello, world!" > test.txt
+clear
+cargo run "[a-z]" "0" test.txt test-modified.txt
+cat test.txt
+cat test-modified.txt
+clear
+cargo run "[[a-z]" "0" test.txt test-modified.txt
+clear
+nvim
+clear
+..
+ls
+cd
+ls
+cd workspace/
+ls
+cd tauri/
+clear
+ls
+cd pomodoro/
+clear
+cargo tauri dev
+nvim
+cargo add stylers
+clear
+clear
+cargo tauri dev
+clear
+cargo add styled
+cargo tauri dev
+rustc --explain E0554
+cler
+cer
+ls
+clear
+cargo tauri dev
+clear
+cargo tauri dev
+cleaer
+nvim
+cargo clean
+clear
+cargo clean
+cargo tauri dev
+clear
+cargo tauri dev
+rustup install nightly
+clear
+cargo +nightly tauri dev
+clear
+cargo tauri
+cargo tauri signer
+cargo tauri build
+clear
+rustup default nightly
+cargo tauri build
+clear
+..
+clear
+cargo create-tauri-app margerita
+rustup target add wasm32-unknown-unknown
+clear
+ls
+cd margerita
+..
+rm -r -f -v
+rm -r -f -v margerita/
+clear
+cargo create-tauri-app margherita
+clear
+cd margherita
+rustup toolchain list
+rustup toolchain
+cd /Users/ruan
+cd .rustup/
+ls
+cd toolchains/
+ls
+clear
+cd nightly-aarch64-apple-darwin/
+ls
+..
+ls
+clear
+ls
+cd
+.config/
+nvim 
+cd nvim/
+nvim
+nvim
+cargo tauri dev
+clear
+cargo add styled
+cargo tauri dev
+cargo add stylers
+clear
+cargo tauri dev
+clear
+cargo tauri dev
+cargo add styles
+cargo add styled
+cargo tauri dev
+cargo add stylist
+clear
+cargo tauri dev
+clear
+cargo tauri dev
+clear
+cargo clean
+..
+clear
+cd margherita/
+cargo tauri dev
+clear
+cargo tauri dev
+clear
+cargo add styled stylist
+cargo clean
+cargo tauri dev
+clear
+cargo add stylers
+cargo tauri dev
+clear
+cargo clean
+cargo tauri dev
+rustc --explain E0432
+cargo clean
+cargo tauri dev
+clear
+cargo tauri dev
+clear
+py
+clear
+python
+clear
+nvim
+..
+clear
+cargo tauri dev
+clear
+cargo tauri dev
+cd .loc
+cd share/nvim/
+site
+cd site/pack/packer/start/
+ls
+cd nvim-treesitter/
+clear
+cd parser-info/
+ls
+nvim c.revision
+nix
+clear
+ls -ld
+cd .config/nvim/
+clear
+nvim
+clear
+nvim
+tree-sitter
+tree-sitter parse
+tree-sitter -h
+tree-sitter dump-languages
+nvim
+clear
+nvim
+clear
+cargo tauri dev
+clear
+cargo tauri dev
+clear
+cargo tauri dev
+clear
+cargo tauri dev
+clear
+~
+clear
+cd .config/nvim/
+clear
+cd /Users/ruan/.local/share/nvim/site/pack/packer/start/nvim-treesitter/parser-info/
+clear
+..
+ls
+nvim
+clear
+ls
+ls -ld
+cd parser-info/
+ls -ld
+chow c.revision ruan
+bash
+chown c.revision ruan
+sudo chown -R ruan c.revision
+sudo chown -R ruan rust.revision
+ls -ld
+ls -ld | uid != ruan
+sudo chown -R ruan help.revision
+..
+clear
+ls -ld
+clear
+cd ~
+clear
+ls
+cd workspace/
+ls
+cd tauri/
+ls
+cd margherita/
+clear
+cd .cargo/bin/
+ls
+..
+ls
+..
+clear
+cd .rustup/
+ls
+cd toolchains/
+clear
+ls
+ls -ld
+cd nightly-aarch64-apple-darwin/
+ls
+ls -ld
+clear
+rustc --print sysroot
+nvim
+rustup
+rustup run
+rustup self
+rustup self update
+rustup update
+clear
+rustc -vV
+rustup component add rust-src
+nvim
+clear
+clear
+cd ~
+clear
+nvim
+nvim
+cargo update rust-analyzer
+rustup component add rust-analyzer
+rust-analyzer
+brew upgrade rust-analyzer
+brew install rust-analyzer
+clear
+rust-analyzer -h
+nvim
+clear
+cd .rustup/
+cd toolchains/
+ls
+cd nightly-aarch64-apple-darwin/
+ls
+cd bin/
+ls
+ls -ld
+clear
+..
+ls
+cd lib/
+ls
+ls -ld
+cd rustlib/
+ls
+..
+clear
+..
+ls
+cd src/
+clear
+ls
+rust-analyzer app.rs
+rust-analyzer
+rust-analyzer -h
+rust-analyzer analysis-stats
+rust-analyzer analysis-stats ../
+ls
+..
+ls
+clear
+nvim
+clear
+:q
+clear
+nvim
+nvim
+cd workspace/
+cd tauri/
+cd margherita/
+clear
+ls
+nvim
+cd .local/
+cd share/
+cd nvim
+cd site/
+cd pack
+cd packer
+cd start
+cd nvim-cmp
+cd lua/cmp/utils
+ls
+cd workspace/tauri/
+cd margherita/
+clear
+nvim
+ls
+cd .rustup/
+ls
+cd toolchains/
+ls
+clear
+ls -ld nightly-aarch64-apple-darwin/
+cd nightly-aarch64-apple-darwin/
+clear
+ls -ld
+ls
+cd bin/
+ls
+..
+sudo rustup component add rust-src
+clear
+rustup -h
+rustup toolchain -h
+rustup toolchain stable
+rustup toolchain help
+rustup help
+rustup set
+rustup set default stable
+rustup set default-holst stable
+rustup set default-host stable
+clear
+rustup
+rustup target stable
+rustup default stable
+clear
+tauri dev
+cargo tauri dev
+clear
+nvim
+clear
+..
+ls
+rm -r -f -v pomodoro/
+clear
+cargo create-tauri-app pomodoro
+clear
+cd pomodoro/
+clear
+rustup component add rust-analyzer
+rustup component add rust-src
+clear
+rustup update
+clear
+rust-analyzer -v
+rust-analyzer --version
+proc-macro --version
+rust-analyzer-procmacro-srv --version
+cd ~
+clear
+cd .rustup/
+ls
+cd toolchains/
+ls
+cd stable-aarch64-apple-darwin/
+clear
+ls
+cd libexec/
+ls
+clear
+nvim
+clear
+./rust-analyzer-proc-macro-srv --version
+rust-analyzer --help
+rust-analyzer --print-lsp-config
+rust-analyzer --print-config-schema
+clear
+..
+ls
+cd etc/
+ls
+..
+cd share/
+ls
+cd man/
+ls
+cd man1/
+ls
+..
+ls
+..
+ls
+clear
+nvim
+ls
+..
+ls
+cd bin
+ls
+clear
+..
+ls
+clear
+rust-analyzer --print-config-schema
+nvim
+clear
+nvim
+clear
+:q
+rustup help
+rustup component help
+rustup component list
+rustup component remove rust-analyzer
+ls
+cd libexec/
+ls
+rm -r -f -v rust-analyzer-proc-macro-srv
+..
+ls
+cd lib
+,s
+ls
+rustup cache
+rustup help
+rustup self
+rustup self upgrade-data
+rustup self update
+rustup component add rust-analyzer
+clear
+..
+ls
+cd libex
+clear
+ls
+..
+nvim
+clear
+ls
+cd bin/
+ls
+clear
+nvim
+sudo rustup component add rust-src
+rustup component remove rust-src
+sudo rustup component add rust-src
+ls
+cd libexec
+ls
+clear
+..
+rustup toolchain help
+rustup toolchain uninstall stable
+..
+rustup toolchain uninstall stable
+sudo rustup toolchain uninstall stable
+rustup toolchain list
+rustup toolchain install stable
+rustup toolchain default stable
+rustup toolchain
+rustup default stable
+cd stable-aarch64-apple-darwin/
+clear
+ls
+cd libexec/
+ls
+..
+rustup component add rust-analyzer
+rustup component add rust-src
+nvim
+clear
+nvim
+nvim
+clear
+cd 
+cd workspace/rust/
+ls
+cd advent-of-code/
+ls
+..
+clear
+cd advent-of-code/
+ls
+rm -r -f -v day-01/
+clear
+ls
+cargo new aoc-2015
+cd aoc-2015/
+clear
+ls
+cd src/
+..
+cargo test
+cargo test
+clear
+cargo test
+clear
+nvim
+clear
+cargo run
+clear
+cargo run
+ls assets/
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+nvim
+cd ~
+clear
+cd workspace/
+cd tauri/
+ls
+cd pomodoro/
+clear
+cargo tauri dev
+rustup target add wasm32-unknown-unknown
+cd workspace/
+cd rust/
+clear
+cargo new timer
+cd timer/
+nvim
+..
+cd margherita/
+nvim
+clear
+cargo tauri dev
+clear
+cd .config/
+cd kitty/
+ls
+nvim
+x
+clear
+cd workspace/
+cd rust/
+cd advent-of-code/
+clear
+ls
+cd aoc-2015/
+clear
+nvim
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo rubn
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+clear
+ls
+rm -r -f -v \\
+ls
+rm -r -f -v \
+ls
+clear
+nvim
+clear
+nvim
+clear
+..
+clear
+ls
+cd coursera
+mkdir 
+mkdir coursera
+clear
+cd coursera/
+clear
+mkdir introduction-to-programming
+clear
+ls
+cd introduction-to-programming/
+clear
+ls
+mkdir p5js
+clear
+cd p5js/
+clear
+cd .conf
+clera
+clear
+ls
+cd nvim
+clear
+ls
+nvim
+clear
+:q
+clear
+nvim index.html
+..
+clear
+ls
+..
+ls
+clear
+cd rust/
+celar
+clear
+ls
+mkdir Crust of Rust
+cargo new functions-closures-n-traits
+clear
+ls
+cd of
+ls
+rm -r -f -v Crust
+rm of
+rm -r -f -v of
+rm -f -f -v Rust
+clear
+mkdir "Crust of Rust"
+ls
+mv `Crust of Rust/` ../"Crust of Rust"
+ls
+..
+ls
+rm -r -f -v Crust/
+rm -r -f -v of/
+rm -r -f -v Rust
+ls
+clear
+rm -r -f -v "\"Crust of Rust\""
+ls
+mkdur 'Crust of Rust'
+mkdir `Crust of Rust`
+ls
+rm -r -f -v functions-closures-n-traits/
+cd `Crust of Rust/`
+clear
+ls
+cargo new functions-closures-n-traits
+clear
+ls
+cd functions-closures-n-traits/
+clear
+nvim
+..
+clear
+ls
+cd advent-of-code/
+clear
+ls
+cd aoc-2015/
+clera
+clear
+ls
+clear
+cargo install cargo-aoc
+clear
+nvim
+cargo aoc input -y 2015
+cargo aoc credentials -s ownerproof-2243287-1698579108-0d40bfcef305
+cargo aoc input -y 2015
+cargo aoc input -y 2015 -d 1
+cargo aoc help
+cargo aoc credentials
+cargo aoc credentials -h
+cargo aoc credentials -s 53616c7465645f5ff9622c651c8f01e4200be5f8b3797e759528a34794df0a8ec65ed8c9bf07e762e953a945cfb762638dcd0e72caeccb7140525b66d5c5f8d5
+clear
+cargo aoc input -y 2015 -d 1
+cargo aoc input -y 2015 -d 2
+cargo aoc input -y 2015 -d 3
+cargo aoc input -y 2015 -d 4
+cargo aoc input -y 2015 -d 5
+clear
+ls
+cd input/
+ls
+..
+ls
+rm -r -f -v assets/
+clear
+ls
+clear
+cargo aoc
+clear
+cargo aoc
+clear
+cargo aoc
+clear
+cargo aoc
+clear
+cargo aoc
+clear
+cd .conf
+cd nvim/
+clear
+cargo aoc -h
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+cargo-aoc
+cargo-aoc -d 2
+cargo-aoc
+clear
+cargo-aoc
+clear
+cargo aoc
+clear
+cargo aoc
+cargo test
+clear
+cargo test
+ear
+clear
+cargo test
+clear
+carear
+clear
+cargo test
+clearclear
+clear
+cargo test
+clear
+cargo test
+clear
+cargo aoc
+clear
+cargo aoc
+cargo test
+clear
+cargo test
+clear
+cargo test
+clear
+mv src/day2.rs ../day2.rs
+git init
+git add .
+git commit -m "initial commit + day1"
+mv ../day2.rs src/day2.rs
+git add .
+git commit -m "day2"
+clear
+cargo aoc -h
+cargo aoc input -d 2 -y 2015
+git rebase -i head~2
+git rebase -i HEAD~2
+git rebase -i HEAD~3
+git rebase -i HEAD~1
+git add .
+git commit -m "day2 input"
+git rebase -i HEAD~2
+git rebase --edit-todo
+git rebase --continue
+git rebase --edit-todo
+git rebase --continue
+git log
+git add .
+git commit -m "day2"
+git log
+git push
+clear
+nvim
+..
+ls
+mv aoc-2015/ advent-of-code-2015
+clear
+ls
+cd advent-of-code-2015/
+clear
+ls
+..
+l
+ls
+cd advent-of-code-2015/
+clear
+git push
+git remote add origin https://github.com/ruan-molinari/aoc-2015.git
+git push -u
+clear
+cargo aoc input -y 2015 -d 3
+clear
+ls
+clear
+git add lib
+git add src/lib.rs
+git commit -m "including day2 in the module tree"
+git push
+clear
+cargo test
+cargo aoc
+git add .
+cargo test
+cargo aoc
+git add .
+git commit -m "day2 part1"
+cargo test
+clear
+cargo test
+clear
+git add .
+git commit -m "day3, part1 polishing"
+clea
+clear
+git rebase -h
+git rebase -i HEAD~2
+git rebase --continue
+git rebase --edit-todo
+git rebase --abort
+git rebase -i HEAD~2
+git rebase
+git add .
+git log
+git log -h
+git log --source
+git commit -m "day3, part1"
+git push
+clear
+nvim
+cargo test
+clear
+python
+clear
+cargo test
+cargo run aoc
+cargo test
+clear
+cargo aoc
+cargo test
+clear
+cargo aoc
+clear
+git add .
+git commit -m "day3, part2"
+clear
+git push
+git status
+clear
+cargo aoc input -y 2015 -d 4
+clear
+cargo aoc
+Pcargo aoc
+cargo aoc
+clear
+cargo aoc
+clear
+cargo test
+clear
+cargo aoc
+clear
+git add .
+git commit -m "day4, part1"
+clear
+cargo aoc
+clear
+cargo add .
+git add .
+git commit -m "day4, part2"
+clear
+git push
+cargo aoc
+clear
+cargo test
+cargo aoc
+cargo benchmark
+cargo aoc benchmark
+cargo-aoc -h
+cargo-aoc bench
+clear
+git add . "day4 optimization"
+git add .
+git commit -m "day4 optimization"
+git push
+cargo aoc input -y 2015 -d 5
+clear
+nvim
+ls
+cd .config/
+ls
+clear
+cd nvim/
+nvim
+..
