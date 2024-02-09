@@ -1,19 +1,24 @@
 vim.g.mapleader = " "
 
-local function map(mode, lhs, rhs, opts)
-  local options = { noremap = true, silent = true }
-  if opts then
-    options = vim.tbl_extend("force", options, opts)
-  end
-  vim.api.nvim_set_keymap(mode, lhs, rhs, options)
-end
+--local Utils = require("lazyvim.util")
+--local map = Utils.safe_keymap_set
+
+
+ local function map(mode, lhs, rhs, opts)
+   local options = { noremap = true, silent = true }
+   if opts then
+     options = vim.tbl_extend("force", options, opts)
+   end
+   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+ end
 
 -- Vim for Colemak
 map("", "n", "j", {})
 map("", "e", "k", {})
 map("", "i", "l", {})
-map("", "j", "e", {})
-map("", "k", "n", {})
+map("", "k", "e", {})
+map("", "K", "E", {})
+map("", "m", "n", {})
 map("", "l", "i", {})
 map("", "K", "N", {})
 map("", "N", "5j", {})
@@ -31,4 +36,11 @@ map("", "S", ":w<cr>", {})
 map("v", "Y", '"+y', {})
 map("n", "P", '"+p', {})
 
-vim.keymap.set('n', '<leader>tv', vim.cmd.Ex)
+-- Chear last search highlights
+map('n', '<esc>', ":noh<return><esc>", {})
+map('n', '<esc>^[', "<esc>^[", {})
+
+map('n', '<leader>tv', ':Ex<cr>', {})
+
+
+
