@@ -16,11 +16,6 @@ return {
       vim.g.lsp_zero_extend_lspconfig = 0
     end,
   },
-  {
-    'williamboman/mason.nvim',
-    lazy = false,
-    config = true,
-  },
 
   -- Autocompletion
   {
@@ -139,11 +134,23 @@ return {
     event = {'BufReadPre', 'BufNewFile'},
     dependencies = {
       {'hrsh7th/cmp-nvim-lsp'},
+      {
+        'williamboman/mason.nvim',
+        lazy = false,
+        config = true,
+      },
       {'williamboman/mason-lspconfig.nvim'},
       {'MunifTanjim/eslint.nvim'},
       {'LhKipp/nvim-nu'},
       {'simrat39/rust-tools.nvim'}
     },
+    keys = function ()
+      local buf = vim.lsp.buf
+
+      return {
+        { "F", buf.hover, desc = "Displays a floating window with info about symbol under cursor"}
+      }
+    end,
     config = function()
       -- This is where all the LSP shenanigans will live
       local lsp_zero = require('lsp-zero')
@@ -176,6 +183,7 @@ return {
           'zls',
           'gopls',
           'htmx',
+          'templ',
         },
         handlers = {
           lsp_zero.default_setup,
@@ -185,6 +193,13 @@ return {
             -- (Optional) Configure lua language server for neovim
             local lua_opts = lsp_zero.nvim_lua_ls()
             require('lspconfig').lua_ls.setup(lua_opts)
+          end,
+
+          html = function ()
+            local html_opts = {
+              filetypes = { "html", "templ" }
+            }
+            require('lspconfig').html.setup(html_opts)
           end,
 
         -- eslint

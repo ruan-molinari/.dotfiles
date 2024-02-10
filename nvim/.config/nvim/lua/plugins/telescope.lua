@@ -1,6 +1,22 @@
+local config = function ()
+  local telescope = require("telescope")
+  telescope.setup({
+    defaults = {
+      mappings = {
+        i = {
+          ['<C-n>'] = 'move_selection_next',
+          ['<C-e>'] = 'move_selection_previous',
+        }
+      }
+    }
+  })
+end
+
 return {
   'nvim-telescope/telescope.nvim', tag = '0.1.5',
   dependencies = { 'nvim-lua/plenary.nvim' },
+  cmd = "Telescope",
+  config = config,
   keys = function ()
     local builtin = require("telescope.builtin")
     return {
@@ -8,20 +24,7 @@ return {
       {"<C-p>", builtin.git_files, {}},
       {"<leader>ts", function ()
         builtin.grep_string({ search = vim.fn.input("Grep > ") });
-      end, {}}
+      end, {}},
     }
   end,
---  opts = function (_, opts)
---    local builtin = require("telescope.builtin")
---
---    opts.defaults = vim.tbl_deep_extend("force", opts.defaults, {
---      mappings = {
---        n = {
---
---        }
---      }
---    })
---  end,
 }
-     -- 
-
