@@ -32,7 +32,7 @@ map("", "S", ":w<cr>", {})
 map("v", "Y", '"+y', {})
 map("n", "P", '"+p', {})
 
--- Chear last search highlights
+-- Clear last search highlights
 map('n', '<esc>', ":noh<return><esc>", {})
 map('n', '<esc>^[', "<esc>^[", {})
 

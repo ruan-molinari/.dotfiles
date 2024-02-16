@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   -- bootstrap lazy.nvim
   vim.fn.system({
@@ -13,7 +13,4 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
-require('lazy').setup({
-  import = "plugins",
-  'morhetz/gruvbox',
-})
+require("lazy").setup("plugins")
