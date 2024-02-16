@@ -1,10 +1,10 @@
 export def main [] {
   {
     pre_prompt: [{
-      $nothing  # replace with source code to run before the prompt is shown
+      null  # replace with source code to run before the prompt is shown
     }]
     pre_execution: [{
-      $nothing  # replace with source code to run before the repl input is run
+      null  # replace with source code to run before the repl input is run
     }]
     env_change: {
       PWD: [

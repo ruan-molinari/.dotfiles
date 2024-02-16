@@ -1,699 +1,3 @@
-clear
-protonvpn not connecting
-clear
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | nu
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-clear
-brew install neovim
-node
-node --version
-clear
-nvim
-clear
-cargo
-ls -
-ls -a
-mkdir .config
-ls
-ls -a
-cd .config
-ls
-ls -a
-clear
-cd ../
-clear
-nucargo
-clear
-cargo
-help
-ls -a
-echo $nu.env-path
-cd `Library/Application Support/`
-ls -a
-cd nushell/
-ls
-nvim config.nu
-cd ~/
-clear
-ls -a
-nvim .profile
-ls .config/ -a
-nvim .profile
-echo $nu.env-path
-cd `Library/Application Support/`
-cd nushell/
-ls
-nvim env.nu
-cargo
-clear
-echo $nu.env-path
-brew install direnv
-ls
-cd ~/
-ls
-ls -a
-cd .config
-mkdir nvim
-clear
-ls -a
-cd nvim/
-mkdir lua
-nvim init.lua
-cd lua/
-mkdir plugins
-mkdir core
-cd core
-nvim init.lua
-nvim options.lua
-rm options.lua
-ls
-rm init.lua
-cd ..
-ls
-rm core/
-rm plugins/
-clear
-ls
-clear
-cd ..
-ls
-mkdir core
-ls
-nvim init.la
-nvim init.lua
-ls
-nvim lua/utils.lua
-nvim core/options.lua
-ls
-mv core lua
-ls
-cd lua
-ls
-mv utils.lua core
-ls
-ls core
-cd ../
-ls
-nvim
-clear
-nvim
-ls -a
-nvim init.lua
-nvim
-ls
-nvim
-cd lua/
-ls
-cd core/
-ls
-nvim init.lua
-ls
-nvim init.lua
-cd ..
-ls
-cd ../
-nvim init.lua
-nvim
-nvim lua/core/init.lua
-cd lua/core/
-ls
-nvim remap.lua
-nvim 
-cd ~
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-clear
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-clear
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \<\n>       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-ls
-cd .config/
-cd nvim/
-clear
-nvim
-cd ~
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-clear
-cd .config/nvim/
-nvim
-cd lua/core/
-ls
-rn vimplug.lua vimplug.vim
-rename vimplug.lua vimplug.vim
-ls
-sed vimplug.lua vimplug.vim
-sed -n vimplug.lua vimplug.vim
-clear
-rm vimplug.lua
-nvim
-cd ~
-cd .config/nvim
-clear
-nvim
-nvim 
-nvim
-mkdir plugin
-mv lua/core/packer.lua plugin/
-ls -a plugin/
-mkdir after
-mv plugin/packer lua/core/
-mv plugin/packer.lua lua/core/
-clear
-git clone https://github.com/weknowbi/weknow.git
-clear
-sudo xcodebuild -license
-ls -a
-git --git-dir .git --work-tree . status
-cd workspaces/
-clear
-git clone https://github.com/weknowbi/weknow.git
-npm
-clear
-curl -fsSL https://fnm.vercel.app/install | bash
-$nu.config-path
-vim $nu.config-path
-nvim $nu.config-path
-load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" && name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
-load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" and name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
-clear
-load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" and name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
-nvim $nu.config-path
-load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" and name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
-load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" && name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
-load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" ; name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
-load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" and name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
-fnm env --shell bash
-load-env (fnm env --shell bash | lines | str replace 'export ' '' | str replace -a '"' '' | split column = | rename name value | where name != "FNM_ARCH" and name != "PATH" | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value })
-nvim $nu.config-path
-echo $nu.path | append (fnm env | lines | split column '"' | first | get Column2) | config set_into  path
-fnm env | str  find-replace -a "export " '' | str find-replace -a '"' '' |  lines | split column = | rename name value | last 5 | load-env
-fnm env --shell bash | lines | last 5 | str find-replace 'export ' '' | str find-replace -a '"' '' | split column = | rename name value | load-env
-athvar add ($nu.env.FNM_MULTISHELL_PATH + /bin)
-pathvar add ($nu.env.FNM_MULTISHELL_PATH + /bin)
-clear
-fnm
-fnm env --shell
-go install github.com/Southclaws/fnm-nushell@latest then run a short pipeline: fnm env --shell bash | fnm-nushell | from json | load-env
-nvim $nu.config-path
-clear
-fnm
-nvim $nu.config-path
-fnm
-clear
-ls
-cd weknow/clientapps/webclient/ng2+/
-clear
-fnm install
-fnm list-remote
-fnm install hydrogen
-fnm install 18.13.0
-fnm default 18.13.0
-fnm use 18.13.0
-clear
-fnm current
-fnm env
-nvim $nu.config-path
-fnm
-fnm current
-clear
-cd weknow/clientapps/
-cd webclient/ng2+/
-clear
-npm i
-npm run serve
-clear
-ls -a
-ls -a src/
-nvim src/data/localConfigs.json
-clear
-npm run serve
-clear
-npm run serve
-clear
-ping 192.168.1.12
-clear
-ping 192.168.1.3
-ipconfig
-ipconfig ifcount
-ipconfig getifaddr interface
-ipconfig getpacket interface
-ipconfig
-ipconfig getiflist
-ipconfig getsummary
-ipconfig getifaddr
-ipconfig waitall
-ipconfig ifconfig
-ifconfig en0
-ping 192.168.1.3
-clear
-npm run serve
-clear
-ping 192.168.1.12
-clear
-ping 192.168.1.3
-ping localhost
-ping 192.168.1.3
-ping 192.168.1.12
-clear
-npm run serve
-code-insiders .
-code .
-clear
-npm run serve
-clear
-npm run serve
-clear
-npm uninstall @angular/flex-layout
-clear
-npm run serve
-clear
-npm run serve
-clear
-git config --global user.name "Ruan Molinari"
-git config --global user.email "ruan.molinari@proton.me"
-clear
-npm run serve
-clear
-git checkout main
-clear
-npm run serve
-clear
-cd ~
-cd .config/nvim/
-nvim
-brew install telescope
-nvim
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \<\n>       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-ls -a
-cd ~
-cd .local/share/
-ls -a
-cd nvim/
-ls -a
-ls
-cd ~
-nvim .config/nvim/
-cd .config/nvim/
-nvim
-ls -a
-cd lua/core/
-ls -a
-nvim
-cd ~
-cd .local/share/nvim/site/autoload/
-ls
-rm plug.vim
-ls
-cd ~
-cd .config/nvim/
-ls
-rm plugins.lua
-cd lua/
-ls
-ls -a
-cd core/
-ls
-cd ../../
-clear
-ls
-nvim
-clear
-nvim
-nvim .config/nvim/
-cd .config/nvim/
-cler
-clear
-nvim
-clear
-nvim
-clear
-cd .config/nvim/
-ls
-nvim
-cd ../
-rm nvim/
-rm nvim --recursive 
-ls
-clear
-mkdir nvim
-cd nvim/
-nvim init.lua
-mkdir lua
-nvim
-ls lua/
-ls 
-cd lua/
-ls
-cd ...
-cd nvim/
-clear
-nvim
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-git clone --depth 1 https://github.com/wbthomason/packer.nvim \  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-clear
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-clear
-cd ~
-ls -a
-nvim plugins.lua
-rm plugins.lua
-ls
-ls -a
-clear
-cd .config/nvim/
-clear
-nvim
-clear
-cd workspaces/weknow/clientapps/webclient/ng2+/
-clear
-npm run serve
-clear
-npm run serve
-npm i
-clear
-npm run serve
-CLEAR
-clear
-cd ~
-cd .config/nvim/
-nvim
-cd lua/
-ls
-mkdir core
-mv opts.lua core
-mv packer.lua core/
-mv remap.lua core/
-clear
-cd ../
-ls
-nvim init.lua
-nvim
-cd ~/.local/share/nvim/site/
-cd pack/
-cd packer/start/
-ls
-git clone --depth 1 https://github.com/wbthomason/packer.nvim
-ls
-cd ~
-cd .config/nvim/
-ls
-nvim
-clear
-ls
-nvim
-cd .config/nvim/
-nvim
-clear
-cd ~
-cd .local/share/nvim/site/pack/
-ls
-cd packer/
-ls
-cd start/
-ls
-cd packer.nvim/
-ls
-cd lua/
-ls
-nvim packer.lua
-cd ~
-cd .config/nvim/
-clear
-nvim
-clear
-nvim
-clear
-brew install pyenv
-pyenv
-clear
-pyenv install 3.11.1
-clear
-$nu.config-path
-cd $nu.config-path
-cd `Library/Application Support/nushell/`
-lls
-ls
-clear
-ls
-nvim
-$env
-clear
-ls
-ls -a
-nvim $nu.config-path
-$env
-$env.PYENV_ROOT
-nvim $nu.config-path
-$env.PYENV_ROOT
-reset
-clear
-pyenv global 3.11.1
-pyenv versions
-nvim $nu.config-path
-clear
-ls
-cd Library/
-ls
-..
-ls
-cd Public/
-ls
-ls -a
-cd `Drop Box/`
-ls
-ls -a
-~
-clear
-ls
-cd ../
-ls
-cd ruan/
-clear
-git clone https://github.com/beancount/beancount
-cd beancount/
-py -m pip install .
-python3y -m pip install .
-python3 -m pip install .
-python3 -m pip install --upgrade pip
-nvim $nu.config-path
-reset 
-python3 -m pip install --upgrade pip
-clear
-cd ~
-clear
-ls .config/nvim/
-cd .config/nvim/
-ls
-clear
-nvim
-cd ~
-cd beancount/
-ls
-cd ~
-bean-check
-cd beancount/bin/
-ls
-clear
-cd ~
-nvim $nu.env-path
-reset
-bean-check
-nvim $nu.env-path
-reset
-bean-check
-$env.PATH
-nvim $nu.env-path
-bean-check
-bean-check --help
-cd .config/nvim/
-nvim
-clear
-brew install ripgrep
-nvim
-clear
-biean-file
-bean-file
-bean-doctor 
-cd ~
-cd beancount/
-ls
-ls -a
-cd beancount/
-ls
-cd ..
-ls
-cd bin/
-ls
-cd ..
-ls
-python3 setup.py build_ext -i
-clear
-cd ..
-bean-doctor 
-cd beancount/
-python3 setup.py install
-python3
-clear
-py
-python
-python3
-clear
-cd beancount/
-python3 setup.py install
-python3 setup.py
-python3 setup.py --help
-python3 setup.py build
-clear
-bean-doctor 
-nvim /Users/ruan/Library/Python/3.9/lib/python/site-packages/beancount/__init__.py
-ls
-ls -a
-cd requirements/
-ls
-cd ..
-clear
-nvim /Users/ruan/Library/Python/3.9/lib/python/site-packages/beancount/__init__.py
-ls
-cd requirements/
-ls
-nvim dev.txt
-cd ..
-clear
-python3 setup.py develop
-python3 setup.py build -d ./
-python3 setup.py build --install-dir ./
-clear
-brew install direnv
-nvim $nu.config-path
-clear
-reset
-python3 setup.py build_ext -i
-clear
-bean-check
-python3 setup.py build_ext -i
-python3 setup.py build
-bean-check
-bean-check --help
-bean-check -a
-bean-check --version
-bean-check -a
-python3 -m beancount.scripts.deps
-nvim .envrc
-reset
-$PYTHONPATH
-$env.PYTHONPATH
-$env
-{NAME: "TEST", AGE: 1} | load-env
-$env.PYTHONPATH
-$env.NAME
-ls
-ls -a
-cd .pyenv
-ls
-cd ..
-nvim $nu.config-path
-cd $nu
-$nu.config-path
-cd `Library/Application Support/`
-cd nushell/
-ls
-clear
-ls
-clear
-nvim
-cd ~
-ls
-ls -a
-cd ...
-ls
-cd home/
-ls
-ls -a
-cd ....
-cd ..
-cd /home/user
-cd usr
-ls
-cd Applications
-cd ..
-cd Applications/
-ls
-cd ..
-clear
-cd ~
-ls
-ls -a
-cd ..
-ls
-cd ..
-ls
-cd dev
-ls
-cdc ..
-cd ..
-ls
-ls -a
-clear
-cd ~
-clear
-ls
-fnm
-fnm help
-cd ..
-clear
-ls
-cd ~
-nvim $nu.config-path
-clear
-ls
-fnm
-reset
-fnm
-fnm env
-fnm --fnm-dir
-clear
-nvim $nu.config-path
-cd beancount/
-direnv allow
-$PYTHONPATH
-nvim $nu.env-path
-nvim beancount-env.nu
-reset
-clear
-nvim $nu.co
-nvim $nu.config-path
-nvim $nu.co
-nvim $nu.config-path
-clear
-reset
-nvim $nu.config-path
-clear
-ls
-clear
-ls
-clear
-nvim $nu.env-path
-$env
-$env.PYTHONPATH
-CLEAR
-nvim $nu.env-path
-cd ../
-ls
-$nu
-cd $nu
-cd `Library/Application Support/`
-ls
-cd nushell/
-clear
-ls
-clear
-nvim
-cd ~
-bean-check
-cd beancount/
-python3 setup.py install
-$env
-pyenv
-pyenv global
 pyenv global 3.11.1
 pyenv install 3.11.1
 pyenv root
@@ -8144,4 +7448,2553 @@ ls
 clear
 cd nvim/
 nvim
+..
+git add .
+git commit -m "setting polishing, ls-zero upgrade to v3, fix rust-analyzer and rust-tools, & more"
+git push
+clear
+cd 
+cd workspace/
+clear
+ls
+cd rust/
+cargo new flappy-bevy
+cd flappy-bevy/
+clear
+cargo add bevy
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+nvim
+cd ..
+ls
+rm -r -f -v perlin-noise/
+rm -r -f -v timer/
+rm -r -f -v conway_game_of_life/
+ls
+clear
+ls
+rm -r -f -v `Crust of Rust/`
+clear
+l
+clear
+ls
+rm -r -f -v hello-world/
+clear
+ls
+cd autoinput/
+ls
+nvim Cargo.toml
+rm -r -f -v
+..
+rm -r -f -v autoinput/
+clear
+ls
+clear
+rm -r -f -v input-spam
+cargo new input-spam
+clear
+cd input-spam/
+clear
+cargo add bevy
+clear
+cd workspace/
+cd rust/
+ls
+cd flappy-bevy/
+clear
+ls
+cd workspace/
+ls
+cd tauri/
+clear
+ls
+..
+clear
+ls
+cd rust/
+clear
+ls
+..
+ls
+cd rust/
+clear
+ls
+..
+clear
+ls
+clear
+ls
+clear
+cargo add bevy_global_input
+clear
+nvim
+cargo run
+clear
+cargo run
+clear
+cargo run
+nvim
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo add enigo
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+cargo add tokio
+nvim
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+nvim
+cargo add tao
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+ls
+cd workspace/
+ls
+cd rust/
+clear
+ls
+cd advent-of-code/
+ls
+clear
+ls
+mkdir advent-of-code-2023
+cd advent-of-code-2023/
+..
+cd advent-of-code-2015/
+clear
+cargo add aoc-runner
+..
+rm -r -f -v advent-of-code-2023/
+clear
+cargo new advent-of-code-2023
+cd advent-of-code-2023
+ls
+clear
+ls
+cargo add aoc-runner
+cargo add aoc-runner-derive
+clear
+ls
+clear
+cargo aoc input -y 2023 -d 1
+..
+cd advent-of-code-2015/
+clear
+ls
+nvim
+clear
+cd workspace/
+clear
+ls
+cd games/
+clear
+ls
+git clone https://github.com/bevyengine/bevy
+ls
+cd bevy/
+clear
+ls
+cd examples/
+cear
+clear
+ls
+cd 3d
+ls
+skybox.rs
+cargo skybox.rs
+cargo build skybox.rs
+clear
+..
+clear
+ls
+..
+cargo build
+lc
+clear
+ls
+cargo run --example breakout
+rustc -vV
+rustup
+rustup update
+clear
+cargo run --example breakout
+..
+clear
+ls
+cargo new project_intro_bevy
+cd project_intro_bevy/
+clear
+ls
+clear
+cargo add bevy
+clear
+ls
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+cd .config/
+ls
+cd kitty/
+clear
+ls
+nvim
+:q
+clear
+cd workspace/
+ls
+cd games/
+clear
+ls
+cd project_intro_bevy/
+clea
+rclear
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+lscd workspace/
+clear
+cd workspace/
+clear
+cd games/
+clear
+ls
+cd project_intro_bevy/
+clear
+nvim
+clear
+cd workspace/
+clear
+cd games/
+ls
+cd project_intro_bevy/
+clear
+cargo run
+clear
+ls
+cd workspace
+ls
+cd games
+ls
+cd project_intro_bevy/
+ls
+clear
+nvim
+cs ~
+cd ~
+clear
+cd .config/
+ls
+cd nvim
+ls
+nvim
+clear
+git add .
+git commit -m "updating keybinds for Colemak"
+clear
+nvim
+clear
+git push
+..
+cs ~
+cd ~
+le
+ls
+clear
+cs workspace/
+cd workspace/
+cd games
+ls
+cd project_intro_bevy/
+clear
+cd
+cd workspace/
+cd games/
+cd project_intro_bevy/
+ls
+clea
+clear
+ls
+cargo run
+cd .config/
+ls
+cd nvim
+ls
+clear
+cargo run
+cd .c
+..
+cd .config/
+cd nvim
+;clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+cd .config/nvim
+nvem
+nvim
+nvim
+cargo run --example defferred_rendering
+cargo run --example deferred_rendering
+cargo run --example 
+cargo run --example deferred_rendering
+clear
+cargo run
+rustup updase
+rustup update
+cd .config/nvim
+cd ~
+cd .config/nvim
+nvim
+clear
+nvim
+..
+cd kitt
+ls
+..
+ls
+nvim kitty/
+lt
+ls
+cd kitty/
+clear
+nvim
+clear
+clear
+nvim
+cd workspace
+cd games
+cd project_intro_bevy/
+clear
+nvim
+clear
+nvim
+cd ~
+cd .config/nvim
+nvim
+..
+ls
+cd kitty/
+ls
+nvim
+cd ~
+cd .config
+cd kitty/
+ls
+nvim
+clear
+nvim
+cd workspace
+cd games/
+ls
+cd project_intro_bevy/
+clear
+nvim
+cd ~
+cd .config
+cd kitty
+nvim
+cd workspace/
+cd games/
+nvim
+ls
+rm -r -f -v project_intro/
+clear
+cd project_intro_bevy/
+clear
+nvim
+cd ~
+cd .config/
+cd kitty/
+nvim
+cd .config/kitty
+nvim
+cd workspace/games
+cd project_intro_bevy/
+clear
+cd ~
+clear
+cd .config/nvim
+nvim
+nvim
+clear
+....
+ls
+..
+cd .config/kitty/
+nvim
+nvim
+cd workspace/games
+clear
+cd project_intro_bevy/
+clear
+cargo run
+;cargo run
+cargo run
+clear
+nvim
+..
+clear
+cargo new pissing_simulator
+clear
+cd pissing_simulator/
+clear
+cargo add bevy
+clear
+cargo run
+clear
+cargo run
+cd ~
+cd .config/nvim/
+cargo run
+nvim
+..
+clear
+ls
+cd memory
+mkdir memory_managemant_studies
+cd memory_managemant_studies/
+clear
+cd .config/nvim
+clear
+nvim
+mkdir simple_calculator
+clear
+cd simple_calculator/
+clear
+g++ main.cpp -o calculator
+calculator
+./calculator
+g++ main.cpp -o calculator
+./calculator
+g++ main.cpp -o calculator
+./calculator
+clear
+..
+clear
+mkdir dynamic_array
+cd dynamic_array/
+clear
+g++ main.cpp -o dynamic_array
+./dynamic_array
+g++ main.cpp -o dynamic_array
+./dynamic_array
+g++ main.cpp -o dynamic_array
+./dynamic_array
+g++ main.cpp -o dynamic_array
+./dynamic_array
+g++ main.cpp -o dynamic_array
+./dynamic_array
+g++ main.cpp -o dynamic_array
+./dynamic_array
+nvim
+..
+clear
+..
+brew install zig
+cd ~
+clear
+cd .config/nvim/
+clear
+mkdir zig-calculator
+cd zig-calculator/
+clear
+zig init
+zig init-exe
+ls
+clear
+zig run
+zit
+zig
+zig run -h
+clear
+zig build run
+zig build test
+clear
+zig build test
+le
+ls
+cd zig-out
+ls
+cd bin
+ls
+..
+clear
+zig build run
+zig build test
+clear
+nvim
+clear
+..
+clear
+git clone https://ziglings.org
+clear
+cd ziglings.org/
+clear
+zig build
+brew uninstall zig
+clear
+ls
+ls -a
+cd Downloads/
+ls
+ls -a
+,,
+cd
+clear
+ls
+ls -a
+cd Downloads/
+..
+cd development/
+ls
+..
+rm -r -f -f development/
+clear
+ls
+cd Documents/
+ls
+..
+cd ruan/
+cd Downloads/
+ls
+lsa
+lsd
+ls -a
+clear
+cd OpenDyslexic
+ls
+..
+cd arst
+clear
+mv zig ../zig
+clear
+mv -f /Users/ruan/Downloads/zig/ /Userr/ruan/
+mv -f /Users/ruan/Downloads/zig/ /Userr/ruan/zig
+mv -f /Users/ruan/Downloads/zig/ /Userr/ruan/zig/
+mv /Users/ruan/Downloads/zig/ /Userr/ruan/zig/
+mv /Users/ruan/Downloads/zig/ /Users/ruan/zig/
+..
+ls
+cd zig
+ls
+..
+mv zig .zig
+clear
+cd .config/nushell
+clear
+zig
+cd .config/
+cd nushell/
+clear
+zig
+clear
+zig -h
+cd .zig/
+clear
+./zig -h
+ls
+cd lib
+ls
+..
+clear
+ls
+nvim README.md
+zig -h
+zig
+clear
+cd Z
+cd ~
+clear
+cd workspace/
+ls
+cd ziglings.org/
+clear
+ls
+clear
+zig version
+clear
+zig build
+clea
+clear
+zig build
+clear
+zig build
+clear
+zig build
+clear
+zig build
+cleaz
+clear
+zig build
+clear
+zig build
+clear
+zig build
+clear; zig build
+nvim
+clear; zig build
+nvim
+clear
+..
+curl -L https://raw.githubusercontent.com/rust-lang/rustlings/main/install.sh | bash
+clear
+ls
+cd rustlings/
+clear
+ls
+clear
+cargo install --force --path .
+clear
+ls
+rustlingr watch
+rustlings hint variable5
+rustlings hint variables5
+clear
+rustlings hint primitive_types3
+cd .config
+cd Z
+cd ~
+cd .config/nvim
+clear
+nvim
+clear
+ncim
+clear
+clear
+rustlings hint move_semanticr3
+rustlings hint move_semantics3
+rustlings hint move_semantics2
+clear
+rustlings hint enums2
+rustlings hint enums3
+rustlings hint strings2
+clear
+rustup default nightly
+clear
+cd ~
+clear
+rustup target add riscv64-unkown-none-elf
+rustup target add riscv64gc-unkown-none-elf
+rustup target add riscv64gc-unknown-none-elf
+rustup default stable
+rustup target add riscv64gc-unknown-none-elf
+clear
+cd workspace
+cargo new riscv-os
+clear
+cd riscv-os/
+clear
+cargo run
+clear
+cargo install cargo-binutils
+clear
+cargo run
+clear
+fallocate -l 32M hdd.dsk
+clear
+rustup component add rls rustfmt rust-analysis clippy
+clear
+dd -h
+dd help
+clear
+rustup default stable
+make
+clear
+qemu
+clear
+brew install qemu
+clear
+qemu
+diskutil list
+clear
+dd if=/dev/zero of=hdd.dsk count=32 bs=1M
+clear
+diskutil list
+le
+ls
+clear
+make
+make .
+make
+ls
+ls -a
+clear
+ls
+ls -a
+mv src/Makefile Makefile
+ls
+clear
+make
+clear
+make
+clear
+make
+clear
+make
+make run
+make
+clear
+make
+make run
+clear
+make
+cargo build
+make
+clear
+..
+clear
+cargo new myos --lib
+clear
+cd myos
+nvim
+ls
+cd src
+mv lib.rs .../riscv-os/src/lib.rs
+clear
+..
+rm -r -f -v myos
+clear
+cd riscv-os/
+clear
+cargo new myos --lib
+cd myos/
+clear
+nvim
+cd ..
+rm -r -f -v myos
+clear
+make
+ls
+clear
+make
+..
+cd riscv-os/
+clear
+make
+ls
+clear
+make
+clear
+make
+make run
+cargo run --nostd
+cargo run -- --nostd
+make
+cargo build -nostdlib
+clear
+cargo build
+qemu-system-riscv64
+clear
+cargo run
+cargo build
+clear
+cargo build
+clear
+cargo build
+rustup default nightly
+clear
+cargo new myos
+cd myos/
+nvim
+rm -r -f -v myos
+..
+rm -r -f -v myos
+clear
+cargo build
+nvim
+clear
+cd .config/nvim
+clear
+cd ~
+clear
+cd .config/nvim
+clear
+rustlings hint hashmaps3
+nvim
+rustlings lsp
+nvim
+clear
+rustlings hint options2
+rustlings hint options3
+clear
+rustlings hint errors1
+clear; rustlings hint errors2
+clear; rustlings hint errors3
+clear; rustlings hint errors4
+clear; rustlings hint errors5
+clear; rustlings hint errors6
+clear; rustlings hint generics1
+clear; rustlings hint taet
+clear; rustlings hint traits3
+nvim
+rustlings watch
+clear
+clear; rustlings hint lifetimes1
+cd workspace/
+ls
+cd rust
+clear
+ls
+clear
+lib
+clear
+book
+clear
+cargo new mind_museum
+clear
+nvim
+cd mind_museum/
+clear
+nvim
+..
+ls
+cd programming-rust-book/
+clear
+ls
+cd mandelbrot/
+clear
+cd
+..
+cd programming-rust-book/
+clear
+ls
+cd quickreplace/
+clear
+open
+clear
+cd ..
+rm -r -f -v mind_museum/
+clear
+cd workspace/
+clear
+ls
+clear
+cd rust
+cargo new open
+clear
+cd open
+clear
+cargo run
+cargo run abc 123
+nvim
+clear; rustlings hint tests4
+..
+cd rust/
+clear
+ls
+cd open/
+clear
+cargo run .
+ls
+clear
+cargo run ./Cargo.toml
+clear; rustlings hint iterators2
+clear; rustlings hint iterators3
+rustup default stable
+clear
+clear; rustlings hint iterators3
+clear
+cd workspace
+clear
+nvim
+cd rust
+clear
+ls
+clear; rustlings hint iterators4
+cd Downloads/
+clear
+ls
+type ls
+ls
+echo *
+ls
+ls -t
+ls 0a
+ls -a
+clear
+..
+ls
+cd Documents/
+ls
+..
+cd Desktop/
+ls
+..
+cd Pictures/
+clear
+ls
+..
+clear
+ls
+cd Applications/
+ls
+clear
+..
+ls
+cd Library/
+clear
+ls
+..
+clear
+ls
+cd Applications/
+clear
+ls
+cd
+ls
+cd
+..
+ls
+cd Users
+ls
+cd ruan
+cd Downloads/
+ls
+clear
+..
+ls
+cd `Firmware files/`
+ls
+..
+rm -r -f -v `Firmware files/`
+clear
+ls
+ls -l
+cd Downloads/
+clear
+ls -l
+clear
+..
+ls ~/Downloads/
+cd Downloads/
+ls
+clear
+ls
+cd
+clear
+ls -a
+rm -r -f -v .dart-tool/
+rm -r -f -v .vscode-insiders/
+rm -r -f -v .vscode/
+clear
+ls -a
+rm -r -f -v .yarnrc
+rm -r -f -v .pyenv/
+rm -r -f -v .python_history
+rm -r -f -v .flutter
+ls .Trash/
+sudo ls .Trash/
+cd .Trash/
+ls
+sudo ls
+..
+clear
+ls -a
+rm -r -f -v .angular-config.json
+nvim .gitconfig
+rm -r -f -v yarn.lock
+rm -r -f -v package.json
+rm -r -f -v package-lock.json
+rm -r -f -v node_modules/
+clear
+ls
+ls -t
+clear
+ls -a
+cd .cache/
+ls
+rm -r -f -v tortoise/
+cd huggingface/
+ls
+cd hub/
+ls
+...
+ls
+rm -r -f -v huggingface/
+clear
+ls
+..
+ls
+clar
+cleas
+clear
+ls 0a
+clear
+ls -a
+cd .thumbnails/
+ls
+cd fail/
+ls
+..
+cd large/
+ls
+ls -a
+..
+//
+..
+cd
+clear
+ls
+clear
+..
+ls
+cd Library/
+ls
+cd `Application Support/`
+ls
+ls -a
+cd LogiOptionsPlus/
+..
+l
+ls
+ls -a
+..
+ls -a
+cd Shared/
+ls
+rm -r -f -v Battle.net/
+sudo rm -r -f -v Battle.net/
+sudo rm -r -f -v Blizzard/
+clear
+ls -a
+cd `Previously Relocated Items/`
+ls
+ls -a
+cd Configuration/
+ls
+ls -a
+cd private/
+ls -a
+cd etc/
+ls -a
+nvim shells.system_default
+.....
+ls
+cd `Relocated Items/`
+ls
+cd Configuration/
+ls
+cd private/
+ls
+cd etc/
+ls
+ls -a
+nvim shells.system_default
+....
+..
+ls
+cd `SC Info/`
+ls
+ls -a
+..
+ls
+clear
+..
+ls
+cd Applications/
+ls
+..
+ls
+cd Library/
+ls
+..
+ls
+cd bin
+ls
+..
+ls
+cd opt
+ls
+ls -a
+..
+cd usr
+ls
+cd ~
+clear
+cd workspace/
+ls
+cd rustlings/
+clear
+ls
+clear
+clear; rustlings hint iterators4
+clear; rustlings hint box1
+..
+ls
+cd Library/
+cd `Application Support/`
+ls
+cd Microsoft/
+ls
+cd MAU2.0/
+ls
+rm `Microsoft AutoUpdate.app/`
+rm -r -f -v `Microsoft AutoUpdate.app/`
+sudo rm -r -f -v `Microsoft AutoUpdate.app/`
+clear
+ls -a
+..
+ls -a
+rm -r -f -v MAU2.0/
+..
+ls
+sudo rm -r -f -v Microsoft/
+clear
+..
+cd LaunchDaemons/
+ls
+rm -r -f -v com.microsoft.autoupdate.helper.plist
+sudo rm -r -f -v com.microsoft.autoupdate.helper.plist
+ls
+ls -a
+..
+cd LaunchAgents/
+ls
+clear
+sudo rm -r -f -v com.microsoft.update.agent.plist
+..
+cd LaunchAgents/
+ls
+..
+cd PrivilegedHelperTools/
+ls
+rm -r -f -v com.microsoft.autoupdate.helper
+sudo rm -r -f -v com.microsoft.autoupdate.helper
+clear
+cd
+clear
+ls
+cd workspace/
+us
+clear
+ls
+..
+cd .config/nushell
+clear
+ls
+$nu.HOME
+cd $env.HOME
+$env.HOME
+ls
+ls -a
+nvim
+cd
+nvim $nu.config-path
+vim
+clear
+clear; rustlings hint cow1
+nvim
+..
+rustlings watch
+cd rust
+clear
+ls
+mkdir crust-of-rust
+cd crust-of-rust/
+mkdir smart-pointers-and-interior-mutability
+cd smart-pointers-and-interior-mutability/
+..
+cargo new --lib pointers
+cd pointers/
+clear
+nvim
+..
+ls
+..
+cd rustlings/
+clear
+clear; rustlings hint threads2
+brew install nim
+clear
+cd .config/nvim
+nvim
+clear
+nvim
+go
+clear
+nvim $nu.env-path
+go verseon
+go
+cd /
+cd usr
+cd local
+cd go
+cd bik
+cd bin/
+ls
+nvim $nu.env-path
+nvim $nu.env-path
+go
+clear
+go version
+clear
+npm
+npm -v
+node -v
+npm update
+clear
+cd
+cd workspace
+s
+clear
+ls
+rm -r -f -v riscv-os/
+cd coursera/
+ls
+cd introduction-to-programming/
+ls
+..
+rm -r -f -v coursera/
+clear
+ls
+rm -r -f -v laboratory/
+clear
+ls
+mkdir go-htmx
+cd go-htmx/
+clear
+go run main.go
+clear
+go run main.go
+clear
+nvim
+go run main.go
+clear
+go run main.go
+clear
+go run main.go
+clear
+git init
+git remote add origin https://github.com/ruan-molinari/go-htmx-study.git
+git push -l
+git push -u
+git pull
+git pull origin main
+git push -u origin main
+clear
+ git add .
+git commit -m "initial commit"
+clear
+git push -u origin main
+clear
+cd .config/nvim
+nvim
+go run main.go
+clear
+go run main.go
+clear
+go run main.go
+clear
+go run main.go
+clear; go run main
+clear; go run main.go
+git add .
+git commit -m "htmx basics"
+git push
+clear
+beancount
+bean-check
+clear
+ls
+cd
+cd workspace/
+ls
+py
+pythoh
+clear
+cd
+ls
+cd Applications/
+ls
+ls -a
+cd /
+cd Applications/
+ls
+cd `Python 3.12/`
+ls
+cd `Python Launcher.app/`
+ls
+cd Contents/
+ls
+cd MacOS/
+ls
+..
+cd usr
+ls
+cd bin
+ls
+cd py
+..
+cd System/
+ls
+Library/
+cd Library/Frameworks/
+ls
+..
+cd Library/Frameworks/
+ls
+cd Python.framework/
+ls
+cd python
+l
+ls
+cd Versions/
+ls
+cd Current/
+ls
+cd bin
+ls
+..
+ls
+python
+cd Current/
+python
+ls
+cd bin
+ls
+python3
+clear
+py
+py -h
+clear
+py -h
+python -h
+fnm -h
+clear
+pip -h
+clear
+ls
+cd .config/
+cd nvim/
+clear
+ls
+nvim $nu.env-path
+nvim
+cd .config/
+cd nvim
+nvm
+nvim
+clear
+nvim
+clear
+nvim
+cd .local/
+cd share/nvim/site/pack/
+us
+ls
+rm -r -f -v packer
+clear
+clear
+nvim
+js
+ls
+cd after
+ls
+.
+..
+mv after/plugin/ lua/plugins/
+cd lua/
+ls
+cd plugins/
+ls
+mv plugin/ ../plugin
+..
+ls
+cd plugin/
+ls
+..
+ls
+rm -r -f -v plugins
+mv plugin/ plugins
+ls
+cd plugins/
+ls
+clear
+nvim
+clear
+tree-sitter -h
+clear
+nvim
+clear
+nvim
+clear
+nvim
+vim
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+ls -a
+clear
+ear
+clear
+nvim
+nvim
+clear
+nvim
+clear
+nvim
+clear
+:q
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+cd Z
+clear
+cd ~
+cd workspace/
+ls
+cd go-htmx/
+nvim
+clear
+nvim
+nvim
+git add .
+git commit -m "from packer to lazy"
+git push
+clear
+nvim
+clear
+cd workspace/go-htmx/
+nvim
+..
+clear
+mkdir store
+clear
+cd store/
+go mod init
+go help mod init
+go env
+cd
+cd go
+ls
+cd bin
+ls
+go mod init echo
+go mod tidy
+go mob init
+go mod init
+clear
+go mod tidy
+go mod init github.com/ruan-molinari
+go mod tidy
+clear
+make
+go get github.com/labstack/echo/v4
+clear
+nvim
+go install github.com/a-h/templ/cmd/templ@latest
+templ -h
+templ
+clear
+go -h
+go gopath
+gopath
+go help gopath
+gireleaser -h
+clear
+goreleaser -h
+brew install goreleaser/tap/goreleaser
+goreleaser -h
+clear
+goreleaser build --snapshot --clean
+cd
+ls
+cd go
+ls
+cd pkg
+ls
+cd mod
+ls
+cd github.com/
+ls
+..
+ls
+cd bin/
+clear
+ls
+..
+ls
+cd bin
+ls
+clear
+go install templ
+cd /
+ls
+clear
+cd
+ls
+go
+go env
+go env gopath
+go env GOPATH
+go env GOPATH | cd
+cd | go env gopath
+cd (go env gopath)
+clear
+cd (go env gopath).value
+cd (go env gopath)
+cd (go env GOPATH)
+ls
+go env
+cd (go env GOROOT)
+ls
+cd pkg/
+ls
+..
+ls
+cd bin
+ls
+..
+ls
+clear
+ls
+cd ~
+clear
+ls
+clear
+go env
+cd (go env GOENV)
+cd Library/
+cd `Application Support/`
+cd go/
+ls
+cd telemetry/
+ls
+clear
+cd
+clear
+go env
+goreleaser build --snapshot --clean
+cd (go env GOPATH)
+cd bin
+clear
+ls
+go run templ generate -include-version=false
+go env
+cd (go env GOROOT)
+cd src/
+ls
+go run templ generate -include-version=false
+..
+clear
+ls
+cd bin
+ls
+.
+..
+cd lib
+ls
+templ
+clear
+ls
+cd bin
+ls
+clear
+cd (go env GOPATH)
+ls
+cd bin
+ls
+clear
+go env
+clear
+templ
+clear
+templ
+clear
+templ
+clear
+go get https://github.com/a-h/templ
+go get github.com/a-h/templ
+clear
+nvim
+clear
+nvim
+make
+clear
+..
+mv store/ ecommerce
+cd ecommerce/
+clear
+ls
+make
+go mod tidy
+go mod init
+clear
+go mod init github.com/ruan-molinari/ecommerce
+make
+go get github.com/a-h/templ
+clear
+make
+clear
+go get github.com/labstack/echo/v4
+clear
+nvim
+clear
+nvim
+nvim
+brew upgrade nvim
+brew install nvim
+brew -h
+brew info nvim
+brew info neovim
+brew info nvim
+clear
+make
+clear
+clear
+brew upgrade neovim
+clear
+brew update
+brew install --HEAD neovim
+clear
+nvim
+clear
+make
+clear
+make
+clear
+make
+clear
+nvim
+nvim .config/nvim/
+cd .config/
+cd nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+cd .conf
+cd kitty/
+nvim
+clear
+nvim
+nivm
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+clear
+nvim
+make
+nvim
+clear
+nvim
+nvim -v
+clear
+brew install --HEAD neovim
+brew -h
+brew doctor neovim
+brew info neovim
+nvim -h
+cd /opt/homebrew/
+ls
+cd Cellar/
+ls
+cd neovim/
+ls
+clear
+ls
+neovim -h
+nvim -h
+neovim
+nvim -v
+cd HEAD-aa840ab/
+ls
+cd bin
+ls
+..
+cd Library/
+cd Taps/
+cd homebrew/
+ls
+brew -h
+brew uninstall neovim
+clear
+nvim
+clear
+brew install neovim
+nvim -v
+clear
+nvim
+cd
+clear
+cd workspace/
+cd ecommerce/
+clear
+cd .config/
+cd nvim/
+clear
+nvim
+git add .
+git commit -m "fixing plugins that weren't working properly after migration to lazy"
+git push
+clear
+nvim
+clear
+nvim
+clear
+make
+clear
+make
+clear
+make
+clear
+make
+clear
+make
+clear
+docker -v
+docker
+brew install docker
+clear
+docker -v
+docker
+brew -h
+brew doctor
+clear
+brew list docker
+docker
+brew uninstall docker
+brew install docker
+docker
+man brew
+docker25
+brew list docker
+cd /opt/homebrew/Cellar/docker/25.0.3/bin/
+ls
+docker
+./docker
+clear
+,,
+..
+docker-compose
+docker
+clear
+ls
+..
+ls
+ls | where name.contains("docker")
+ls | where name.contains(docker)
+ls | where name =~ "docker"
+cd
+cd .docker/
+ls
+cd machine/
+ls
+..
+clear
+ls
+ls -a
+ls
+docker
+cd machine/
+ls
+..
+clear
+ls
+cd contexts/
+ls
+..
+clear
+ls
+cd run
+ls
+..
+cd sca
+ls
+..
+clear
+ls
+cd devenvironments/
+ls
+..
+clear
+dockes run
+ls
+cd run
+ls
+..
+lc
+clear
+..
+ls
+ls -a
+cd .docker/
+clear
+docker
+clear
+nvim
+clear
+nvim
+go-blue
+..
+go install github.com/melkeydev/go-blueprint@latest
+ls
+mv ecommerce/ htmx-go
+..
+clear
+go-blueprint create
+cd ecommerce/
+clear
+go get github.com/markbates/goth
+ clear\
+clear
+86400 * 30
+8600 / 24
+(86400 / 24) / 60
+go get github.com/gorilla/sessions
+nvim
+go get github.com/gorilla/mux
+clear
+go get -v
+go get -h
+go build
+go mod tidy
+nvim
+go mod tidy -h
+go help mod tidy
+clear
+..
+ls
+cd htmx-go/
+ls
+go get github.com/nabowler
+/
+go get github.com/nabowler/echo-gothic
+..
+cd htmx-go/
+make
+go get github.com/a-h/templ
+cd workspace/
+ls
+cd go-htmx/
+ls
+clear
+..
+ls
+cd htmx-go/
+ls
+..
+cd go-htmx/
+make
+clear
+go mod tidy
+nvim
+clear
+make
+go run main.go
+go build
+make run
+clear
+nvim
+go mod tidy
+ls
+clear
+nvim
+clear
+go -h
+go get github.com/a-h/templ
+nvim
+go mod tidy\
+go mod tidy
+clear
+vim
+nvim
+go get github.com/a-h/templ
+make
+nvim
+templ
+templ generate
+make
+clear
+nvim
+make
+nvim
+clear
+nvim
+make run
+clear
+make run
+make; make run
+make urn
+make run
+clear
+make run
+clear
+make
+make run
+clear
+make
+go-blueprint create
+cg go-oauth/
+cd workspace/
+ls
+..
+ls
+mv go-oauth/ workspace/go-oauth
+cd workspace/go-oauth/
+clear
+make
+make run
+docker-compose 
+docker-compose exec
+docker-compose run
+docker-compose run -h
+ls
+nvim
+docker-compose run psql
+make run
+clear
+go-blueprint -h
+clear
+clear
+docker-compose run psql
+docker-credentials-desktop
+..
+rm -r -f -v go-oauth/
+go-blueprint --advanced
+go-blueprint create --advanced
+cd go-oauth/
+templ generate
+clear
+nvim
+make
+make run
+clear
+ls
+make docker-run
+make clean
+clear
+make docker-compose.yml
+make docker-run
+cd .docker/
+clear
+ls
+nvim config.json
+make docker-run
+nvim
+make watch
+clear
+make all build
+make run
+clea
+clear
+templ generate
+make run
+clear
+nvim
+..
+clear
+mkdir go
+cd go
+clear
+mkdir playground
+cd playground/
+clear
+go
+go main.go
+go run main.go
+clear
+go run main.go
+clear
+nvim
+clear
+..
+clear
+ls
+clear
+cd estudo/
+ls
+go mod init estudo
+clear
+go main.go
+go run main.go
+clear
+nvim
+make
+clear
+make
+clear
+make
+clear
+make
+ls
+clear
+cd go
+clear
+ls
+..
+cd workspace/
+cd go
+clear
+ls
+mkdir go-friend-crm
+clear
+cd go-friend-crm/
+clear
+ls
+clear
+mkdir cmd
+go mod init go-frind-crm
+clear
+nvim
+make
+clear
+make
+clear
+go get github.com/mattn/go-sqlite3
+go mod tidy
+go build
+make build
+clear
+go mod tidy
+nvim
+ nvim
+go mod tid;
+go mod tidy
+clear
+nvim
+make
+go mod tidy
+clear
+make
+clear
+make
+nvim
+clear
+make
+clear
+..
+ls
+mv go-friend-crm/ go-people-crm
+clear
+cd go-people-crm/
+clear
+ls
+nvim
+git init
+git config --global init.defaultBranch main
+git init
+ls
+ls -a
+curl -o .gitignore # Created by https://www.toptal.com/developers/gitignore/api/go,macos
+# Edit at https://www.toptal.com/developers/gitignore?templates=go,macos
+### Go ###
+# If you prefer the allow list template instead of the deny list, see community template:
+# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
+#
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+# Test binary, built with `go test -c`
+*.test
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+# Dependency directories (remove the comment below to include it)
+# vendor/
+# Go workspace file
+go.work
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+# Icon must end with two \r
+Icon
+# Thumbnails
+._*
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+### macOS Patch ###
+# iCloud generated files
+*.icloud
+ls
+ls -a
+clear
+curl -o .gitignore https://www.toptal.com/developers/gitignore/api/go,macos
+ls -a
+ls
+ls -t
+ls -h
+ls -l
+clear
+ls
+git add .
+git -h
+git info
+git status
+git commit -m "initial commit"
+clear
+git remote add origin https://github.com/ruan-molinari/go-people-crm.git
+git push -u origin main
+git help
+git show
+clear
+git help
+git push
+ls
+git config --global init.defaultBranch master
+clear
+ls
+clear
+nvim .gitignore
+clear
+nvim
+..
+mkdir interfaces
+cd interfaces/
+clear
+go mod init interfaces
+make
+clear
+make
+makhe
+make
+clear
+make
+clear
+cd .config/nvim
+nvim
+vim
+nvim
+clear
+nvim
+clear
+nvim
+nvim
+nvim
+clear
+..
+..
+ls
+cd estudo/
+ls
+make
+clear
+nvim
+..
+mkdir concurrency
+cd concurrency/
+nvim
+go mod init concurrency
+go run goroutines.go
+nvim
+go run main.go
+clear
+go run main.go
+clear
+make
+clear
+make
+clear
+make
+clear
+makne
+clear
+make
+clear
+make
+clear
+make
+clear
+make
+clear
+make
+clear
+nvim
+make
+clear
+make
+clear
+make
+clear
+make
+clear
+..
+clear
+mkdir EmailN
+cd EmailN/
+clear
+go mod init emailn
+..
+rm -r -f -v EmailN/
+mkdir emailr
+cd emailr/
+go mod init emailr
+clear
+nvim
+clear
+go get github.com/rs/xid
+nvim
+cd .config/nvim
+brew install tabbyml/tabby/tabby
+tabby serve --device metal --model TabbyML/StarCoder-18
+tabby -h
+tabby download
+tabby serve --device metal --model TabbyML/StarCoder-1B
+tabby help
+brew uninstall tabbyml/tabby/tabby
+clear
+node -v
+clear
+mkdir ./tabby-client
+mkdir ./tabby-client .tabby-client
+cd .tabby-client/
+mkdir agent
+cd agent/
+clear
+nvim config.toml
+cd
+node -h
+node -c
+node -C
+node --check
+$env.PATH
+pwd
+where
+where node
+node -v
+node --path
+node -h
+clear
+npm -h
+npm -l
+clear
+ls -a
+path node
+which node
+nvim
+clear
+nvim
+clear
+cd .tabby/
+ls
+..
+cd .tabby-client/
+ls
+cd agent/
+ls
+nvim
+nvim data.json
+clear
+cd .config/nvim
+nvim
+cd .config/kitty/
+nvim
+nvim
+nvim
+clear
+nvim
+cd workspace/
+ls
+cd rust/ls
+cd rust
+ls
+clear
+cargo new countdown
+cd countdown/
+clear
+cargo run
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo update create-tauri-app
+cargo install create-tauri-app --locked
+clear
+..
+ls
+create-tauri-app -v
+cargo create-tauri-app -v
+cargo create-tauri-app pomodoro
+cd pomodoro/
+clear
+nvim
+clear
+cargo tauri dev
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+clear
+cd workspace/rust
+us
+..
+ls
+cd rustlings/
+clear
+ls
+clear
+nvim
+cd
+cd workspace
+ls
+cd rusp
+cd rust
+ls
+clear
+cd pomodoro
+ls
+clear
+cargo run
+clear
+cargo run
+clear
+cargo run
+cargo ru
+clear
+cargo run
+ls
+cd workspace
+ls
+cd go
+ls
+cd emailr/
+clear
+ls 
+nvim
+..
+ls
+clear
+cargo new --lib stopwatch-rs
+cd stopwatch-rs/
+clear
+ls
+nvim
+cd workspace/
+ls
+cd rust
+ls
+cd countdown
+ls
+nvim
+cargo install zoxide --locked
+cd $nu.env-path
+cd $nu.config-path
+$nu
+ls
+ls -a
+z .config/nvim/
+nvim $nu.env-path
+ls
+cd $nu.env-path
+$nu
+cd ../$nu.config-path
+cd .config/nushell/
+clear
+cargo install --git https://github.com/ajeetdsouza/zoxide
+nu -v
+nu help
+cargo update nushell
+cargo install nushell
+cargo -h
+cargo --list
+brew -l
+brew -h
+brew list
+brew install nushell
+clear
+nvim
+cargo check
+clear
+cargo check
+clear
+z .config/nvim
+..
+uls
+us
+cuiar
+ls
+clear
+ls
+cd open
+ls
+nvim
+cargo new --lib testando123
+cd testando123/
+nvim
+..
+rm -r -f -v testando123/
+clear
+cargo test
+clear
+cargo test
+clear
+cargo check
+clear
+git remote add origin https://github.com/ruan-molinari/stopwatch-rs.git
+git fetch
+git add .
+git commit -m "initial commit"
+git push -u origin main
+git push -u origin master
+clear
+git -h
+nvim
+clear
+ls
+ls -a\
+ls -a
+rm -r -f -v .git
+clear
+git remote add origin https://github.com/ruan-molinari/stopwatch-rs.git
+git remote add origin https://github.com/ruan-molinari/stopwatch-rs.git\
+git init
+git remote add origin https://github.com/ruan-molinari/stopwatch-rs.git\
+git add .
+git commit -m "initial commit"
+git push -u origin main
+git push
+git remote -h
+git remote set-url https://github.com/ruan-molinari/stopwatch-rs.git
+git remote set-url origin https://github.com/ruan-molinari/stopwatch-rs.git
+git push
+git branch -M main
+git push -u origin main
+ls
+clear
+z nvim
+cd nvim
+clear
+nvim
+cd nvim
+nvim
+git --status
+git -h
+git diff
+clear
+git add .
+git commit -m "updating things"
+..
+git add .
+git push
+clear
+git diff
+clear
 ..
