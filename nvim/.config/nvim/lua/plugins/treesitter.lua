@@ -30,6 +30,7 @@ return {
           "html",
           "go",
           "templ",
+          "norg",
         },
 
         -- Install parsers synchronously (only applied to `ensure_installed`)

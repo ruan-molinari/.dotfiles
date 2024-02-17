@@ -4,6 +4,27 @@ local has_words_before = function()
   return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 end
 
+local ensure_installed = {
+  'tsserver',
+  'eslint',
+  -- 'rust_analyzer', -- rust-tools is setting it already
+  'beancount',
+  'angularls',
+  'lua_ls',
+  'clangd',
+  'jsonls',
+  'cssls',
+  'cssmodules_ls',
+  'html',
+  'pylsp',
+  'svelte',
+  -- Zigtools for Zig --
+  'zls',
+  'gopls',
+  'htmx',
+  'templ',
+};
+
 return {
   {
     'VonHeikemen/lsp-zero.nvim',
@@ -166,26 +187,7 @@ return {
       end)
 
       require('mason-lspconfig').setup({
-        ensure_installed = {
-          'tsserver',
-          'eslint',
-          -- 'rust_analyzer', -- rust-tools is setting it already
-          'beancount',
-          'angularls',
-          'lua_ls',
-          'clangd',
-          'jsonls',
-          'cssls',
-          'cssmodules_ls',
-          'html',
-          'pylsp',
-          'svelte',
-          -- Zigtools for Zig --
-          'zls',
-          'gopls',
-          'htmx',
-          'templ',
-        },
+        ensure_installed = ensure_installed,
         handlers = {
           lsp_zero.default_setup,
 
