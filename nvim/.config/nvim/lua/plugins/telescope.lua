@@ -2,6 +2,12 @@ local config = function ()
   local telescope = require("telescope")
   telescope.setup({
     defaults = {
+      file_ignore_patterns = {
+        "/node_modules",
+        "/target",
+        "/build",
+        "/zig-cache",
+      },
       mappings = {
         i = {
           ['<C-n>'] = 'move_selection_next',

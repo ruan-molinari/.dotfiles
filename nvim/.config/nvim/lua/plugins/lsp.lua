@@ -191,6 +191,18 @@ return {
         handlers = {
           lsp_zero.default_setup,
 
+          angularls = function ()
+            local languageServerPath = vim.fn.stdpath("config").."/languageserver"
+            local cmd = {"ngserver", "--stdio", "--tsProbeLocations", languageServerPath, "--ngProbeLocation", languageServerPath, "--viewEngine"}
+
+            require('angularls').setup({
+              cmd = cmd,
+              on_new_config = function (new_config, new_root_dir)
+                new_config.cmd = cmd
+              end,
+            })
+          end,
+
         -- lua_ls
           lua_ls = function()
             -- (Optional) Configure lua language server for neovim
@@ -244,7 +256,7 @@ return {
               -- these override the defaults set by rust-tools.nvim
               -- see https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#rust_analyzer
               server = {
-                cmd = { '/Users/ruan/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rust-analyzer' },
+                --cmd = { '/Users/ruan/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rust-analyzer' },
                 -- standalone file support
                 -- setting it to false may improve startup time
                 standalone = true,
