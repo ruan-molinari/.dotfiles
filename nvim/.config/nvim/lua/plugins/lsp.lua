@@ -79,7 +79,15 @@ return {
           ['<C-S-n>'] = cmp.mapping.scroll_docs(-4),
           ['<C-S-e>'] = cmp.mapping.scroll_docs(4),
           ['<C-e>'] = cmp.mapping.select_prev_item(cmp_select),
-          ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+          ["<C-n>"] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+              cmp.select_next_item()
+            elseif has_words_before() then
+              cmp.complete()
+            else
+              fallback()
+            end
+          end, { "i", "s" }),
           ['<CR>'] = cmp.mapping.confirm({ select = true }),
           ['<C-Space>'] = cmp.mapping.complete(),
 
@@ -260,12 +268,81 @@ return {
                 -- standalone file support
                 -- setting it to false may improve startup time
                 standalone = true,
+
+                -- disabling unresolved proc-macro not expanded warnings
+                diagnostics = {
+                  disabled = {
+                    'unresolved-proc-macro'
+                  }
+                }
               }, -- rust-analyzer options
             }
             rust_tools.setup(opts)
 
             -- require('lspconfig').rust_analyzer.setup(opts) -- uncomment if rust-tools is not being used
           end
+        }
+      })
+    end
+  },
+  -- Linting
+  {
+    "mfussenegger/nvim-lint",
+    event = {
+      "BufReadPre",
+      "BufNewFile",
+    },
+    config = function ()
+      local lint = require("lint")
+
+      lint.linters_by_ft = {
+        javascript = { "eslint_d" },
+        typescript = { "eslint_d" },
+        reactjavascript = { "eslint_d" },
+        reacttypescript = { "eslint_d" },
+        svelte = { "eslint_d" },
+        css = { "stylelint" },
+        scss = { "stylelint" },
+        sass = { "stylelint" },
+        less = { "stylelint" },
+        lua = { "luacheck" },
+        go = { "golangcilint" },
+      }
+
+      vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+        callback = function()
+          require("lint").try_lint()
+        end,
+      })
+    end,
+    keys = {
+      { "<leader>ll", function ()
+        require("lint").try_lint()
+      end,
+        {
+          desc = "Trigger linting for current file"
+        }
+      }
+    }
+  },
+  {
+    "stevearc/conform.nvim",
+    config = function ()
+      local conform = require("conform")
+
+      vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+        pattern = "*",
+        callback = function (args)
+          conform.format({ bufnr = args.buf })
+        end,
+      })
+
+      conform.setup({
+        formatters_by_ft = {
+          lua = { "stylua" },
+          javascript = { { "prettierd", "prettier" } },
+          typescript = { { "prettierd", "prettier" } },
+          go = { { "gofumpt", "gofmt" } }
         }
       })
     end
