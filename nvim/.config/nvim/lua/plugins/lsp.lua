@@ -171,8 +171,8 @@ return {
       },
       {'williamboman/mason-lspconfig.nvim'},
       {'MunifTanjim/eslint.nvim'},
-      {'LhKipp/nvim-nu'},
-      {'simrat39/rust-tools.nvim'}
+      {'LhKipp/nvim-nu', cmd = {'TSInstall nu'}},
+      {'simrat39/rust-tools.nvim'},
     },
     keys = function ()
       local buf = vim.lsp.buf

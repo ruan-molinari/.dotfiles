@@ -29,6 +29,7 @@ return {
           "python",
           "html",
           "go",
+          "nu",
           "templ",
           "norg",
         },
