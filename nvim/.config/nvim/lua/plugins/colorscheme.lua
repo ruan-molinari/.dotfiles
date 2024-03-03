@@ -4,10 +4,14 @@ local themes = {
   ['gruvbox'] = { 'morhetz/gruvbox', 'gruvbox', {} },
   ['noctis'] = { 'talha-akram/noctis.nvim', 'noctis', {} },
   ['tokyodark'] = { 'tiagovla/tokyodark.nvim', 'tokyodark', {} },
+  ['awesome'] = { 'rafi/awesome-vim-colorschemes', 'deus', {} },
+  ['andromeda'] = { 'safv12/andromeda.vim', 'andromeda', {} },
+  ['modest'] = { 'matveyt/vim-modest', 'modest', {} },
+  ['incorrectish'] = { 'incorrectish/incorrectish_colors', 'incorrectish_colors', {} },
 }
 
 -- Set the active theme here, only this will be loaded
-local active_theme = 'tokyodark'
+local active_theme = 'awesome'
 
 return {
   {
