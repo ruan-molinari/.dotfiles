@@ -9,5 +9,6 @@ echo "Stow dotfiles"
 stow nvim
 stow kitty
 stow nushell
+stow wezterm
 echo "Back to home"\
 cd ..
