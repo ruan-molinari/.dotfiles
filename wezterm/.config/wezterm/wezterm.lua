@@ -7,8 +7,18 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 config.color_scheme = 'rose-pine-moon'
 
+-- Buttons are integrated inside the window instead of title bar:
+-- config.window_decorations = 'RESIZE|INTEGRATED_BUTTONS'
+config.window_decorations = 'RESIZE'
+config.window_padding = {
+  -- Uncomment if integrated buttons are set in window_decorations:
+  -- top = 20
+}
+
 config.tab_bar_at_bottom = true
 
+-- From now on, colors were set manually
+-- TODO: find a way to get color values directly from selected color_scheme
 config.window_frame = {
   active_titlebar_bg = '#232136'
 }
