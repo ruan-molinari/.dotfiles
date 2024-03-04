@@ -18,7 +18,6 @@ local ensure_installed = {
   'html',
   'pylsp',
   'svelte',
-  -- Zigtools for Zig --
   'zls',
   'gopls',
   'htmx',
@@ -59,7 +58,6 @@ return {
       -- And you can configure cmp even more, if you want to.
       local cmp = require('cmp')
       local cmp_select = { behavior = cmp.SelectBehavior.Select }
-      local cmp_action = lsp_zero.cmp_action()
 
       local luasnip = require('luasnip')
 
@@ -96,7 +94,7 @@ return {
           ["<Tab>"] = cmp.mapping(function(fallback)
             if cmp.visible() then
               cmp.select_next_item()
-            -- You could replace the expand_or_jumpable() calls with expand_or_locally_jumpable() 
+            -- You could replace the expand_or_jumpable() calls with expand_or_locally_jumpable()
             -- this way you will only jump inside the snippet region
             elseif luasnip.expand_or_locally_jumpable() then
               luasnip.expand_or_jump()
@@ -188,7 +186,7 @@ return {
 
       --- if you want to know more about lsp-zero and mason.nvim
       --- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guides/integrate-with-mason-nvim.md
-      lsp_zero.on_attach(function(client, bufnr)
+      lsp_zero.on_attach(function(_, bufnr)
         -- see :help lsp-zero-keybindings
         -- to learn the available actions
         lsp_zero.default_keymaps({buffer = bufnr})
@@ -203,9 +201,9 @@ return {
             local languageServerPath = vim.fn.stdpath("config").."/languageserver"
             local cmd = {"ngserver", "--stdio", "--tsProbeLocations", languageServerPath, "--ngProbeLocation", languageServerPath, "--viewEngine"}
 
-            require('angularls').setup({
+            require('lspconfig').angularls.setup({
               cmd = cmd,
-              on_new_config = function (new_config, new_root_dir)
+              on_new_config = function (new_config, _)
                 new_config.cmd = cmd
               end,
             })
@@ -213,9 +211,28 @@ return {
 
         -- lua_ls
           lua_ls = function()
-            -- (Optional) Configure lua language server for neovim
-            local lua_opts = lsp_zero.nvim_lua_ls()
-            require('lspconfig').lua_ls.setup(lua_opts)
+            require('lspconfig').lua_ls.setup({
+              settings = {
+                  Lua = {
+                    runtime = {
+                      version = 'LuaJIT',
+                    },
+                    diagnostics = {
+                      globals = {
+                        'vim',
+                        'require',
+                      },
+                    },
+                    workspace = {
+                      library = vim.api.nvim_get_runtime_file("", true),
+                    },
+                    telemetry = {
+
+                    }
+                    --globals = { "vim" },
+                  },
+              },
+            })
           end,
 
           html = function ()
@@ -285,55 +302,15 @@ return {
       })
     end
   },
-  -- Linting
-  {
-    "mfussenegger/nvim-lint",
-    event = {
-      "BufReadPre",
-      "BufNewFile",
-    },
-    config = function ()
-      local lint = require("lint")
 
-      lint.linters_by_ft = {
-        javascript = { "eslint_d" },
-        typescript = { "eslint_d" },
-        reactjavascript = { "eslint_d" },
-        reacttypescript = { "eslint_d" },
-        svelte = { "eslint_d" },
-        css = { "stylelint" },
-        scss = { "stylelint" },
-        sass = { "stylelint" },
-        less = { "stylelint" },
-        lua = { "luacheck" },
-        go = { "golangcilint" },
-      }
-
-      vim.api.nvim_create_autocmd({ "BufWritePost" }, {
-        pattern = "*",
-        callback = function()
-          require("lint").try_lint()
-        end,
-      })
-    end,
-    keys = {
-      { "<leader>ll", function ()
-        require("lint").try_lint()
-      end,
-        {
-          desc = "Trigger linting for current file"
-        }
-      }
-    }
-  },
-  -- Autocompletion
+  -- Formatting
   {
     "stevearc/conform.nvim",
     config = function ()
       local conform = require("conform")
 
       vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-        pattern = "*",
+        pattern = { "*" },
         callback = function (args)
           conform.format({ bufnr = args.buf })
         end,

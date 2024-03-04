@@ -14,14 +14,13 @@ map("", "e", "k", {})
 map("", "i", "l", {})
 map("", "k", "e", {})
 map("", "K", "E", {})
---map("", "m", "n", {})
 map("", "l", "i", {})
-map("", "K", "N", {})
+map("", "L", "I", {})
 map("", "N", "5j", {})
 map("", "E", "5k", {})
-map("", "L", "I", {})
 
-map("", "H", "0", {})
+
+map("", "H", "^", {})
 map("", "I", "$", {})
 
 -- Shortcut for quiting and saving
@@ -37,6 +36,4 @@ map('n', '<esc>', ":noh<return><esc>", {})
 map('n', '<esc>^[', "<esc>^[", {})
 
 map('n', '<leader>tv', ':Ex<cr>', {})
-
-
 
