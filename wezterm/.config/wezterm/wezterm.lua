@@ -17,6 +17,8 @@ config.window_padding = {
 
 config.tab_bar_at_bottom = true
 
+config.window_background_opacity = 0.5
+
 -- From now on, colors were set manually
 -- TODO: find a way to get color values directly from selected color_scheme
 config.window_frame = {

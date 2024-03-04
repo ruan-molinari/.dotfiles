@@ -1,38 +1,4 @@
 clear
-cargo test
-clear
-cargo tets
-cargo test
-clear
-ls
-cd src/
-ls
-cd bin/
-ls
-mv main.rs part-1.rs
-cd ..
-clear
-ls
-clear
-nvim
-ls
-rm -r -f -v target/
-clear
-cargo run
-clear
-nvim
-ls
-cd ..
-ls
-mv day-1/ day-01
-clear
-ls
-cd day-01/
-clear
-ls
-clear
-nvim\
-clear
 nvim
 cargo test
 clear
@@ -9998,3 +9964,37 @@ ls
 ls -a
 nvim .gitignore
 git status
+git add nushell/
+git add .gitignore
+git commit -m "adding aliases"
+git push
+clear
+cd nushell/
+clear
+cd
+cd .config/nushell/
+ls
+git ignore history.txt
+git status history.txt
+cd
+cd .dotfiles/
+ls
+clear
+nvim .gitignore
+git add .gitignore
+git add nushell/
+git status
+git diff nushell/
+cd
+cd .dotfiles/
+ls
+git rm .gitignore
+git add .gitignore
+ls
+git add nushell/
+ls
+clear
+git status
+git diff
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch history.txt' HEAD
+git diff
