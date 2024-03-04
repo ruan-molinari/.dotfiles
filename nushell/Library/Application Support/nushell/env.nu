@@ -81,12 +81,14 @@ $env.PATH = ($env.PATH | prepend '/opt/homebrew/opt/bison/bin')
 # Adding Bazel to path
 $env.PATH = ($env.PATH | prepend '/opt/homebrew/opt/bazel/bin')
 
-# Zig
-$env.PATH = ($env.PATH | prepend '/Users/ruan/.zig')
-
 # Go
+$env.GOPATH = ([$env.HOME 'go'] | path join)
 $env.PATH = ($env.PATH | prepend '/usr/local/go/bin')
-$env.PATH = ($env.PATH | prepend ([$env.HOME 'go/bin'] | path join))
+$env.PATH = ($env.PATH | prepend ([$env.GOPATH 'bin'] | path join))
+
+
+# Docker binaries
+$env.PATH = ($env.PATH | prepend '/Applications/Docker.app/Contents/Resources/bin')
 
 # Python
 $env.PATH = ($env.PATH | prepend '/Library/Frameworks/Python.framework/Versions/Current/bin')
