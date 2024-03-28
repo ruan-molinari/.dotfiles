@@ -19,9 +19,9 @@ map("", "L", "I", {})
 map("", "N", "5j", {})
 map("", "E", "5k", {})
 
-
+-- Jumps to first/last non-blank character
 map("", "H", "^", {})
-map("", "I", "$", {})
+map("", "I", "g_", {})
 
 -- Shortcut for quiting and saving
 map("", "Q", ":q<cr>", {})

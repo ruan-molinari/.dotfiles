@@ -12,3 +12,5 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 
 vim.opt.cursorline = true
+
+vim.opt.scrolloff = 10
