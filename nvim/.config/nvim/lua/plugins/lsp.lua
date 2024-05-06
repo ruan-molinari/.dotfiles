@@ -19,6 +19,7 @@ local ensure_installed = {
   'pylsp',
   'svelte',
   'zls',
+  'ols',
   'gopls',
   'htmx',
   'templ',
@@ -170,7 +171,11 @@ return {
       {'williamboman/mason-lspconfig.nvim'},
       {'MunifTanjim/eslint.nvim'},
       {'LhKipp/nvim-nu', cmd = {'TSInstall nu'}},
-      {'simrat39/rust-tools.nvim'},
+      {
+        'mrcjkb/rustaceanvim',
+        version = '^4',
+        ft = { 'rust' },
+      },
     },
     keys = function ()
       local buf = vim.lsp.buf
@@ -184,6 +189,10 @@ return {
       local lsp_zero = require('lsp-zero')
       lsp_zero.extend_lspconfig()
 
+      local lspconfig = require('lspconfig')
+      local util = require('lspconfig.util')
+      local configs = require('lspconfig.configs')
+
       --- if you want to know more about lsp-zero and mason.nvim
       --- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guides/integrate-with-mason-nvim.md
       lsp_zero.on_attach(function(_, bufnr)
@@ -192,16 +201,52 @@ return {
         lsp_zero.default_keymaps({buffer = bufnr})
       end)
 
+      -- Gleam lsp setup
+      -- gleam lsp comes with the cli tool, no need to `ensure_installed` then
+      if not configs.gleam then
+        configs.gleam = {
+          default_config = {
+            cmd = { 'gleam', 'lsp' },
+            filetypes = { 'gleam' },
+            root_dir = function (fname)
+              return util.root_pattern('gleam.toml', '.git') (fname) or vim.loop.os_homedir()
+            end,
+          },
+        }
+      end
+      lspconfig.gleam.setup({
+        on_attach = lsp_zero.on_attach
+      })
+
+      lspconfig.clangd.setup({
+        cmd = {
+          -- "--background-index",
+          -- "--suggest-missing-includes",
+          "-j=40",
+          "--clang-tidy",
+        },
+        filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto", "metal" },
+      })
+
       require('mason-lspconfig').setup({
         ensure_installed = ensure_installed,
         handlers = {
           lsp_zero.default_setup,
 
+          ols = function ()
+            lspconfig.ols.setup({
+              cmd = {"ols"},
+              filetypes = {"odin"},
+              single_file_support = true,
+              enable_inlay_hints = true,
+            })
+          end,
+
           angularls = function ()
             local languageServerPath = vim.fn.stdpath("config").."/languageserver"
             local cmd = {"ngserver", "--stdio", "--tsProbeLocations", languageServerPath, "--ngProbeLocation", languageServerPath, "--viewEngine"}
 
-            require('lspconfig').angularls.setup({
+            lspconfig.angularls.setup({
               cmd = cmd,
               on_new_config = function (new_config, _)
                 new_config.cmd = cmd
@@ -211,7 +256,7 @@ return {
 
         -- lua_ls
           lua_ls = function()
-            require('lspconfig').lua_ls.setup({
+            lspconfig.lua_ls.setup({
               settings = {
                   Lua = {
                     runtime = {
@@ -239,7 +284,7 @@ return {
             local html_opts = {
               filetypes = { "html", "templ" }
             }
-            require('lspconfig').html.setup(html_opts)
+            lspconfig.html.setup(html_opts)
           end,
 
         -- eslint
@@ -268,9 +313,7 @@ return {
 
         -- Rust Analyzer configuration
           rust_analyzer = function()
-            local rust_tools = require('rust-tools')
-
-            local opts = {
+            vim.g.rustaceanvim = {
               tools = { -- rust-tools options
                 inlay_hints = {
                   only_current_line = true
@@ -294,10 +337,7 @@ return {
                 }
               }, -- rust-analyzer options
             }
-            rust_tools.setup(opts)
-
-            -- require('lspconfig').rust_analyzer.setup(opts) -- uncomment if rust-tools is not being used
-          end
+          end,
         }
       })
     end
@@ -327,3 +367,4 @@ return {
     end
   }
 }
+

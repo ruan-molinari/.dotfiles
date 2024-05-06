@@ -29,9 +29,11 @@ return {
 
       lint.linters_by_ft = opts.linters_by_ft
       vim.api.nvim_create_autocmd(opts.events, {
-        pattern = { "*" },
+        --pattern = { "*" },
         callback = function()
-          lint.try_lint()
+          lint.try_lint(nil, {
+            ignore_errors = true
+          })
         end,
       })
     end,

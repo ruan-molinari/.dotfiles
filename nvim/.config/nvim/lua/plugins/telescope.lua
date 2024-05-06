@@ -3,10 +3,10 @@ local config = function ()
   telescope.setup({
     defaults = {
       file_ignore_patterns = {
-        "/node_modules",
-        "/target",
-        "/build",
-        "/zig-cache",
+        "node_modules",
+        "target",
+        "build",
+        "zig-cache",
       },
       mappings = {
         i = {

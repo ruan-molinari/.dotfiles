@@ -9,7 +9,7 @@ return {
     init = function ()
       vim.filetype.add({
         extension = {
-          templ = "templ"
+          templ = "templ",
         }
       })
       vim.api.nvim_create_autocmd("BufEnter", {
@@ -25,6 +25,7 @@ return {
         "typescript",
         "angular",
         "c",
+        "cpp",
         "lua",
         "rust",
         "json",
