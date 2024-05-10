@@ -7,6 +7,9 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 config.color_scheme = 'rose-pine-moon'
 
+config.font = wezterm.font('CaskaydiaCove Nerd Font Mono', { })
+config.font_size = 20.0
+
 -- Buttons are integrated inside the window instead of title bar:
 -- config.window_decorations = 'RESIZE|INTEGRATED_BUTTONS'
 config.window_decorations = 'RESIZE'
@@ -17,7 +20,7 @@ config.window_padding = {
 
 config.tab_bar_at_bottom = true
 
-config.window_background_opacity = 0.5
+config.window_background_opacity = 1.00
 
 -- From now on, colors were set manually
 -- TODO: find a way to get color values directly from selected color_scheme
