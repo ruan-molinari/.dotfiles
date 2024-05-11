@@ -28,13 +28,7 @@
 
   programs.firefox.enable = true;
   home.packages = with pkgs; [
-    git
-    nerdfonts
-    zoxide
-    wezterm
-    starship
-    neovim
-    nushell
+    instawow
   ];
 
   programs.gpg.enable = true;

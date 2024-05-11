@@ -28,6 +28,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     	git
+      nerdfonts
     	neovim
     	wezterm
     	nushell
