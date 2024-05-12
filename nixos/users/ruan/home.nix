@@ -26,12 +26,22 @@
     )
     + userSettings.username;
 
-  programs.firefox.enable = true;
-  home.packages = with pkgs; [
-    instawow
-  ];
+  programs = {
+    gpg.enable = true;
+    firefox.enable = true;
 
-  programs.gpg.enable = true;
+    # TODO: set up and config nushell through nix insted of standalone files
+    # nushell.enable = true;
+
+    carapace.enable = true;
+    carapace.enableNushellIntegration = true;
+
+    starship.enable = true;
+  };
+
+  home.packages = with pkgs; [
+
+  ];
 
   home.sessionVariables = {
     EDITOR = userSettings.editor;

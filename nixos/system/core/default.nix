@@ -19,8 +19,11 @@
 
   networking.networkmanager.enable = true;
 
+  services.blueman.enable = true;
   services.printing.enable = true;
   services.flatpak.enable = true;
+  services.ratbagd.enable = true;
+  services.input-remapper.enable = true;
   
   users.users.${userSettings.username} = {
     isNormalUser = true;
@@ -34,6 +37,21 @@
     	nushell
     	starship
     	zoxide
+
+      libratbag # Configuration library for gaming mice
+      piper # GTK frontend for libratbag mouse config daemon
+
+      # Programming languages/LSPs/tools
+      cargo
+      rustup
+      zig
+      zls
+      go
+      odin
+      ols
+      python3
+      nodejs_20
+      bun
     ];
   };
 }
