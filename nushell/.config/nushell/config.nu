@@ -4,12 +4,7 @@ use core/completions.nu *
 use core/hooks.nu *
 use core/keybindings.nu *
 
-source ~/.zoxide.nu
-
 # Aliases
-# When zoxide isn't working properly, use `ccd`
-alias ccd = cd
-alias cd = z
 alias vim = nvim
 
 # Defining overriding open command to work properly with nu

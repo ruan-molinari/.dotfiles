@@ -69,10 +69,11 @@ $env.PATH = ($env.PATH | prepend ([$env.HOME '.cargo/bin'] | path join))
 
 # FNM
 # load env variables
-fnm env --json | from json | load-env
+try {
+  fnm env --json | from json | load-env
+  $env.PATH = ($env.PATH | append [$"($env.FNM_MULTISHELL_PATH)/bin"])
+}
 
-# add dynamic fnm path
-$env.PATH = ($env.PATH | append [$"($env.FNM_MULTISHELL_PATH)/bin"])
 # FNM END #
 
 # Adding homebrew bison to PATH
@@ -96,4 +97,9 @@ alias python = python3
 alias py = python3
 alias pip = pip3
 
-zoxide init nushell | save -f ~/.zoxide.nu
+# Trying to load zoxide
+try {
+  zoxide init nushell | save -f ~/.zoxide.nu 
+  alias ccd = cd
+  alias cd = z
+}
