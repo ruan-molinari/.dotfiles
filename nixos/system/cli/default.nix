@@ -10,8 +10,6 @@
     #  ./linux.nix
     #]
     #else [];
-
-
   ];
 
   environment.systemPackages = with pkgs; [
@@ -31,5 +29,6 @@
     starship
   ];
 
+  users.defaultUserShell = pkgs.nushell;
   environment.shells = with pkgs; [nushell];
 }
