@@ -7,12 +7,13 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 config.color_scheme = 'rose-pine-moon'
 
-config.font = wezterm.font('CaskaydiaCove Nerd Font Mono', { })
-config.font_size = 20.0
+config.font = wezterm.font_with_fallback { 'CaskaydiaCove Nerd Font Mono', 'JetBrains Mono' }
+config.font_size = 16.0
 
 -- Buttons are integrated inside the window instead of title bar:
 -- config.window_decorations = 'RESIZE|INTEGRATED_BUTTONS'
 config.window_decorations = 'RESIZE'
+
 config.window_padding = {
   -- Uncomment if integrated buttons are set in window_decorations:
   -- top = 20
