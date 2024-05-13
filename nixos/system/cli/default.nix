@@ -26,6 +26,9 @@
     fzf
     zoxide
     usbutils
+    nushell
+    wezterm
+    starship
   ];
 
   environment.shells = with pkgs; [nushell];

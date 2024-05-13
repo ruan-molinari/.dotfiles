@@ -30,17 +30,14 @@
     description = userSettings.name;
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-    	git
       nerdfonts
-    	neovim
-    	wezterm
-    	nushell
-    	starship
-    	zoxide
+      usbutils
+      appimage-run
 
       libratbag # Configuration library for gaming mice
       piper # GTK frontend for libratbag mouse config daemon
 
+      # TODO: move programming language config to a separate file/module
       # Programming languages/LSPs/tools
       cargo
       rustup
@@ -49,7 +46,13 @@
       go
       odin
       ols
-      python3
+
+      (pkgs.python3.withPackages (python-pkgs: [
+        python-pkgs.pip
+        python-pkgs.pandas
+        python-pkgs.requests
+      ]))
+
       nodejs_20
       bun
     ];

@@ -8,6 +8,7 @@
 }: {
   imports = [
     # ./nvim
+    # ./terminal
   ]
   ++ (
     if systemSettings.system == "x86_64-linux"
@@ -29,6 +30,7 @@
   programs = {
     gpg.enable = true;
     firefox.enable = true;
+    # wezterm.enable = true;
 
     # TODO: set up and config nushell through nix insted of standalone files
     # nushell.enable = true;
