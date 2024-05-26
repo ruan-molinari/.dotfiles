@@ -8,7 +8,6 @@ local ensure_installed = {
   'tsserver',
   'eslint',
   -- 'rust_analyzer', -- rust-tools is setting it already
-  'beancount',
   'angularls',
   'lua_ls',
   'clangd',
@@ -21,7 +20,7 @@ local ensure_installed = {
   'zls',
   'ols',
   'gopls',
-  'htmx',
+  --'htmx',
   'templ',
 };
 
@@ -176,6 +175,19 @@ return {
         version = '^4',
         ft = { 'rust' },
       },
+      {
+        'NTBBloodbath/zig-tools.nvim',
+        ft = { "zig", "zon" },
+        config = function ()
+          require'zig-tools'.setup()
+        end,
+        dependencies = {
+          'akinsho/toggleterm.nvim',
+          config = function ()
+            require'toggleterm'.setup()
+          end
+        }
+      }
     },
     keys = function ()
       local buf = vim.lsp.buf
