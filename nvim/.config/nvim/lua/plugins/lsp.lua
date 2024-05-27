@@ -230,16 +230,6 @@ return {
         on_attach = lsp_zero.on_attach
       })
 
-      lspconfig.clangd.setup({
-        cmd = {
-          -- "--background-index",
-          -- "--suggest-missing-includes",
-          "-j=40",
-          "--clang-tidy",
-        },
-        filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto", "metal" },
-      })
-
       require('mason-lspconfig').setup({
         ensure_installed = ensure_installed,
         handlers = {
