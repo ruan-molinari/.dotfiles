@@ -106,21 +106,22 @@ return {
         stopOnEntry = false,
         cwd         = vim.fn.getcwd(),
         args        = {},
-        --args          = function()
-        --  local result = input_sync({
-        --    prompt = 'program arguments: ',
-        --  })
+        args          = function()
+          local result = input_sync({
+            prompt = 'program arguments: ',
+          })
 
-        --  if result == nil then
-        --    return dap.ABORT
-        --  end
+          if result == nil then
+            return dap.ABORT
+          end
 
-        --  return vim.split(result, ' ')
-        --end,
+          return vim.split(result, ' ')
+        end,
       },
     }
 
     dap.configurations.odin = lldb_default_config
+    dap.configurations.zig  = lldb_default_config
     dap.configurations.cpp  = lldb_default_config
     dap.configurations.c    = lldb_default_config
 
