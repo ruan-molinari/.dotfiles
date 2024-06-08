@@ -1,0 +1,4 @@
+set-option global scrolloff 5,1
+set-option global grepcmd 'rg --column'
+
+add-highlighter global/ number-lines -hlcursor -relative
