@@ -11,7 +11,7 @@ local config = function ()
       mappings = {
         i = {
           ['<C-n>'] = 'move_selection_next',
-          ['<C-e>'] = 'move_selection_previous',
+          ['<C-p>'] = 'move_selection_previous',
         }
       }
     }
@@ -26,10 +26,10 @@ return {
   keys = function ()
     local builtin = require("telescope.builtin")
     return {
-      {"<leader>tf", builtin.find_files, {}},
+      {"<leader>ff", builtin.find_files, {}},
       {"<C-p>", builtin.git_files, {}},
-      {"<leader>ts", function ()
-        builtin.grep_string({ search = vim.fn.input("Grep > ") });
+      {"<leader>fg", function ()
+        builtin.rep_string({ search = vim.fn.input("Grep > ") });
       end, {}},
     }
   end,

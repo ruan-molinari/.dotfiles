@@ -9,19 +9,19 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- Vim for Colemak
-map("", "n", "j", {})
-map("", "e", "k", {})
-map("", "i", "l", {})
-map("", "k", "e", {})
-map("", "K", "E", {})
-map("", "l", "i", {})
-map("", "L", "I", {})
-map("", "N", "5j", {})
-map("", "E", "5k", {})
+--map("", "n", "j", {})
+--map("", "e", "k", {})
+--map("", "i", "l", {})
+--map("", "k", "e", {})
+--map("", "K", "E", {})
+--map("", "l", "i", {})
+--map("", "L", "I", {})
+--map("", "N", "5j", {})
+--map("", "E", "5k", {})
 
 -- Jumps to first/last non-blank character
 map("", "H", "^", {})
-map("", "I", "g_", {})
+map("", "L", "g_", {})
 
 -- Shortcut for quiting and saving
 map("", "Q", ":q<cr>", {})
