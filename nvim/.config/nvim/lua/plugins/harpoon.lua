@@ -14,17 +14,17 @@ return {
         desc = "Harpoons a file"
       },
       {
-        "<C-l>",
+        "<C-e>",
         function ()
           ui.toggle_quick_menu()
         end,
         silent = true,
         desc = "Toggle harpoon mark list",
       },
-      {"<C-h>", function() ui.nav_file(1) end},
-      {"<C-n>", function() ui.nav_file(2) end},
-      {"<C-e>", function() ui.nav_file(3) end},
-      {"<C-i>", function() ui.nav_file(4) end},
+      {"<C-b>", function() ui.nav_file(1) end},
+      {"<C-m>", function() ui.nav_file(2) end},
+      {"<C-w>", function() ui.nav_file(3) end},
+      {"<C-v>", function() ui.nav_file(4) end},
     }
 
   end
