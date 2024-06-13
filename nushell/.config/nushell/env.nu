@@ -56,6 +56,8 @@ $env.NU_PLUGIN_DIRS = [
     ($nu.config-path | path dirname | path join 'plugins')
 ]
 
+$env.PATH = ($env.PATH | prepend '/usr/local/bin')
+
 ####################################
 ############ HOMEBREW ##############
 ####################################
@@ -74,13 +76,22 @@ try {
   $env.PATH = ($env.PATH | append [$"($env.FNM_MULTISHELL_PATH)/bin"])
 }
 
-# FNM END #
 
-# Adding homebrew bison to PATH
-$env.PATH = ($env.PATH | prepend '/opt/homebrew/opt/bison/bin')
+# Macos only
+if $nu.os-info.name == 'macos' {
+  # Bun macos
+  $env.BUN_INSTALL = ([$env.HOME '.bun'] | path join)
+  $env.PATH = ($env.PATH | prepend ([$env.BUN_INSTALL 'bin'] | path join))
 
-# Adding Bazel to path
-$env.PATH = ($env.PATH | prepend '/opt/homebrew/opt/bazel/bin')
+  # Adding homebrew bison to PATH
+  $env.PATH = ($env.PATH | prepend '/opt/homebrew/opt/bison/bin')
+
+  # Adding Bazel to path
+  $env.PATH = ($env.PATH | prepend '/opt/homebrew/opt/bazel/bin')
+}
+
+
+
 
 # Go
 $env.GOPATH = ([$env.HOME 'go'] | path join)
