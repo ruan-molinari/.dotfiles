@@ -1,4 +1,4 @@
-# Desktop Envirionment Management
+# Desktop Environment Management
 {
   config,
   pkgs,

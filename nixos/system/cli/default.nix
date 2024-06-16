@@ -20,6 +20,7 @@
     gnumake
     stow
     clang
+    xclip
     ripgrep
     fzf
     zoxide
