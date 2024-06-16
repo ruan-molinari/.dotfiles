@@ -10,7 +10,6 @@ local ensure_installed = {
   -- 'rust_analyzer', -- rust-tools is setting it already
   'angularls',
   'lua_ls',
-  'clangd',
   'jsonls',
   'cssls',
   'cssmodules_ls',

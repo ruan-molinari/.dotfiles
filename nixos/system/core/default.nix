@@ -25,15 +25,33 @@
   services.ratbagd.enable = true;
   services.input-remapper.enable = true;
   
+  programs.nix-ld.enable = true;
+
+  virtualisation.docker = {
+    enable = true;
+
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
+  };
+
   users.users.${userSettings.username} = {
     isNormalUser = true;
     description = userSettings.name;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       nerdfonts
       usbutils
       appimage-run
+      readline
+      zlib
+      zlib.dev
 
+      pkg-config # needed for openssl
+      openssl # needed for rust
+      openssl.dev
+          
       libratbag # Configuration library for gaming mice
       piper # GTK frontend for libratbag mouse config daemon
 
@@ -55,6 +73,11 @@
 
       nodejs_20
       bun
+
+      jetbrains.rider
+      (with dotnetCorePackages; combinePackages [
+       sdk_7_0_3xx
+      ])
     ];
   };
 }
