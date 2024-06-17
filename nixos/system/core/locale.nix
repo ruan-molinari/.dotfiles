@@ -24,8 +24,8 @@
 
   services.xserver.xkb = {
     layout = "us";
-    variant = "colemak";
+    variant = "dvorak";
   };
 
-  console.keyMap = "colemak";
+  console.keyMap = "dvorak";
 }

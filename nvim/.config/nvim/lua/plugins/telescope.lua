@@ -29,7 +29,7 @@ return {
       {"<leader>ff", builtin.find_files, {}},
       {"<C-p>", builtin.git_files, {}},
       {"<leader>fg", function ()
-        builtin.rep_string({ search = vim.fn.input("Grep > ") });
+        builtin.grep_string({ search = vim.fn.input("Grep > ") });
       end, {}},
     }
   end,
