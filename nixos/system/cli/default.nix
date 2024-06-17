@@ -23,6 +23,7 @@
     xclip
     ripgrep
     fzf
+    fd
     zoxide
     usbutils
     nushell
