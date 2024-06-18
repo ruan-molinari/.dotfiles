@@ -62,8 +62,8 @@
       # zig
       zls
       go
-      odin
-      ols
+      # odin
+      # ols
 
       (pkgs.python3.withPackages (python-pkgs: [
         python-pkgs.pip
