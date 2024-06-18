@@ -94,7 +94,6 @@ $env.config = {
   float_precision: 2
   use_ansi_coloring: true
   edit_mode: vi # emacs, vi
-  shell_integration: true # enables terminal markers and a workaround to arrow keys stop working issue
   show_banner: false # true or false to enable or disable the banner
   render_right_prompt_on_last_line: false # true or false to enable or disable right prompt to be rendered on last line of the prompt.
 

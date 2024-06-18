@@ -58,6 +58,10 @@ $env.NU_PLUGIN_DIRS = [
 
 $env.PATH = ($env.PATH | prepend '/usr/local/bin')
 
+# Folder where I install some binaries manually
+$env.BIN = ([$env.HOME 'bin'] | path join)
+$env.PATH = ($env.PATH | prepend ([$env.HOME 'bin'] | path join))
+
 ####################################
 ############ HOMEBREW ##############
 ####################################
