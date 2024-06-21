@@ -16,3 +16,7 @@ plug "andreyorst/plug.kak" noload
 plug "kakoune-lsp/kakoune-lsp" do %{
     cargo install --locked --force --path .
 }
+
+plug "andreyorst/fzf.kak" config %{
+  map global normal <c-p> ': fzf-mode<ret>'
+}
