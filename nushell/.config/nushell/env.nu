@@ -118,3 +118,6 @@ try {
   alias ccd = cd
   alias cd = z
 }
+
+# Using nix-shell with nu by default
+alias nix-shell = nix-shell --command nu
