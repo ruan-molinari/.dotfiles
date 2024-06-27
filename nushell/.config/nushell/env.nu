@@ -94,7 +94,7 @@ if $nu.os-info.name == 'macos' {
   $env.PATH = ($env.PATH | prepend '/opt/homebrew/opt/bazel/bin')
 }
 
-
+$env.ODIN_ROOT = ([$env.HOME 'Odin'] | path join)
 
 
 # Go
