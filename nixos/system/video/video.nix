@@ -11,7 +11,7 @@
       enable = true;
       driSupport = true;
       driSupport32Bit = true;
-      # extraPackages = with pkgs; [ vaapiVdpau ];
+      extraPackages = with pkgs; [ vaapiVdpau ];
   };
 
   # Load default nvidia drivers for Xorg and wayland
@@ -20,7 +20,6 @@
   hardware.nvidia = {
     # Modesetting is required.
     modesetting.enable = true;
-    # Drivers did not start without powerManagement, don't know why
     powerManagement.enable = false;
     powerManagement.finegrained = false;
     open = true;
