@@ -24,6 +24,7 @@
     ripgrep
     fzf
     fd
+    unzip
     zoxide
     usbutils
     nushell
