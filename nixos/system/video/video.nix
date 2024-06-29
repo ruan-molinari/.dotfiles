@@ -6,11 +6,9 @@
 
   services.xserver.enable = true;
 
-  hardware.opengl = {
+  hardware.graphics = {
       # Enables the graphics driver for OpenGL
       enable = true;
-      driSupport = true;
-      driSupport32Bit = true;
       extraPackages = with pkgs; [ vaapiVdpau ];
   };
 

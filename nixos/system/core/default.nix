@@ -74,7 +74,6 @@
       nodejs_20
       bun
 
-      jetbrains.rider
       (with dotnetCorePackages; combinePackages [
        sdk_7_0_3xx
       ])
