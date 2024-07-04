@@ -1,3 +1,12 @@
 [submodule "kitty/.config/kitty/kitty-themes"]
 	path = kitty/.config/kitty/kitty-themes
 	url = https://github.com/dexpota/kitty-themes
+[submodule "alacritty/.config/alacritty/alacritty"]
+	path = alacritty/.config/alacritty/alacritty
+	url = https://github.com/rose-pine/alacritty.git
+[submodule "alacritty/.config/alacritty/rose-pine"]
+	path = alacritty/.config/alacritty/rose-pine
+	url = https://github.com/rose-pine/alacritty.git
+[submodule "alacritty/.config/alacritty/themes/rose-pine"]
+	path = alacritty/.config/alacritty/themes/rose-pine
+	url = https://github.com/rose-pine/alacritty.git
