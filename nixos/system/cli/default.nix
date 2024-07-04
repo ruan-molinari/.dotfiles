@@ -20,6 +20,7 @@
     gnumake
     stow
     clang
+    lsof
     xclip
     ripgrep
     fzf
@@ -29,6 +30,7 @@
     usbutils
     nushell
     wezterm
+    alacritty
     starship
   ];
 
