@@ -10,6 +10,7 @@
     ./audio.nix
     ./locale.nix
     ./nix.nix
+    ./virtualisation.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
