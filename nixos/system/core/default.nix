@@ -75,6 +75,8 @@
       nodejs_20
       bun
 
+      hoppscotch
+
       (with dotnetCorePackages; combinePackages [
        sdk_7_0_3xx
       ])
