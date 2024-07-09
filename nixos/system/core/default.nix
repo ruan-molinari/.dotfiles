@@ -52,6 +52,8 @@
       pkg-config # needed for openssl
       openssl # needed for rust
       openssl.dev
+      protonvpn-cli
+      protonvpn-gui
           
       libratbag # Configuration library for gaming mice
       piper # GTK frontend for libratbag mouse config daemon
