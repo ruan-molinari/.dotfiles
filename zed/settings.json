@@ -1,0 +1,75 @@
+{
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_assistant": false
+  },
+  "assistant": {
+    "default_model": {
+      "model": "claude-3-5-sonnet",
+      "provider": "copilot_chat"
+    },
+    "enabled": true,
+    "version": "2"
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "auto_install_extensions": {
+    "json": true,
+    "make": true,
+    "nix": true,
+    "toml": true,
+    "zig": true,
+    "dockerfile": true,
+    "zed-legacy-themes": true,
+    "wakatime": true,
+    "discord-presence": true
+  },
+  "format_on_save": null,
+  "vim_mode": true,
+  "lsp": {
+    "nix": {
+      "binary": {
+        "path_lookup": true
+      }
+    },
+    "zls": {
+      "binary": {
+        "path_lookup": true
+      }
+    }
+  },
+  "terminal": {
+    "env": {
+      "TERM": "alacritty"
+    }
+  },
+  "theme": {
+    "dark": "Zed Legacy: Rosé Pine Moon",
+    "light": "Zed Legacy: Rosé Pine Dawn",
+    "mode": "system"
+  },
+
+  "language_overrides": {
+    "TypeScript": {
+      "format_on_save": {
+        "external": {
+          "command": "node_modules/.bin/prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "TSX": {
+      "format_on_save": {
+        "external": {
+          "command": "node_modules/.bin/prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    }
+  }
+}

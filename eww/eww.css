@@ -1,0 +1,10 @@
+/* Global Styles */
+.bar {
+  background-color: alpha(@theme_bg_color, 0.6);
+  color: @theme_fg_color;
+  padding: 4px;
+}
+
+.tags button {
+  border-radius: 5px;
+}
