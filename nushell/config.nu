@@ -1,7 +1,3 @@
-let carapace_completer = {|spans|
-  carapace $spans.0 nushell $spans | from json
-}
-
 # TODO: see if there is a way to do this in nix instead
 alias nix-shell = nix-shell --command nu
 alias vim = nvim
@@ -51,11 +47,6 @@ $env.config = {
     quick: true # set to false to prevent auto-selecting completions when only one remains
     partial: true # set this to false to prevent partial filling of the prompt
     algorithm: "prefix" # "prefix" or "fuzzy"
-    external: {
-      enable: true # set to false to prevent nushell looking into $env.PATH to find more suggestions, `false` recommended for WSL users as this look up my be very slow
-      max_results: 10000
-      completer: $carapace_completer
-    }
   }
   filesize: {
     unit: binary
