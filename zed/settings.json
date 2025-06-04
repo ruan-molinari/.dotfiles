@@ -5,9 +5,9 @@
       "proxy": null,
       "proxy_no_verify": null
     },
-    "enabled_in_assistant": false
+    "enabled_in_text_threads": false
   },
-  "assistant": {
+  "agent": {
     "default_model": {
       "model": "claude-3-5-sonnet",
       "provider": "copilot_chat"
@@ -16,7 +16,7 @@
     "version": "2"
   },
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "copilot"
   },
   "auto_install_extensions": {
     "json": true,
@@ -49,7 +49,7 @@
     }
   },
   "theme": {
-    "dark": "Zed Legacy: Rosé Pine Moon",
+    "dark": "Ayu Mirage",
     "light": "Zed Legacy: Rosé Pine Dawn",
     "mode": "system"
   },
