@@ -1,6 +1,7 @@
 # TODO: see if there is a way to do this in nix instead
 alias nix-shell = nix-shell --command nu
 alias vim = nvim
+alias hx = helix
 
 $env.config = {
   ls: {
@@ -86,3 +87,6 @@ $env.config = {
     reset_application_mode: true
   }
 }
+
+# Startup
+fastfetch --config examples/13

@@ -6,6 +6,7 @@ source '../scripts/util.nu'
 
 $env.STARSHIP_SHELL = "nu"
 
+
 def create_left_prompt [] {
     starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)'
 }
@@ -40,6 +41,7 @@ $env.PATH = (
     | append $env.BIN
     | append ([$env.BUN_ROOT bin] | path join)
     | append ([$env.CARGO bin] | path join)
+    | append ([$env.HOME '.local' 'bin'] | path join)
     | uniq # filters so the paths are unique
     )
 
@@ -49,7 +51,6 @@ if $nu.os-info.name == macos { # env variables for macos
       | split row (char esep)
       | append '/opt/homebrew/bin'
       | append '/opt/podman/bin'
-      | append ([$env.HOME '.local' 'bin'] | path join)
       | uniq
       )
 
