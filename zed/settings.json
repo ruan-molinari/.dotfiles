@@ -41,6 +41,17 @@
       "binary": {
         "path_lookup": true
       }
+    },
+    "rust-analyzer": {
+      "initialization_options": {
+        "cargo": {
+          "allFeatures": true
+        },
+        "binary": {
+          "ignore_system_version": true,
+          "path": "/usr/lib/rustup/bin/rust-analyzer"
+        }
+      }
     }
   },
   "terminal": {
@@ -49,7 +60,7 @@
     }
   },
   "theme": {
-    "dark": "Ayu Mirage",
+    "dark": "Zed Legacy: Rosé Pine Moon",
     "light": "Zed Legacy: Rosé Pine Dawn",
     "mode": "system"
   },
