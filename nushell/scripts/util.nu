@@ -12,7 +12,7 @@ export def "str replace-env" [
         uniq |
         reduce --fold $in_string { |var, s|
             # Env key has been parsed into either the var0 group or the var1 group
-            let env_key = [$var.var0 $var.var1] | filter { not ($in | is-empty) } | first
+            let env_key = [$var.var0 $var.var1] | where not ($in | is-empty) | first
             # Get from either the overlay or $env
             let replacement = $overlay | get -i $env_key | default ($env | get $env_key)
             $s | str replace --all $var.match $replacement
