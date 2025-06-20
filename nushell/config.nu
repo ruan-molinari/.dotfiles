@@ -88,4 +88,5 @@ $env.config = {
 }
 
 # Startup
-fastfetch --config examples/26
+fastfetch --config examples/13
+source $"($nu.home-path)/.cargo/env.nu"
