@@ -14,7 +14,7 @@ export def "str replace-env" [
             # Env key has been parsed into either the var0 group or the var1 group
             let env_key = [$var.var0 $var.var1] | where not ($in | is-empty) | first
             # Get from either the overlay or $env
-            let replacement = $overlay | get -i $env_key | default ($env | get $env_key)
+            let replacement = $overlay | get -o $env_key | default ($env | get $env_key)
             $s | str replace --all $var.match $replacement
         })
 } 
