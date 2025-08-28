@@ -35,6 +35,9 @@ $env.BUN_ROOT = ([$env.HOME .bun] | path join)
 $env.BUN_CACHE = ([$env.HOME .cache .bun] | path join)
 $env.CARGO = ([$env.HOME .cargo] | path join)
 
+# Zig Version Manager:w
+$env.ZVM_INSTALL = ([$env.HOME .zvm] | path join)
+
 # Env variable for any system
 $env.PATH = (
     $env.PATH
@@ -43,6 +46,10 @@ $env.PATH = (
     | append ([$env.BUN_ROOT bin] | path join)
     | append ([$env.BUN_CACHE bin] | path join)
     | append ([$env.CARGO bin] | path join)
+
+    | append ([$env.ZVM_INSTALL bin] | path join)
+    | append ([$env.ZVM_INSTALL self] | path join)
+
     | append ([$env.HOME '.local' 'bin'] | path join)
     | uniq # filters so the paths are unique
     )
