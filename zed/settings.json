@@ -1,6 +1,7 @@
 {
+  "show_edit_predictions": true,
   "edit_predictions": {
-    "mode": "subtle",
+    "mode": "eager",
     "copilot": {
       "proxy": null,
       "proxy_no_verify": null
@@ -9,7 +10,7 @@
   },
   "agent": {
     "default_model": {
-      "model": "claude-3-5-sonnet",
+      "model": "claude-3.7-sonnet",
       "provider": "copilot_chat"
     },
     "enabled": true,
