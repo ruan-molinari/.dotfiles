@@ -1,0 +1,87 @@
+{
+  "show_edit_predictions": true,
+  "edit_predictions": {
+    "mode": "eager",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_text_threads": false
+  },
+  "agent": {
+    "default_model": {
+      "model": "claude-3.7-sonnet",
+      "provider": "copilot_chat"
+    },
+    "enabled": true,
+    "version": "2"
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "auto_install_extensions": {
+    "json": true,
+    "make": true,
+    "nix": true,
+    "toml": true,
+    "zig": true,
+    "dockerfile": true,
+    "zed-legacy-themes": true,
+    "wakatime": true,
+    "discord-presence": true
+  },
+  "format_on_save": null,
+  "vim_mode": true,
+  "lsp": {
+    "nix": {
+      "binary": {
+        "path_lookup": true
+      }
+    },
+    "zls": {
+      "binary": {
+        "path_lookup": true
+      }
+    },
+    "rust-analyzer": {
+      "initialization_options": {
+        "cargo": {
+          "allFeatures": true
+        },
+        "binary": {
+          "ignore_system_version": true,
+          "path": "/usr/lib/rustup/bin/rust-analyzer"
+        }
+      }
+    }
+  },
+  "terminal": {
+    "env": {
+      "TERM": "alacritty"
+    }
+  },
+  "theme": {
+    "dark": "Zed Legacy: Rosé Pine Moon",
+    "light": "Zed Legacy: Rosé Pine Dawn",
+    "mode": "system"
+  },
+
+  "language_overrides": {
+    "TypeScript": {
+      "format_on_save": {
+        "external": {
+          "command": "node_modules/.bin/prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "TSX": {
+      "format_on_save": {
+        "external": {
+          "command": "node_modules/.bin/prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    }
+  }
+}
