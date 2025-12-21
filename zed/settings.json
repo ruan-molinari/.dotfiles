@@ -4,20 +4,20 @@
     "mode": "subtle",
     "copilot": {
       "proxy": null,
-      "proxy_no_verify": null
+      "proxy_no_verify": null,
     },
-    "enabled_in_text_threads": false
+    "enabled_in_text_threads": false,
   },
   "agent": {
     "default_profile": "ask",
     "default_model": {
       "model": "claude-sonnet-4.5",
-      "provider": "copilot_chat"
+      "provider": "copilot_chat",
     },
-    "enabled": true
+    "enabled": true,
   },
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "copilot",
   },
   "auto_install_extensions": {
     "json": true,
@@ -28,27 +28,27 @@
     "dockerfile": true,
     "zed-legacy-themes": true,
     "wakatime": true,
-    "discord-presence": true
+    "discord-presence": true,
   },
   "format_on_save": "on",
   "vim_mode": true,
   "lsp": {
     "zls": {
       "binary": {
-        "path": "/Users/ruan/.zvm/bin/zls"
+        "path": "/Users/ruan/.zvm/bin/zls",
       },
       "settings": {
         "zls": {
-          "zig_exe_path": "/Users/ruan/.zvm/bin/zig"
-        }
-      }
-    }
+          "zig_exe_path": "/Users/ruan/.zvm/bin/zig",
+        },
+      },
+    },
   },
   "terminal": {
     "shell": "system",
     "env": {
-      "TERM": "alacritty"
-    }
+      "TERM": "ghostty",
+    },
   },
   "theme": "Zed Legacy: Rosé Pine Moon",
 
@@ -57,24 +57,24 @@
       "formatter": {
         "external": {
           "command": "node_modules/.bin/prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
-        }
+          "arguments": ["--stdin-filepath", "{buffer_path}"],
+        },
       },
-      "format_on_save": "on"
+      "format_on_save": "on",
     },
     "TSX": {
       "formatter": {
         "external": {
           "command": "node_modules/.bin/prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
-        }
+          "arguments": ["--stdin-filepath", "{buffer_path}"],
+        },
       },
-      "format_on_save": "on"
+      "format_on_save": "on",
     },
     "Zig": {
       "formatter": "language_server",
       "format_on_save": "on",
-      "language_servers": ["zls", "..."]
-    }
-  }
+      "language_servers": ["zls", "..."],
+    },
+  },
 }
