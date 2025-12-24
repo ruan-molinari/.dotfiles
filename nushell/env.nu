@@ -60,6 +60,7 @@ if $nu.os-info.name == macos { # env variables for macos
       | split row (char esep)
       | append '/opt/homebrew/bin'
       | append '/opt/podman/bin'
+      | append ([$env.HOME 'Library' 'Python' '3.9' 'bin'] | path join)
       | uniq
       )
 
