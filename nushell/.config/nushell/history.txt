@@ -1,0 +1,729 @@
+exit
+cd /etc
+ls
+clear
+cd .dotfiles/
+cd
+cd .config/wezterm/
+vim
+cd .config/wezterm/
+brew install bun
+clear
+vim
+curl -fsSL https://bun.sh/install | bash
+bun
+clear
+vim
+brew install npm
+vim
+brew install go
+vim
+clear
+exit
+brew install microsoft-teams
+brew install rectangle
+clear
+/private/etc/
+ls
+ls hosts
+sudo nvim -e host 
+vim hosts
+sudo nvim hosts
+bat hosts
+vim hosts
+clear
+vim hosts
+sudo nvim hosts
+vim hosts
+exit
+bun
+clear
+npm
+clear
+cd .config
+ls
+cd nushell
+vim
+exin
+exit
+ls
+ls -a
+cd /
+ls
+cd bin
+ls
+..
+ls
+ls usr
+ls usr/bin
+cd usr/bin
+clear
+rn
+clear
+ls
+ls | find open
+vim open
+open --help
+vim open
+clear
+vim
+..
+ls
+cd etc
+ls
+vim hosts
+sudo vim hosts
+sudo nvim -e host
+ls
+ls hosts
+sudo nvim hosts
+cd
+clear
+ls
+clear
+mkdir workspace
+cd workspace/
+clear
+mkdir prototyping
+cd prototyping/
+clear
+mkdir diff-log
+clear
+cd diff-log/
+clear
+bun install deep-diff
+ls
+main.ts
+bun help
+bun i help
+bun u help
+bun remove help
+bun install --help
+bun i -d @types/node
+clear
+nvim main.ts
+bun run
+bun run main.ts
+ls
+mv main.ts scratch.ts
+ls
+bun run scratch.ts
+clear
+vim
+bun run scratch.ts
+clear
+bun run scratch.ts
+echo shell
+shell
+$env.SHELL
+clear
+info
+version
+$env | find shell
+clear
+banner
+clear
+help -f banner
+help -f 'banner'
+help -f message
+clear
+version
+nu version
+nushell version
+clear
+nu --version
+clear
+help -f nushell
+clear
+help
+clear
+help
+clear
+make
+cd
+cd .config/wezterm/
+vim
+..
+cd
+cd .config
+ls
+alacritty
+clear
+clear
+make
+make | from json
+help -f 'skip'
+help skip
+make | skip 1 | from json
+make | to text | skip 1 | from json
+make | to text | drop 1 | from json
+clear
+help skip
+help -f skip
+clear
+make
+bun run src/main.ts
+bun run src/main.ts | from json
+help from
+bun run src/main.ts | to json
+bun run src/main.ts | to nuon
+make
+clear
+make run
+clear
+make
+clear
+make
+clear; make
+clear
+make
+clear
+make
+make | drop 1 | from json
+make | from json
+make | skip 1 | from json
+make | to text | drop 1 | from json
+clear
+make | lines
+make | lines | skip 1 | from json
+make | lines | skip 1 | to text | from json
+make | lines | skip 1 | to text
+make | lines | $in.2 | to text
+make | lines | $in.2 | to text | from json
+clear
+make | lines | skip 1 | to text
+make | lines | skip 1 | to text | from json
+make | lines | skip 1 | each { |it| $it | from json }
+clear
+make
+clear
+vim
+..
+clear
+bunx create-astro@latest changelog
+ls 
+cd changelop
+cd changelog
+clear
+ls
+ls src
+..
+mkdir prototypes
+clear
+cd prototypes/
+clear
+bun
+bun c
+bun c dmifsud/bun-tsx-htmx
+lsls
+ls
+mv bun-tsx-htmx/ change-log
+clear
+vim change-log/
+clear
+ls
+cd change-log/
+clear
+bun i deep-diff
+clear
+cd
+ls
+vim README.md
+vim
+ls
+..
+rm -rf change-log/
+clear
+bun c vite changes-log
+cd changes-log/
+vim
+..
+rm -rf changes-log/
+bun c vite changes-log
+cd changes-log/
+clear
+vim
+clear
+bun i deep-diff
+clear
+bun run src/server.ts
+clear
+cd
+clear
+cd workspace/prototyping/diff-log/
+clear
+vim
+clear
+..
+rm -rf changes-log/
+bun c dmifsud/bun-tsx-htmx changes-log
+lls
+ls
+clear
+cd changes-log/
+clear
+bun i deep-diff
+clear
+vim
+bun i -d @types/deep-diff
+clear
+vim
+..
+bun c vite changes-logs
+cd changes-logs/
+vim
+ls
+bun install
+ls
+cd
+cd workspace/prototyping/diff-log/
+clear
+make
+vim
+make
+vim
+make
+clear
+bun run dev
+vim
+clear
+clear
+..
+cd changes-log/
+ls
+ls src
+clear
+bun run dev
+clear
+make
+bun run dev
+clear
+vim
+bun run dev
+clear
+bun run dev
+clear
+hx
+clear
+brew install evil-helix
+clear
+make
+bun run dev
+vim
+make
+vim
+clear
+bun run dev
+clear
+bun run dev
+bun run build:css
+bun run build
+bun run build:css
+clear
+ls
+ls dist
+clear
+bun run dev
+fzf
+clear
+brew install --cask fzf
+brew install fzf
+vim
+clear
+fzf
+which fzf
+grep
+clear
+brew install rg
+brew install fd
+clear
+vim
+clear
+vim
+cd
+clear
+ls
+mkdir open-source
+cd open-source/
+clear
+cargo version
+git clone https://github.com/usagi-flow/evil-helix.git --recursive
+cargo
+clear
+rustup
+clear
+clear
+ls
+cd evil-helix/
+clear
+ls
+cargo
+clear
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+clear
+ls
+ls /opt
+cargo build
+clear
+ls
+..
+rm -rf evil-helix/
+clear
+cd
+cd Downloads/
+ls
+mv helix-aarch64-macos.tar.gz /opt
+sudo mv helix-aarch64-macos.tar.gz /opt
+cd /opt
+clear
+ls
+tar -xf helix-aarch64-macos.tar.gz
+ls
+sudo tar -xf helix-aarch64-macos.tar.gz
+ls
+rm helix-aarch64-macos.tar.gz
+sudo rm helix-aarch64-macos.tar.gz
+clear
+cd helix/
+clear
+ls
+cd /usr/local/
+ls
+mkdir bin
+sudo mkdir bin
+ls
+cd bin
+clear
+ls
+sudo ln -sv /opt/helix/hx .
+ls
+clear
+hx
+clear
+cd
+clear
+hx
+cd /opt
+ls
+cd helix/
+clear
+ls
+ls runtime/
+chmod +x hx
+ls
+hx
+clear
+clear\
+clear
+ls
+ls -l
+ls runtime/ -l
+ls runtime/grammars/ -l
+clear
+vim
+hx
+clear
+ls
+clear
+..
+ls
+..
+ls
+cd prototypes/
+ls
+clear
+git clone https://github.com/ruan-molinari/deep-diff-lab.git
+ssh-keygen -t ed25519 -C "ruan.molinari@proton.me"
+ls ~/.ssh
+ls
+mkdir ~/.ssh
+ls
+mv github ~/.ssh/
+mv github.pub ~/.ssh/
+clear
+ls
+clear
+cd
+cd .ssh
+clear
+ls
+eval (ssh-agent s-)
+clear
+vim config
+ssh-agent --apple-use-keychain ~/.ssh/github
+ssh-agint --help
+ssh-agent --help
+sh
+clear
+ssh-agint
+ssh-agent
+ssh-agent --help
+ssh-agent -h
+ssh-agent -apple-use-keychain github
+ssh-agent -apple-use-keychain ./github
+ssh-agent --apple-use-keychain ./github
+ssh-agent - -apple-use-keychain ./github
+ssh-agent -- apple-use-keychain ./github
+ssh-agent -apple-use-keychain ./github
+ssh-add
+ssh-add --help
+ssh-add -h
+/usr/bin/ssh-add --apple-use-keychain ./github
+ls
+rm pple-use-keychain
+ls
+clear
+vim
+cd
+cd prototypes/
+clear
+ls
+git clone git@github.com:ruan-molinari/deep-diff-lab.git
+ls
+cd deep-diff-lab/
+clear
+ls
+clear
+vim
+clear
+bun run dev
+echo $0
+sh (echo $0)
+clear
+sh
+clear
+ls\
+exit
+exit
+cd prototypes/deep-diff-lab/
+clear
+bun run dev
+$env.SHELL
+clear
+ls
+vim
+clear
+bun run dev
+vite
+bun install -g vite
+clear
+bun run dev
+bun install
+clear
+bun run dev
+clear
+cd
+cd workspace/prototyping/diff-log/
+ls
+vim
+cluor
+clear
+cd
+cd Downloads/
+ls
+vim aplicativo.interface.ts
+clear
+bun run dev
+clear
+git status
+git add .
+git commit -m "Fixing some things"
+git push
+clear
+bun install -g @angular/cli
+git diff
+git status
+clear
+cd
+clear
+vim src/
+cd
+clear
+ls
+cd work
+cd workspace/
+clear
+ls
+ng
+clear
+ng config -g cli.packageManager bun
+ng config
+ng --help
+ng config -g
+clear
+ng new
+clear
+ls
+mv microdiff/ workspace/
+cd workspace/
+clear
+ls
+cd microdiff/
+clear
+vim
+clear
+bun install microdiff
+ls
+..
+ls
+cd prototyping/
+ls
+cd diff-log/
+ls
+ls src
+..
+clear
+cd
+cd prototypes/
+clear
+ls
+ls changes-log/
+cd changes-log/
+..
+rm -rf changes-log/
+cd changes-logs/
+ls
+vim src
+..
+rm -rf changes-logs/
+clear
+ls
+vim
+clear
+ls src/
+mv ~/Downloads/aplicativo.interface.ts src/app/
+vim
+vm `~/Downloads/aplicativo.interface(1).ts` src/app/interfaces/aplicativos.interface.ts
+mv `~/Downloads/aplicativo.interface(1).ts` src/app/interfaces/aplicativos.interface.ts
+clear
+ls
+clear
+bun run dev
+vim package.json
+brew install scroll-reverser
+brew update
+brew upgrade
+brew install discord
+xz --help
+clear
+hq
+zq
+xq
+clear
+qt
+clear
+jq
+clear
+bun install moment
+clear
+vim
+clear
+vim deep-diff-lab/
+clear
+cd .config
+cd 
+cd .config
+clear
+ls
+cd nvim
+clear
+vim
+clear
+vim
+clear
+bun run start
+clear
+vim
+clear
+brew install obsidian
+clear
+brew install gitui
+clear
+cargo
+clear
+cargo install gitui
+clear
+gitui
+clear
+cargo --help
+clear
+vim
+clear
+brew install zed
+clear
+cd
+clear
+git clone git@github.com:ruan-molinari/nixconfig.git
+clear
+cd nixconfig
+clear
+ls
+mkdir scripts
+clear
+cd scripts/
+clear
+ls
+vim stow_dotfiles.sh
+./stow_dotfiles.sh
+ls
+sh ./stow_dotfiles.sh
+vim
+sh ./stow_dotfiles.sh
+vim
+sh ./stow_dotfiles.sh
+vim
+vim stow_dotfiles.sh
+sh ./stow_dotfiles.sh
+curl cht.sh/stow
+help stow
+clear
+stow --help
+sh stow_dotfiles.sh
+cd
+cd .config
+clear
+ls
+rm nvim
+vim stow_dotfiles.sh
+clear
+sh stow_dotfiles.sh
+ls
+..
+ls
+cd .config
+ls
+stow --help
+vim stow_dotfiles.sh
+sh stow_dotfiles.sh
+clear
+exit
+nu
+vim
+cd
+cd .config
+ls
+clear
+ls
+cd
+ls
+vim stow_dotfiles.sh
+sh stow_dotfiles.sh
+cd .config/
+clear
+ls
+vim stow_dotfiles.sh
+ls /usr/bin/env
+clear
+sh stow_dotfiles.sh
+ls /usr/bin/env
+vim stow_dotfiles.sh
+./stow_dotfiles.shl
+./stow_dotfiles.sh
+stow_dotfiles.sh
+sh stow_dotfiles.sh
+clear
+vim
+vim stow_dotfiles.sh
+stow_dotfiles.sh
+sh stow_dotfiles.sh
+rm nushell/
