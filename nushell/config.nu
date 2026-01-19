@@ -88,5 +88,5 @@ $env.config = {
 }
 
 # Startup
-fastfetch --config examples/13
+#fastfetch --config examples/13
 #source $"($nu.home-path)/.cargo/env.nu" # TODO: returning error. do not remember why this is here
